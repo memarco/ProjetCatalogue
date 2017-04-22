@@ -10,7 +10,7 @@ class Domaine extends CI_Controller {
         $this->load->model('domaine_model');
         $this->load->helper('url_helper');
 
-        //$this->load->library(array('PHPExcel','PHPExcel/IOFactory'));
+
     }
  
     public function index()
@@ -114,64 +114,6 @@ class Domaine extends CI_Controller {
         redirect( base_url() . 'index.php/domaine');        
     }
 
-    public function upload(){
-        $fileName = time().$_FILES['file']['name'];
 
-        //Config upload
-        $config['upload_path'] = './upload/';
-        $config['file_name'] = $fileName;
-        $config['allowed_types'] = 'xls|xlsx|csv';
-        $config['max_size'] = 10000;
-
-        $this->load->library('upload');
-        $this->upload->initialize($config);
-
-        if (!$this->upload->do_upload('file'))
-        {
-            $error = array('error' => $this->upload->display_errors());
-            print_r($error);
-        }else{
-            $media = $this->upload->data('file');
-            //Upload file excel
-            $inputFileName = './upload/'.$fileName;
-            //reading excel
-            try {
-                $inputFileType = IOFactory::identify($inputFileName);
-                $objReader = IOFactory::createReader($inputFileType);
-                $objPHPExcel = $objReader->load($inputFileName);
-            } catch (Exception $e) {
-                die('Error loading file "'.pathinfo($inputFileName,PATHINFO_BASENAME).'": '.$e->getMessage());
-            }
-
-            $sheet = $objPHPExcel->getSheet(0);
-            $highestRow = $sheet->getHighestRow();
-            $highestColumn = $sheet->getHighestColumn();
-
-            for ($row = 2; $row <= $highestRow; $row++){
-                //  Read a row of data into an array
-                $rowData = $sheet->rangeToArray('A' . $row . ':' . $highestColumn . $row,
-                    '',
-                    TRUE,
-                    FALSE);
-
-                //Sesuaikan sama nama kolom tabel di database
-                $data = array(
-                    /*"idimport"=> $rowData[0][0],*/
-                    "nom"=> $rowData[0][1] );
-
-                //sesuaikan nama dengan nama tabel
-                $insert = $this->db->insert("domaine",$data);
-            }
-
-            $this->delete_file($media['file_path']);
-            echo "Succès!!!";
-        }
-    }
-
-    function delete_file($file) {
-        if (file_exists($file) && is_file($file)){
-            unlink($file);
-        }
-    }
 
 }

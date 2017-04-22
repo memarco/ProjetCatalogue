@@ -68,9 +68,6 @@ $route['composante/(:any)'] = 'composante/view/$1';
 $route['domaine'] = 'domaine';
 $route['domaine/create'] = 'domaine/create';
 
-$route['csv_domaine'] = 'csv_domaine';
-$route['domaine/upload'] = 'domaine/upload';
- 
 $route['domaine/edit/(:any)'] = 'domaine/edit/$1';
 $route['domaine/delete/(:any)'] = 'domaine/delete/$1';
  

@@ -12,10 +12,6 @@
                
               <p><a class="btn btn-primary" href="<?php echo site_url('domaine/create'); ?>">AJOUTER &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus text-right" aria-hidden="true"></span></a></p>
 
-    <form method="post" action="<?php echo site_url('domaine/upload'); ?>" enctype="multipart/form-data">
-        <input type="file" name="file" ><br><br>
-        <input type="submit"  value="UPLOAD" class="btn btn-primary">
-    </form>
 
 <table  class="table table-bordered"> 
     <thead>
