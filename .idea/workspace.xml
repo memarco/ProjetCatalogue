@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d7f2001-25dc-4da7-8fef-b1094aa901a1" name="Default" comment="importexcel_projet">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/import_excel.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/cache/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/cache/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/constants.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/doctypes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/foreign_chars.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/hooks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/memcached.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/migration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/mimes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/routes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/smileys.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/config/user_agents.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/core/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/hooks/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/language/english/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/language/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Cell/AdvancedValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Cell/DataType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Cell/DataValidation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Cell/DefaultValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Cell/Hyperlink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Cell/IValueBinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/DataSeries.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/DataSeriesValues.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/Layout.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/Legend.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/PlotArea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/Renderer/jpgraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Chart/Title.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Alignment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Border.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Borders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Color.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Conditional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Fill.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Font.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/NumberFormat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Protection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/Style/Supervisor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/locale/bg/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/locale/cs/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/locale/cs/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/locale/da/config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/libraries/PHPExcel/locale/da/functions" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/logs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/models/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/cli/error_404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/cli/error_db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/cli/error_exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/cli/error_general.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/cli/error_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/cli/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/html/error_404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/html/error_db.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/html/error_exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/html/error_general.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/html/error_php.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/errors/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/import.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/application/views/welcome_message.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/readme.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Benchmark.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/CodeIgniter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Common.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Exceptions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Hooks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Input.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Log.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Output.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Router.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Security.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/URI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/Utf8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/compat/hash.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/compat/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/compat/mbstring.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/compat/password.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/compat/standard.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/core/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/DB.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/DB_cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/DB_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/DB_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/DB_query_builder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/DB_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/DB_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/cubrid/cubrid_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/cubrid/cubrid_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/cubrid/cubrid_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/cubrid/cubrid_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/cubrid/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/ibase/ibase_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/ibase/ibase_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/ibase/ibase_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/ibase/ibase_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/ibase/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mssql/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mssql/mssql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mssql/mssql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mssql/mssql_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mssql/mssql_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysql/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysql/mysql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysql/mysql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysql/mysql_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysql/mysql_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysqli/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysqli/mysqli_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysqli/mysqli_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysqli/mysqli_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/mysqli/mysqli_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/oci8/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/oci8/oci8_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/oci8/oci8_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/oci8/oci8_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/oci8/oci8_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/odbc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/odbc/odbc_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/odbc/odbc_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/odbc/odbc_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/odbc/odbc_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/pdo_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/pdo_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/pdo_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/pdo_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_4d_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_4d_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_cubrid_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_cubrid_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_dblib_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_dblib_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_firebird_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_firebird_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_ibm_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_ibm_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_informix_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_informix_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_mysql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_mysql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_oci_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_odbc_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_odbc_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_pgsql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_pgsql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_sqlite_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_sqlite_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/postgre/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/postgre/postgre_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/postgre/postgre_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/postgre/postgre_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/postgre/postgre_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite/sqlite_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite/sqlite_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite/sqlite_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite/sqlite_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite3/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite3/sqlite3_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite3/sqlite3_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite3/sqlite3_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlite3/sqlite3_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlsrv/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlsrv/sqlsrv_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlsrv/sqlsrv_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlsrv/sqlsrv_result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/drivers/sqlsrv/sqlsrv_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/database/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/fonts/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/fonts/texb.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/array_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/captcha_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/cookie_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/date_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/directory_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/download_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/email_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/file_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/form_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/html_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/inflector_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/language_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/number_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/path_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/security_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/smiley_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/string_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/text_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/typography_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/url_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/helpers/xml_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/calendar_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/date_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/db_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/email_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/form_validation_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/ftp_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/imglib_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/migration_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/number_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/pagination_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/profiler_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/unit_test_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/english/upload_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/language/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/drivers/Cache_apc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/drivers/Cache_dummy.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/drivers/Cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/drivers/Cache_memcached.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/drivers/Cache_redis.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/drivers/Cache_wincache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/drivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cache/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Calendar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Cart.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Email.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Encrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Encryption.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Form_validation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Ftp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Image_lib.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Javascript.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Javascript/Jquery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Javascript/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Migration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Parser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/Session.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/SessionHandlerInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/Session_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/drivers/Session_database_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/drivers/Session_files_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/drivers/Session_memcached_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/drivers/Session_redis_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/drivers/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Session/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Trackback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Typography.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Unit_test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Upload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/User_agent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Xmlrpc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Xmlrpcs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/Zip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/system/libraries/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1472845225sample_template.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1472845431sample_template.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492783901sample_template.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492809818sample_template.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492809991sample_template.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492812187import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492812325import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492812897import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492813057import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492813128import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492813332import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492813459import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492813511import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492814959composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492815164composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492815583composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492815672composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492815778composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492815914composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492816106composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492816312composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492816474composant_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492817108site_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492817564site_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492817754site_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492817842site_import.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492844286import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492844341import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492844518import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/import_excel/upload/1492844532import_domaine.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\Import_file\Welcome.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\Import_file\database.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\Import_file\import.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\controllers\Welcome.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\controllers\index.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\index.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Autoloader.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorageFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\APC.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\CacheBase.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\DiscISAM.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\ICache.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\Igbinary.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\Memcache.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\Memory.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\MemoryGZip.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\MemorySerialized.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\PHPTemp.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\SQLite.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\SQLite3.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CachedObjectStorage\Wincache.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CalcEngine\CyclicReferenceStack.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\CalcEngine\Logger.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Database.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\DateTime.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Engineering.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\ExceptionHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Financial.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\FormulaParser.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\FormulaToken.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Function.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Functions.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Logical.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\LookupRef.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\MathTrig.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Statistical.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\TextData.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\Token\Stack.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Calculation\functionlist.txt" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Cell.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Comment.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\DocumentProperties.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\DocumentSecurity.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\HashTable.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\IComparable.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\IOFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\NamedRange.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\CSV.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\DefaultReadFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel2003XML.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel2007.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel2007\Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel2007\Theme.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel5\Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel5\MD5.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Excel5\RC4.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\Gnumeric.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\IReadFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\IReader.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\OOCalc.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Reader\SYLK.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\ReferenceHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\RichText.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\RichText\ITextElement.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\RichText\Run.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\RichText\TextElement.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Settings.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\CodePage.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Date.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher\DgContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher\DgContainer\SpgrContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher\DgContainer\SpgrContainer\SpContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher\DggContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher\DggContainer\BstoreContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher\DggContainer\BstoreContainer\BSE.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Escher\DggContainer\BstoreContainer\BSE\Blip.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\File.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\Font.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\CHANGELOG.TXT" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\CholeskyDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\EigenvalueDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\LUDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\Matrix.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\QRDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\SingularValueDecomposition.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\utils\Error.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\JAMA\utils\Maths.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\OLE.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\OLERead.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\OLE\ChainedBlockStream.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\OLE\PPS.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\OLE\PPS\File.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\OLE\PPS\Root.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\PCLZip\gnu-lgpl.txt" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\PCLZip\pclzip.lib.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\PCLZip\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\PasswordHasher.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\String.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\TimeZone.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\XMLWriter.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\ZipArchive.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\ZipStreamWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\trend\bestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\trend\exponentialBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\trend\linearBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\trend\logarithmicBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\trend\polynomialBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\trend\powerBestFitClass.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Shared\trend\trendClass.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Style.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\WorksheetIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\AutoFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\AutoFilter\Column.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\AutoFilter\Column\Rule.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\BaseDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\CellIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\ColumnDimension.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\Drawing\Shadow.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\HeaderFooter.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\HeaderFooterDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\MemoryDrawing.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\PageMargins.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\PageSetup.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\Protection.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\Row.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\RowDimension.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\RowIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Worksheet\SheetView.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\CSV.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Chart.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Comments.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\ContentTypes.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\DocProps.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Drawing.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Rels.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\RelsRibbon.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\RelsVBA.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\StringTable.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Style.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Theme.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Workbook.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel2007\WriterPart.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5\BIFFwriter.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5\Escher.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5\Font.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5\Parser.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5\Workbook.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5\Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Excel5\Xf.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\HTML.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\IWriter.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\PDF.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\PDF\Core.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\PDF\DomPDF.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\PDF\mPDF.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\Writer\PDF\tcPDF.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\de\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\de\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\en\uk\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\es\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\es\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\fi\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\fi\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\fr\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\fr\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\hu\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\hu\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\it\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\it\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\nl\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\nl\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\no\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\no\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\pl\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\pl\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\pt\br\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\pt\br\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\pt\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\pt\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\ru\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\ru\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\sv\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\sv\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\tr\config" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\PHPExcel\locale\tr\functions" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\libraries\index.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\application\third_party\index.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\contributing.md" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\import_excel.sql" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\license.txt" afterPath="" />
+      <change type="DELETED" beforePath="F:\wamp\www\ProjetCatalogue\import_excel\sample_template.xlsx" afterPath="" />
+    </list>
+    <ignored path="ProjetCatalogue.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ProjetCatalogue">
+      <favorite_root url="file://$PROJECT_DIR$/admin/application/libraries/Csvimport.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/admin/application/views/header.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/database.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/templates/head_form.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/Csv_Domaine_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Csv_Domaine.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/domaine/vue.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/config.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/csv_domaine_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/csv_domaine.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/Domaine_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/domaine/index.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Domaine.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/mimes.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetCatalogue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetCatalogue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjetCatalogue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.splitter.main.proportions" value="0.26833335" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../import_excel" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wamp\www\ProjetCatalogue" />
+      <recent name="F:\wamp\www\ProjetCatalogue\admin\application\libraries" />
+      <recent name="F:\wamp\www\ProjetCatalogue\Ressources" />
+      <recent name="F:\wamp\www\ProjetCatalogue\admin\application\models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.csv_domaine.php">
+    <configuration default="false" name="libraries" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/admin/application/libraries" />
+      <method />
+    </configuration>
+    <configuration default="false" name="csv_domaine.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/ProjetCatalogue/admin/application/controllers/csv_domaine.php">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.libraries" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.csv_domaine.php" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.csv_domaine.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.libraries" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d7f2001-25dc-4da7-8fef-b1094aa901a1" name="Default" comment="" />
+      <created>1492105417632</created>
+      <updated>1492105417632</updated>
+    </task>
+    <task id="LOCAL-00001" summary="projet  modifier">
+      <created>1492845028292</created>
+      <updated>1492845028292</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Import_file">
+      <created>1492848489502</created>
+      <updated>1492848489502</updated>
+    </task>
+    <task id="LOCAL-00003" summary="import-excel">
+      <created>1492853500606</created>
+      <updated>1492853500606</updated>
+    </task>
+    <task id="LOCAL-00004" summary="import_excel_projet">
+      <created>1492856233907</created>
+      <updated>1492856233907</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23247497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="projet modifier" />
+    <MESSAGE value="projet  modifier" />
+    <MESSAGE value="Import_file" />
+    <MESSAGE value="importexcel" />
+    <MESSAGE value="import-excel" />
+    <MESSAGE value="import_excel_projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="import_excel_projet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="97" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="6290" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.5977917" vertical-offset="2915" max-vertical-offset="3570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/menu_left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="34" selection-start="42" selection-end="42" vertical-scroll-proportion="-3.1267176" vertical-offset="2065" max-vertical-offset="2720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3488024" vertical-offset="233" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/core/Lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="82.84615" vertical-offset="2154" max-vertical-offset="2822" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="9.615385" vertical-offset="250" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/main_head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/core/Lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.3616693" vertical-offset="2175" max-vertical-offset="2822" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Filiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1267388" vertical-offset="1376" max-vertical-offset="2023" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.6061068" vertical-offset="3672" max-vertical-offset="4454" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="31" selection-start="1030" selection-end="1030" vertical-scroll-proportion="-4.269231" vertical-offset="416" max-vertical-offset="1122" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Formation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="33" selection-start="2361" selection-end="2362" vertical-scroll-proportion="-30.73077" vertical-offset="0" max-vertical-offset="2720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/_partials/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.72397476" vertical-offset="459" max-vertical-offset="1258" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/_base/head_catalogue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/_base/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/head_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="53" selection-start="273" selection-end="273" vertical-scroll-proportion="0.07634731" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="15" selection-start="546" selection-end="546" vertical-scroll-proportion="-6.730769" vertical-offset="97" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/filiere/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.08044164" vertical-offset="51" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Formation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1631737" vertical-offset="777" max-vertical-offset="2414" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/core/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="8" selection-start="1253" selection-end="1253" vertical-scroll-proportion="1.2215569" vertical-offset="0" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/libraries/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.39258114" vertical-offset="254" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3153014" vertical-offset="204" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="1" selection-start="429" selection-end="429" vertical-scroll-proportion="0.33083832" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="40" selection-start="770" selection-end="770" vertical-scroll-proportion="0.58532935" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/system/helpers/form_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="13" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.33282444" vertical-offset="1414" max-vertical-offset="18020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/menu_top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="66" selection-start="1380" selection-end="1385" vertical-scroll-proportion="0.72397476" vertical-offset="0" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scuio_catalog_db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="34" selection-start="5446" selection-end="5446" vertical-scroll-proportion="0.20731707" vertical-offset="3162" max-vertical-offset="9741" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="30" selection-start="2619" selection-end="2628" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="97" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="6290" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/mimes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="266" selection-start="701" selection-end="701" vertical-scroll-proportion="0.22566372" vertical-offset="51" max-vertical-offset="1904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Domaine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Domaine_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.79640716" vertical-offset="471" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.07938931" vertical-offset="186" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="6" selection-start="1750" selection-end="1750" vertical-scroll-proportion="1.0641221" vertical-offset="0" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_excel/application/views/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/vue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="56" selection-start="1738" selection-end="1742" vertical-scroll-proportion="0.58532935" vertical-offset="357" max-vertical-offset="1581" />
+      </provider>
+    </entry>
+  </component>
+</project>
+
