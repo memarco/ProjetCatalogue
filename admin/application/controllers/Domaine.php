@@ -9,6 +9,8 @@ class Domaine extends CI_Controller {
     }
         $this->load->model('domaine_model');
         $this->load->helper('url_helper');
+
+
     }
  
     public function index()
@@ -111,4 +113,7 @@ class Domaine extends CI_Controller {
         $this->domaine_model->delete_domaine($id);        
         redirect( base_url() . 'index.php/domaine');        
     }
+
+
+
 }

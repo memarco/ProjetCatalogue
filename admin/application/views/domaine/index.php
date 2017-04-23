@@ -10,7 +10,9 @@
 <!--maincontent-->        
 <?php $this->load->view('templates/main_head') ?> 
                
-              <p><a class="btn btn-primary" href="<?php echo site_url('domaine/create'); ?>">AJOUTER &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus text-right" aria-hidden="true"></span></a></p> 
+              <p><a class="btn btn-primary" href="<?php echo site_url('domaine/create'); ?>">AJOUTER &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus text-right" aria-hidden="true"></span></a></p>
+
+
 <table  class="table table-bordered"> 
     <thead>
 				<tr>
