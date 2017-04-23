@@ -62,12 +62,9 @@ $route['composante/view/(:any)'] = 'composante/view/$1';
 $route['composante/(:any)'] = 'composante/view/$1';
 
 /* domaine routes  */
-
-
-
 $route['domaine'] = 'domaine';
 $route['domaine/create'] = 'domaine/create';
-
+ 
 $route['domaine/edit/(:any)'] = 'domaine/edit/$1';
 $route['domaine/delete/(:any)'] = 'domaine/delete/$1';
  
