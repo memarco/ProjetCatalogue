@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Diplome extends CI_Controller {
+class Formation extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
@@ -10,7 +10,7 @@ class Diplome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('diplome/import');
+		$this->load->view('formation/import');
 	}
 
 	public function upload(){
@@ -47,7 +47,7 @@ class Diplome extends CI_Controller {
             $highestColumn = $sheet->getHighestColumn();
 
               //on vide la table
-                $this->db->empty_table('diplome');
+                $this->db->empty_table('formation');
             for ($row = 2; $row <= $highestRow; $row++){
             	//  Read a row of data into an array
                 $rowData = $sheet->rangeToArray('A' . $row . ':' . $highestColumn . $row,
@@ -62,11 +62,15 @@ class Diplome extends CI_Controller {
                     // "alamat"=> $rowData[0][1],
                     // "kontak"=> $rowData[0][2]
 
-                   "nom"=> $rowData[0][1],
+                     "mention"=> $rowData[0][0],
+                     "id_composante"=> $rowData[0][1],
+                     "id_filiere"=> $rowData[0][2],
+                     "id_type_formation"=> $rowData[0][3],
+                     "id_diplome"=> $rowData[0][4],
+                     "niveau"=> $rowData[0][5],
+                     "id_domaine"=> $rowData[0][6],
+                     "id_site"=> $rowData[0][7]
 
-//                    "mail1"=> $rowData[0][2],
-//                    "mail2"=> $rowData[0][3],
-//                    "sigle"=> $rowData[0][4]
 
 //                     "nom"=> $rowData[0][1],
 //                     "cp_site"=> $rowData[0][2],
@@ -79,7 +83,7 @@ class Diplome extends CI_Controller {
                 //$insert = $this->db->insert("import_data",$data);
                 //$insert = $this->db->insert("domaine",$data);
                 //$insert = $this->db->insert("composante",$data);
-               $insert = $this->db->insert("domaine",$data);
+               $insert = $this->db->insert("formation",$data);
             }
 
             $this->delete_file($media['file_path']);
