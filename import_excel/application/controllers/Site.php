@@ -57,7 +57,7 @@ class Site extends CI_Controller {
 
                 //enregistrer
                 $data = array(
-
+                      "id"=> $rowData[0][0],
                       "nom"=> $rowData[0][1],
                       "cp_site"=> $rowData[0][2],
                       "adresse"=> $rowData[0][3],
