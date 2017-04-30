@@ -4,7 +4,7 @@
 	<title>Import Data From Excel</title>
 </head>
 <body>
-	<?php echo form_open_multipart('diplome/upload'); ?>
+	<?php echo form_open_multipart('formation/upload'); ?>
 		<input type="file" name="file"/>
     	<input type="submit" value="Upload file"/>
 	</form>

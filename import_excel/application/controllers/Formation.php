@@ -10,7 +10,7 @@ class Formation extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('formation/import');
+		$this->load->view('diplome/import');
 	}
 
 	public function upload(){
