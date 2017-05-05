@@ -76,7 +76,8 @@ class Filiere extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         
-        $data['title'] = 'Modifier les informations';        
+        $data['title'] = 'Modifier les informations';
+        $data['name'] = $this->session->userdata('name');
         $data['filiere_item'] = $this->filiere_model->get_filiere_by_id($id);
         
         $this->form_validation->set_rules('nom', 'Nom', 'required'); 

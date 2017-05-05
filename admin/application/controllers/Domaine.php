@@ -79,7 +79,8 @@ class Domaine extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         
-        $data['title'] = 'Modifier les informations';        
+        $data['title'] = 'Modifier les informations';
+        $data['name'] = $this->session->userdata('name');
         $data['domaine_item'] = $this->domaine_model->get_domaine_by_id($id);
         
         $this->form_validation->set_rules('nom', 'Nom', 'required'); 

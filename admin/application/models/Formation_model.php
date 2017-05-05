@@ -6,7 +6,7 @@ class Formation_model extends CI_Model {
         $this->load->database();
     }
      
-    public function get_formation($nom = FALSE)
+    public function get_formation_old($nom = FALSE)
     {
         if ($nom === FALSE)
         {
@@ -33,30 +33,59 @@ class Formation_model extends CI_Model {
         $query = $this->db->get_where('rd_formation', array('fa.id' => 'formation.id','fi.id' => 'formation.id'));
         return $query->row_array();
     }
-    
+
+
+
+    public function get_formation($mention = FALSE)
+    {
+        if ($mention=== FALSE)
+        {
+
+            $this->db->select('formation.id, mention, niveau, filiere.nom as nom_f, domaine.nom as nom_do,  '
+               // . 'type_formation.nom as nom_typ,'
+               // . 'diplome.nom as nom_d,'
+                . 'composante.nom as nom_c,'
+                . 'site.nom as nom_site');
+            $this->db->from('formation');
+            $this->db->join('filiere', 'filiere.id = formation.id_filiere');
+            $this->db->join('domaine', 'domaine.id = formation.id_domaine');
+            //$this->db->join('type_formation', 'type_formation.id = formation.id_type_formation');
+            //$this->db->join('diplome', 'diplome.id = formation.id_diplome');
+            $this->db->join('composante', 'composante.id = formation.id_composante');
+            $this->db->join('site', 'site.id = formation.id_site');
+            $query = $this->db->get();
+            return $query->result_array();
+
+        }
+
+        $query = $this->db->get_where('formation', array('mention' => $mention));
+        return $query->row_array();
+    }
+
+
     public function get_formation_by_id($id = 0)
     {
         if ($id === 0)
-        { 
-               $this->db->select('*');    
-            $this->db->from('formation'); 
-            $this->db->join('composante', 'composante.id = formation.id_composante');  
-            $this->db->join('filiere', 'filiere.id = formation.id_filiere'); 
-            $this->db->join('type_formation', 'type_formation.id = formation.id_type_formation');  
-            $this->db->join('diplome', 'diplome.id = formation.id_diplome');   
+        {
+               $this->db->select('*');
+            $this->db->from('formation');
+            $this->db->join('composante', 'composante.id = formation.id_composante');
+            $this->db->join('filiere', 'filiere.id = formation.id_filiere');
+            $this->db->join('type_formation', 'type_formation.id = formation.id_type_formation');
+            $this->db->join('diplome', 'diplome.id = formation.id_diplome');
             $this->db->join('domaine', 'domaine.id = formation.id_domaine');
             $this->db->join('fa', 'fa.id = formation.id','left outer');
             $this->db->join('fi', 'fi.id = formation.id','left outer');
-            $this->db->join('type_periode', 'type_periode.id = fa.id_rythme'); 
-            $this->db->join('site', 'site.id = formation.id_site'); 
+            $this->db->join('type_periode', 'type_periode.id = fa.id_rythme');
+            $this->db->join('site', 'site.id = formation.id_site');
                 $this->db->where('formation.id',$id);
             $query = $this->db->get();
             return $query->result_array();
         }
-        
-        $this->db->select('*');    
-            $this->db->from('formation'); 
-            $this->db->join('composante', 'composante.id = formation.id_composante');  
+
+        $this->db->select('*');
+            $this->db->from('formation');
+            $this->db->join('composante', 'composante.id = formation.id_composante');
             $this->db->join('filiere', 'filiere.id = formation.id_filiere'); 
             $this->db->join('type_formation', 'type_formation.id = formation.id_type_formation');  
             $this->db->join('diplome', 'diplome.id = formation.id_diplome');   

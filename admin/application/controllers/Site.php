@@ -44,6 +44,7 @@ class Site extends CI_Controller {
         $this->load->library('form_validation');
  
         $data['title'] = 'Nouveau site de l\'U-PEC';
+        $data['name'] = $this->session->userdata('name');
  
         $this->form_validation->set_rules('nom', 'Nom', 'required');
         $this->form_validation->set_rules('adresse', 'Adresse', 'required');
@@ -76,6 +77,7 @@ class Site extends CI_Controller {
         
         $this->load->helper('form');
         $this->load->library('form_validation');
+        $data['name'] = $this->session->userdata('name');
         
         $data['title'] = 'Modifier les informations';        
         $data['site_item'] = $this->site_model->get_site_by_id($id);

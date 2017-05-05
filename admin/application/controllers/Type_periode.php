@@ -44,6 +44,7 @@ class Type_periode extends CI_Controller {
         $this->load->library('form_validation');
  
         $data['title'] = 'Nouveau rythme d\'alternance';
+        $data['name'] = $this->session->userdata('name');
  
         $this->form_validation->set_rules('nom', 'Nom', 'required'); 
  
@@ -75,7 +76,8 @@ class Type_periode extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         
-        $data['title'] = 'Modifier les informations';        
+        $data['title'] = 'Modifier les informations';
+        $data['name'] = $this->session->userdata('name');
         $data['type_periode_item'] = $this->type_periode_model->get_type_periode_by_id($id);
         
         $this->form_validation->set_rules('nom', 'Nom', 'required'); 

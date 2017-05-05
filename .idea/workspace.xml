@@ -2,62 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7f2001-25dc-4da7-8fef-b1094aa901a1" name="Default" comment="Nouveau fichier importe">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1492987337site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493409934formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493410074formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493410427formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411179formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411239formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411310formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411356formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411491formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411591formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411831formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493411937formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412071formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412123formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412128formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412192formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412330formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412479formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412782formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493412875formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493413192formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493413425formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493414429formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493414474formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493414593formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493414748formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493414974formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493415026formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493415626site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493416007site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493502146site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493507034site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493507219site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493507456site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493512032site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493513360formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493513502formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493513631formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493514983formation_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493525415stages-master-licence-29-03-16-AR.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493525768site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493526146site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493526421site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/upload/1493526867site_import.xlsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ressources/stages-master-licence-29-03-16-AR.xls" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/application/controllers/Filiere.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/application/controllers/Niveau.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/application/views/filiere/import.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/application/views/formation/import.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/import_excel/application/views/niveau/import.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ressources/Copie de stages-licence-29-03-16-AR.xls" afterPath="$PROJECT_DIR$/Ressources/Copie de stages-licence-29-03-16-AR.xls" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ressources/site_import.xlsx" afterPath="$PROJECT_DIR$/Ressources/site_import.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/import_excel/application/views/diplome/import.php" afterPath="$PROJECT_DIR$/import_excel/application/views/diplome/import.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/import_excel/application/views/index.php" afterPath="$PROJECT_DIR$/import_excel/application/views/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ressources/stages-master-licence-29-03-16-AR.xls" afterPath="$PROJECT_DIR$/Ressources/stages-master-licence-29-03-16-AR.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Domaine.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Domaine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Filiere.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Filiere.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Formation.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Formation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/models/Formation_model.php" afterPath="$PROJECT_DIR$/admin/application/models/Formation_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Niveau.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Niveau.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Site.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/import_excel/application/controllers/Site.php" afterPath="$PROJECT_DIR$/import_excel/application/controllers/Site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Type_formation.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Type_formation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Type_periode.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Type_periode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/controllers/Type_stage.php" afterPath="$PROJECT_DIR$/admin/application/controllers/Type_stage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/formation/index.php" afterPath="$PROJECT_DIR$/admin/application/views/formation/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/views/type_formation/index.php" afterPath="$PROJECT_DIR$/admin/application/views/type_formation/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/application/config/routes.php" afterPath="$PROJECT_DIR$/admin/application/config/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\wamp\www\ProjetCatalogue\Ressources\formation_import.xlsx" afterPath="$PROJECT_DIR$/import_excel/upload/1493509180formation_import.xlsx" />
     </list>
     <ignored path="ProjetCatalogue.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,68 +42,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Site.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Site.php">
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1564">
+            <state line="63" column="21" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="2227">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="import.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/import_excel/application/views/site/import.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="242" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
-              <folding>
-                <marker date="1492985710400" expanded="true" signature="21:241" placeholder="..." />
-                <marker date="1492985710400" expanded="true" signature="28:75" placeholder="..." />
-                <marker date="1492985710400" expanded="true" signature="82:233" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/import_excel/application/views/index.php">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="65" selection-start="562" selection-end="562" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="391">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Niveau.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Niveau.php">
+      <file leaf-file-name="Diplome_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/models/Diplome_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="63" selection-start="2695" selection-end="2695" vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="1683">
+            <state line="9" column="5" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1309">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/import_excel/application/views/filiere/import.php">
+      <file leaf-file-name="Formation_model.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/application/models/Formation_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="50" selection-start="220" selection-end="220" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289">
+            <state line="34" column="5" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.6377246" vertical-offset="152" max-vertical-offset="3213">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filiere.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Filiere.php">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/formation/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="397" selection-end="397" vertical-scroll-proportion="0.75555557" vertical-offset="0" max-vertical-offset="1513">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="import.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/import_excel/application/views/formation/import.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="231" selection-end="231" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
+            <state line="25" column="35" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1122">
               <folding />
             </state>
           </provider>
@@ -173,8 +111,6 @@
         <option value="$PROJECT_DIR$/admin/application/controllers/csv_domaine.php" />
         <option value="$PROJECT_DIR$/admin/application/models/Domaine_model.php" />
         <option value="$PROJECT_DIR$/admin/application/views/domaine/index.php" />
-        <option value="$PROJECT_DIR$/admin/application/config/routes.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Domaine.php" />
         <option value="$PROJECT_DIR$/admin/application/config/mimes.php" />
         <option value="$PROJECT_DIR$/import_excel/application/views/formation/import.php" />
         <option value="$PROJECT_DIR$/import_excel/application/views/niveau/import.php" />
@@ -183,6 +119,21 @@
         <option value="$PROJECT_DIR$/import_excel/application/views/index.php" />
         <option value="$PROJECT_DIR$/import_excel/application/controllers/Filiere.php" />
         <option value="$PROJECT_DIR$/import_excel/application/controllers/Formation.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/type_formation/index.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/templates/menu_top.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Type_formation.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Filiere.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Domaine.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Niveau.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Type_periode.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Type_stage.php" />
+        <option value="$PROJECT_DIR$/import_excel/application/controllers/Site.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Site.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Formation.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/formation/index.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/site/index.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/Formation_model.php" />
       </list>
     </option>
   </component>
@@ -237,92 +188,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="import_excel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="import_excel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="import_excel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -337,6 +202,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../import_excel" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="152" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="170" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="177" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="856" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="174" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="163" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="169" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="849" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -426,24 +307,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07361111" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22532189" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13090129" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22532189" sideWeight="0.5010352" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04432133" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -495,293 +376,267 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.6061068" vertical-offset="3672" max-vertical-offset="4454" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="1030" selection-end="1030" vertical-scroll-proportion="-4.269231" vertical-offset="416" max-vertical-offset="1122" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/Formation_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="33" selection-start="2361" selection-end="2362" vertical-scroll-proportion="-30.73077" vertical-offset="0" max-vertical-offset="2720" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/application/views/_partials/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.72397476" vertical-offset="459" max-vertical-offset="1258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/application/views/_base/head_catalogue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/application/views/_base/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/head_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="53" selection-start="273" selection-end="273" vertical-scroll-proportion="0.07634731" vertical-offset="0" max-vertical-offset="668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="546" selection-end="546" vertical-scroll-proportion="-6.730769" vertical-offset="97" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="681" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/filiere/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.08044164" vertical-offset="51" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Formation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1631737" vertical-offset="777" max-vertical-offset="2414" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/core/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="8" selection-start="1253" selection-end="1253" vertical-scroll-proportion="1.2215569" vertical-offset="0" max-vertical-offset="1173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/libraries/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.39258114" vertical-offset="254" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3153014" vertical-offset="204" max-vertical-offset="1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="429" selection-end="429" vertical-scroll-proportion="0.33083832" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="40" selection-start="770" selection-end="770" vertical-scroll-proportion="0.58532935" vertical-offset="0" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/system/helpers/form_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="13" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.33282444" vertical-offset="1414" max-vertical-offset="18020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/menu_top.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="66" selection-start="1380" selection-end="1385" vertical-scroll-proportion="0.72397476" vertical-offset="0" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scuio_catalog_db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="34" selection-start="5446" selection-end="5446" vertical-scroll-proportion="0.20731707" vertical-offset="3162" max-vertical-offset="9741" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="30" selection-start="2619" selection-end="2628" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="1292" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/mimes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="266" selection-start="701" selection-end="701" vertical-scroll-proportion="0.22566372" vertical-offset="51" max-vertical-offset="1904" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Domaine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2278" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/Domaine_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.79640716" vertical-offset="471" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.07938931" vertical-offset="186" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="6" selection-start="1750" selection-end="1750" vertical-scroll-proportion="1.0641221" vertical-offset="0" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/domaine/vue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="56" selection-start="1738" selection-end="1742" vertical-scroll-proportion="0.58532935" vertical-offset="357" max-vertical-offset="1581" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="97" selection-start="997" selection-end="997" vertical-scroll-proportion="0.76347303" vertical-offset="0" max-vertical-offset="6290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/site/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="242" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding>
-            <marker date="1492985710400" expanded="true" signature="21:241" placeholder="..." />
-            <marker date="1492985710400" expanded="true" signature="28:75" placeholder="..." />
-            <marker date="1492985710400" expanded="true" signature="82:233" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/niveau/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="230" selection-end="230" vertical-scroll-proportion="0.25449103" vertical-offset="0" max-vertical-offset="668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.576507" vertical-offset="1020" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.256569" vertical-offset="2754" max-vertical-offset="6290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/import_excel/application/views/welcome_message.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import_excel/application/config/migration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3647604" vertical-offset="883" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3647604" vertical-offset="883" max-vertical-offset="1530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import_excel/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.66877" vertical-offset="4228" max-vertical-offset="4862">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-6.66877" vertical-offset="4228" max-vertical-offset="4862" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import_excel/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.54404944" vertical-offset="352" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="65" selection-start="562" selection-end="562" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/filiere/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="50" selection-start="220" selection-end="220" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.54404944" vertical-offset="352" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Niveau.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="63" selection-start="2695" selection-end="2695" vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="1683">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/formation/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="231" selection-end="231" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="76" column="63" selection-start="2695" selection-end="2695" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1683" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Formation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.42040184" vertical-offset="0" max-vertical-offset="1802">
-          <folding />
-        </state>
+        <state line="16" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.42040184" vertical-offset="0" max-vertical-offset="1802" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_excel/application/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="590" selection-end="590" vertical-scroll-proportion="0.38173652" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_excel/application/views/site/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="234" selection-end="234" vertical-scroll-proportion="0.25449103" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_excel/application/views/filiere/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="50" selection-start="220" selection-end="220" vertical-scroll-proportion="0.2035928" vertical-offset="0" max-vertical-offset="668" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Filiere.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="397" selection-end="397" vertical-scroll-proportion="0.75555557" vertical-offset="0" max-vertical-offset="1513">
+        <state line="18" column="23" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_excel/application/views/niveau/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="7" selection-start="230" selection-end="230" vertical-scroll-proportion="0.25449103" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_excel/application/views/formation/import.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="231" selection-end="231" vertical-scroll-proportion="0.22904192" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38173652" vertical-offset="255" max-vertical-offset="1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="1" selection-start="578" selection-end="578" vertical-scroll-proportion="0.58532935" vertical-offset="51" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="40" selection-start="770" selection-end="770" vertical-scroll-proportion="0.6043277" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.026275115" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="2607" selection-end="2607" vertical-scroll-proportion="0.9072643" vertical-offset="297" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="0" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.9491018" vertical-offset="1066" max-vertical-offset="1802" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/menu_top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="67" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.6691617" vertical-offset="12" max-vertical-offset="680" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/type_formation/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0778626" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/type_formation/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0508982" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Niveau.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="57" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.36377245" vertical-offset="1100" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Domaine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="57" selection-start="2184" selection-end="2184" vertical-scroll-proportion="-10.461538" vertical-offset="1122" max-vertical-offset="2142" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/type_periode/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Filiere.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="57" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.4992272" vertical-offset="1020" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Type_formation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="57" selection-start="2253" selection-end="2253" vertical-scroll-proportion="-11.923077" vertical-offset="1033" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/type_periode/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="44" selection-start="2089" selection-end="2089" vertical-scroll-proportion="1.501497" vertical-offset="0" max-vertical-offset="1564" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Type_stage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="7" selection-start="2134" selection-end="2184" vertical-scroll-proportion="-12.423077" vertical-offset="1020" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Type_periode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="9" selection-start="2446" selection-end="2446" vertical-scroll-proportion="-11.307693" vertical-offset="1151" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/type_stage/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-18.846153" vertical-offset="190" max-vertical-offset="935" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="57" selection-start="876" selection-end="876" vertical-scroll-proportion="-15.076923" vertical-offset="50" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Composante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="60" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.99251497" vertical-offset="102" max-vertical-offset="2057" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="23" selection-start="2045" selection-end="2045" vertical-scroll-proportion="1.5089821" vertical-offset="250" max-vertical-offset="2091" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/niveau/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="21" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Diplome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2395209" vertical-offset="828" max-vertical-offset="2159" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Site_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.07634731" vertical-offset="51" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Composante_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="29" selection-start="311" selection-end="311" vertical-scroll-proportion="0.33083832" vertical-offset="0" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Filiere_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="35" selection-start="540" selection-end="540" vertical-scroll-proportion="0.50898206" vertical-offset="0" max-vertical-offset="1105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Domaine_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Formation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="22" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.94011974" vertical-offset="171" max-vertical-offset="2431" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Diplome_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="35" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Formation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.6377246" vertical-offset="152" max-vertical-offset="3213">
           <folding />
         </state>
       </provider>

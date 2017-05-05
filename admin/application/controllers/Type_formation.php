@@ -44,6 +44,7 @@ class Type_formation extends CI_Controller {
         $this->load->library('form_validation');
  
         $data['title'] = 'Nouveau type_formation d\'étude';
+        $data['name'] = $this->session->userdata('name');
  
         $this->form_validation->set_rules('nom', 'Nom', 'required'); 
  
@@ -75,7 +76,8 @@ class Type_formation extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         
-        $data['title'] = 'Modifier les informations';        
+        $data['title'] = 'Modifier les informations';
+        $data['name'] = $this->session->userdata('name');
         $data['type_formation_item'] = $this->type_formation_model->get_type_formation_by_id($id);
         
         $this->form_validation->set_rules('nom', 'Nom', 'required'); 

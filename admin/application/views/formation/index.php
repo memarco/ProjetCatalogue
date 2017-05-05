@@ -16,12 +16,12 @@
     <thead>
 				<tr>
 					<th>Mention</th>  
-					<th>Niveau</th>  
-					<th>Filière</th>  
-					<th>Domaine d'étude</th> 
-					<th>Type formation</th>  
+					<th>Niveau</th>
+					<th>Filière</th>
+					<th>Domaine d'étude</th>
+					<th>Type formation</th>
 					<th>Diplôme préparé</th>
-					<th>Composante</th>  
+					<th>Composante</th>
 					<th>Site</th>
 					<th>Action</th>
 				</tr>
@@ -30,13 +30,13 @@
 <?php foreach ($formation as $formation_item): ?>
         <tr>
             <td><?php echo $formation_item['mention']; ?></td> 
-            <td><?php echo $formation_item['niveau']; ?></td> 
-            <td><?php echo $formation_item['nom_f']; ?></td> 
-            <td><?php echo $formation_item['nom_do']; ?></td> 
-            <td><?php echo $formation_item['nom_typ']; ?></td>  
-            <td><?php echo $formation_item['nom_d']; ?></td> 
-            <td><?php echo $formation_item['nom_c']; ?></td> 
-            <td><?php echo $formation_item['nom_site']; ?></td> 
+            <td><?php echo $formation_item['niveau']; ?></td>
+            <td><?php echo $formation_item['nom_f']; ?></td>
+            <td><?php echo $formation_item['nom_do']; ?></td>
+            <td><?php echo $formation_item['nom_typ']; ?></td>
+            <td><?php echo $formation_item['nom_d']; ?></td>
+            <td><?php echo $formation_item['nom_c']; ?></td>
+            <td><?php echo $formation_item['nom_site']; ?></td>
             <td>
                 <a title="Afficher" href="<?php echo site_url('formation/'.$formation_item['id']); ?>"><span class="glyphicon glyphicon-align-justify text-success" aria-hidden="true"></span></a> | 
                 <a title="Modifier" href="<?php echo site_url('formation/edit/'.$formation_item['id']); ?>"> <span class="glyphicon glyphicon-pencil text-primary" aria-hidden="true"></span></a> | 
