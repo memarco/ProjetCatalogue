@@ -19,14 +19,41 @@ class Formation extends CI_Controller {
         $this->load->model('type_stage_model');
         $this->load->model('niveau_model');
         $this->load->helper('url_helper');
+        $this->load->library("pagination");
     }
- 
+      
     public function index()
-    {
-        $data['formation'] = $this->formation_model->get_formation();
-        $data['title'] = 'Les formations de l\'U-PEC';
+    { 
+        $data['title'] = 'Liste des formations de l\'U-PEC ';
         $data['name'] = $this->session->userdata('name');
- 
+        $data['total_formation'] = $this->formation_model->record_count();  
+        
+        $config = array();
+        $config["base_url"] = base_url() . "index.php/formation/index";
+        $total_row = $this->formation_model->record_count();
+        $config["total_rows"] = $total_row;
+        $config["per_page"] = 5;    
+        $config['first_link'] = 'Début';
+        $config['last_link'] = 'Dernier';
+        $config['use_page_numbers'] = TRUE;
+        $config['num_links'] = 7;
+        $config['cur_tag_open'] = '&nbsp;<a class="current">';
+        $config['cur_tag_close'] = '</a>';
+        $config['next_link'] = 'Suivant';
+        $config['prev_link'] = 'Précédent';
+
+        $this->pagination->initialize($config); 
+        if($this->uri->segment(3)){
+            $page = ($this->uri->segment(3)) ;
+            }
+            else{
+            $page = 1;
+            } 
+        $data["formation"] = $this->formation_model->get_formation(FALSE, $config["per_page"], $page);
+        $str_links = $this->pagination->create_links();
+        $data["links"] = explode('&nbsp;',$str_links ); 
+          
+         
         $this->load->view('templates/header', $data);
         $this->load->view('formation/index', $data);
          
@@ -35,15 +62,31 @@ class Formation extends CI_Controller {
  
     public function view($mail1 = NULL)
     {
-        $data['formation_item'] = $this->formation_model->get_formation($mail1);
+        
+        $data['name'] = $this->session->userdata('name');
+        $data['total_formation'] = $this->formation_model->record_count();
+ 
+        $data['formation_item'] = $this->formation_model->get_formation($mail1,0,1);
         
         if (empty($data['formation_item']))
         {
             show_404();
         }
  
-        $data['mention'] = $data['formation_item']['mention'];
- 
+        $data['libelle'] = $data['formation_item']['libelle'];
+        $data['nom_do'] = $data['formation_item']['nom_do'];
+        $data['nom_f'] = $data['formation_item']['nom_f'];
+        $data['nom_typ'] = $data['formation_item']['nom_typ'];
+        $data['nom_stage'] = $data['formation_item']['nom_stage'];
+        $data['debut_stage'] = $data['formation_item']['debut_stage'];
+        $data['fin_stage'] = $data['formation_item']['fin_stage'];
+        $data['niveau'] = $data['formation_item']['niveau'];
+        $data['nom_c'] = $data['formation_item']['nom_c'];
+        $data['nom_d'] = $data['formation_item']['nom_d'];
+        $data['nom_site'] = $data['formation_item']['nom_site'];
+        $data['detail_s'] = $data['formation_item']['detail_s'];
+  
+        
         $this->load->view('templates/header', $data);
         $this->load->view('formation/view', $data);
         

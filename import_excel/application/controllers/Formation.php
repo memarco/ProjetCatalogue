@@ -48,6 +48,8 @@ class Formation extends CI_Controller {
 
               //on vide la table
                 $this->db->empty_table('formation');
+                $this->db->empty_table('rd_formation');
+                $this->db->empty_table('fi');
             for ($row = 2; $row <= $highestRow; $row++){
             	//  Read a row of data into an array
                 $rowData = $sheet->rangeToArray('A' . $row . ':' . $highestColumn . $row,
@@ -62,14 +64,16 @@ class Formation extends CI_Controller {
                     // "alamat"=> $rowData[0][1],
                     // "kontak"=> $rowData[0][2]
 
-                     "mention"=> $rowData[0][0],
+                     "id_domaine"=> $rowData[0][0],
                      "id_composante"=> $rowData[0][1],
-                     "id_filiere"=> $rowData[0][2],
-                     "id_type_formation"=> $rowData[0][3],
+                     "libelle"=> $rowData[0][2],
+                     "niveau"=> $rowData[0][4],
                      "id_diplome"=> $rowData[0][4],
-                     "niveau"=> $rowData[0][5],
-                     "id_domaine"=> $rowData[0][6],
-                     "id_site"=> $rowData[0][7]
+                     "id_filiere"=> $rowData[0][6],
+                     "est_alternance"=> $rowData[0][7],
+                     "recrutement_particulier"=> $rowData[0][8],
+                     "id_site"=> $rowData[0][11],
+                     "detail_stage"=> $rowData[0][10]
 
 
 //                     "nom"=> $rowData[0][1],
@@ -82,8 +86,25 @@ class Formation extends CI_Controller {
 
                 //$insert = $this->db->insert("import_data",$data);
                 //$insert = $this->db->insert("domaine",$data);
-                //$insert = $this->db->insert("composante",$data);
-               $insert = $this->db->insert("formation",$data);
+                //$insert = $this->db->insert("composante",$data); 
+                $this->db->insert('formation', $data);
+                $formation_id = $this->db->insert_id();  
+                $data2 = array(
+                    'id' => $formation_id,   
+                     "id_domaine"=> $rowData[0][0],
+                     "id_composante"=> $rowData[0][1],
+                     "libelle"=> $rowData[0][2],
+                     "niveau"=> $rowData[0][4],
+                     "id_diplome"=> $rowData[0][4],
+                     "id_filiere"=> $rowData[0][6],
+                     "est_alternance"=> $rowData[0][7],
+                     "recrutement_particulier"=> $rowData[0][8],
+                     "id_site"=> $rowData[0][11],
+                     "detail_stage"=> $rowData[0][10]
+                ); 
+            $this->db->query('INSERT INTO fi(id) '
+                                . 'VALUES("'.$formation_id.'")');
+               $this->db->insert('rd_formation', $data2);
             }
 
             $this->delete_file($media['file_path']);

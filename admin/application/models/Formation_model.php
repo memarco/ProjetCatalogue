@@ -5,18 +5,23 @@ class Formation_model extends CI_Model {
     {
         $this->load->database();
     }
+    
+    public function record_count() {
+        return $this->db->count_all("rd_formation");
+    }
      
-    public function get_formation_old($nom = FALSE)
+   
+    public function get_formation($nom = FALSE, $limit, $start)
     {
         if ($nom === FALSE)
         {
             
             $this->db->select('rd_formation.id as id, type_periode.nom as nom_periode, nbre_entreprise, '
-                    . 'nbre_ecole, libelle as mention,niveau, composante.nom as nom_c, filiere.nom as nom_f, '
+                    . 'nbre_ecole, libelle as libelle,niveau, composante.nom as nom_c, filiere.nom as nom_f, '
                     . 'type_formation.nom as nom_typ,type_stage.nom as nom_stage,'
                     . 'nbre_ecole,nbre_semaine, debut_stage, fin_stage,'
                     . 'diplome.nom as nom_d, domaine.nom as nom_do, '
-                    . 'site.nom as nom_site');    
+                    . 'site.nom as nom_site, rd_formation.detail_stage as detail_s');    
             $this->db->from('rd_formation');
             $this->db->join('composante', 'composante.id = rd_formation.id_composante');  
             $this->db->join('filiere', 'filiere.id = rd_formation.id_filiere'); 
@@ -25,23 +30,40 @@ class Formation_model extends CI_Model {
             $this->db->join('domaine', 'domaine.id = rd_formation.id_domaine');
             $this->db->join('site', 'site.id = rd_formation.id_site');    
             $this->db->join('type_periode', 'type_periode.id = rd_formation.id_rythme'); 
-            $this->db->join('type_stage', 'type_stage.id = rd_formation.id_type_stage');     
+            $this->db->join('type_stage', 'type_stage.id = rd_formation.id_type_stage');  
+            $this->db->limit($limit, $start);   
             $query = $this->db->get();
             return $query->result_array();
         }
- 
-        $query = $this->db->get_where('rd_formation', array('fa.id' => 'formation.id','fi.id' => 'formation.id'));
-        return $query->row_array();
+         $this->db->select('rd_formation.id as id, type_periode.nom as nom_periode, rd_formation.nbre_entreprise, '
+                    . 'rd_formation.nbre_ecole, libelle as libelle,niveau, composante.nom as nom_c, filiere.nom as nom_f, '
+                    . 'type_formation.nom as nom_typ,type_stage.nom as nom_stage,'
+                    . 'rd_formation.nbre_ecole,rd_formation.nbre_semaine, rd_formation.debut_stage, rd_formation.fin_stage,'
+                    . 'diplome.nom as nom_d, domaine.nom as nom_do, '
+                    . 'site.nom as nom_site, rd_formation.detail_stage as detail_s');    
+            $this->db->from('rd_formation');
+            $this->db->join('composante', 'composante.id = rd_formation.id_composante');  
+            $this->db->join('filiere', 'filiere.id = rd_formation.id_filiere'); 
+            $this->db->join('type_formation', 'type_formation.id = rd_formation.id_type_formation');  
+            $this->db->join('diplome', 'diplome.id = rd_formation.id_diplome');   
+            $this->db->join('domaine', 'domaine.id = rd_formation.id_domaine');
+            $this->db->join('site', 'site.id = rd_formation.id_site');    
+            $this->db->join('type_periode', 'type_periode.id = rd_formation.id_rythme'); 
+            $this->db->join('type_stage', 'type_stage.id = rd_formation.id_type_stage');   
+            $this->db->join('fi', 'fi.id = rd_formation.id');    
+            $this->db->where('rd_formation.id' , $nom);  
+            $query = $this->db->get();
+             return $query->row_array(); 
     }
 
 
-
-    public function get_formation($mention = FALSE)
+     
+    public function get_formation_bad($libelle = FALSE)
     {
-        if ($mention=== FALSE)
+        if ($libelle=== FALSE)
         {
 
-            $this->db->select('formation.id, mention, niveau, filiere.nom as nom_f, domaine.nom as nom_do,  '
+            $this->db->select('formation.id, libelle, niveau, filiere.nom as nom_f, domaine.nom as nom_do,  '
                // . 'type_formation.nom as nom_typ,'
                // . 'diplome.nom as nom_d,'
                 . 'composante.nom as nom_c,'
@@ -58,7 +80,7 @@ class Formation_model extends CI_Model {
 
         }
 
-        $query = $this->db->get_where('formation', array('mention' => $mention));
+        $query = $this->db->get_where('formation', array('libelle' => $libelle));
         return $query->row_array();
     }
 
@@ -100,9 +122,9 @@ class Formation_model extends CI_Model {
     {
         $this->load->helper('url');
  
-        $mail1 = url_title($this->input->post('mention'), 'dash', TRUE);
+        $mail1 = url_title($this->input->post('libelle'), 'dash', TRUE);
         $data = array(
-            'mention' => $this->input->post('mention'),
+            'libelle' => $this->input->post('libelle'),
             'id_type_formation' => $this->input->post('id_type_formation'),
             'id_domaine' => $this->input->post('id_domaine'),
             'id_filiere' => $this->input->post('id_filiere'),
@@ -150,7 +172,7 @@ class Formation_model extends CI_Model {
                     $this->db->insert('formation', $data);
                     $formation_id = $this->db->insert_id();  
                     $data2 = array('id' => $this->db->insert_id(),
-            'libelle' => $this->input->post('mention'),
+            'libelle' => $this->input->post('libelle'),
             'id_type_formation' => $this->input->post('id_type_formation'),
             'id_domaine' => $this->input->post('id_domaine'),
             'id_filiere' => $this->input->post('id_filiere'),

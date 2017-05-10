@@ -58,12 +58,12 @@ class Domaine extends CI_Controller {
                 
                 //enregistrer
                 $data = array(
-                    "id"=> $rowData[0][0],
+                    "id"=> $rowData[0][1],
                     //"nama"=> $rowData[0][0],
                     // "alamat"=> $rowData[0][1],
                     // "kontak"=> $rowData[0][2]
 
-                   "nom"=> $rowData[0][1],
+                   "nom"=> $rowData[0][0],
 
 //                    "mail1"=> $rowData[0][2],
 //                    "mail2"=> $rowData[0][3],

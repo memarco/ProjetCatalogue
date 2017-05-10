@@ -16,7 +16,6 @@
                                 <tr>
                                     <td>
                                         <span class="glyphicon glyphicon-duplicate"></span><a href="<?php echo site_url('formation/'); ?>">Formations</a>
-                                        <span class="badge">4</span>
                                     </td>
                                 </tr>
                                 <tr>

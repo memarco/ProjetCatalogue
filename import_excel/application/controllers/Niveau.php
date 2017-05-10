@@ -47,7 +47,7 @@ class Niveau extends CI_Controller {
             $highestColumn = $sheet->getHighestColumn();
 
               //on vide la table
-                $this->db->empty_table('niveau');
+                $this->db->empty_table('diplome');
             for ($row = 2; $row <= $highestRow; $row++){
             	//  Read a row of data into an array
                 $rowData = $sheet->rangeToArray('A' . $row . ':' . $highestColumn . $row,
@@ -63,7 +63,8 @@ class Niveau extends CI_Controller {
                     // "kontak"=> $rowData[0][2]
 
                     "id"=> $rowData[0][1],
-                    "nom_niveau"=> $rowData[0][0]
+                    "nom"=> $rowData[0][0],
+                    "id_niveau"=> $rowData[0][2]
 
   //                   "nom"=> $rowData[0][1],
 //                     "cp_site"=> $rowData[0][2],
@@ -75,7 +76,7 @@ class Niveau extends CI_Controller {
 
                 //$insert = $this->db->insert("import_data",$data);
                 //$insert = $this->db->insert("domaine",$data);
-                $insert = $this->db->insert("niveau",$data);
+                $insert = $this->db->insert("diplome",$data);
                //$insert = $this->db->insert("domaine",$data);
             }
 

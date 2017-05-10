@@ -114,6 +114,7 @@ $route['diplome/(:any)'] = 'diplome/view/$1';
 /* filiere formation  */
 $route['formation'] = 'formation';
 $route['formation/create'] = 'formation/create';
+$route['formation/index/(:any)'] = 'formation/index/$1';
  
 $route['formation/edit/(:any)'] = 'formation/edit/$1';
 $route['formation/delete/(:any)'] = 'formation/delete/$1';

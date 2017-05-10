@@ -61,7 +61,8 @@ class Composante extends CI_Controller {
                     //"nama"=> $rowData[0][0],
                     // "alamat"=> $rowData[0][1],
                     // "kontak"=> $rowData[0][2]
-
+                   
+                   "id"=> $rowData[0][0],     
                    "nom"=> $rowData[0][1],
 
                     "mail1"=> $rowData[0][2],
