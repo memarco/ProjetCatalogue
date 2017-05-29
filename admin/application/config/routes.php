@@ -64,6 +64,7 @@ $route['composante/(:any)'] = 'composante/view/$1';
 /* domaine routes  */
 $route['domaine'] = 'domaine';
 $route['domaine/create'] = 'domaine/create';
+$route['domaine/index/(:any)'] = 'domaine/index/$1';
 
 $route['domaine/edit/(:any)'] = 'domaine/edit/$1';
 $route['domaine/delete/(:any)'] = 'domaine/delete/$1';

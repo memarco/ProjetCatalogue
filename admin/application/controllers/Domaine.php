@@ -9,16 +9,46 @@ class Domaine extends CI_Controller {
     }
         $this->load->model('domaine_model');
         $this->load->helper('url_helper');
+        $this->load->library("pagination");
 
 
     }
  
     public function index()
     {
-        $data['domaine'] = $this->domaine_model->get_domaine();
+        //$data['domaine'] = $this->domaine_model->get_domaine();
         $data['title'] = 'Les domaines de l\'U-PEC';
         $data['name'] = $this->session->userdata('name');
  
+        $data['total_domaine'] = $this->domaine_model->record_count();  
+        
+        $config = array();
+        $config["base_url"] = base_url() . "index.php/domaine/index";
+        $total_row = $this->domaine_model->record_count();
+        $config["total_rows"] = $total_row;
+        $config["per_page"] = 2;    
+        $config['first_link'] = 'Début';
+        $config['last_link'] = 'Dernier';
+        $config['use_page_numbers'] = TRUE;
+        $config['num_links'] = 3;
+        $config['cur_tag_open'] = '&nbsp;<a class="current">';
+        $config['cur_tag_close'] = '</a>';
+        $config['next_link'] = 'Suivant';
+        $config['prev_link'] = 'Précédent';
+
+        $this->pagination->initialize($config); 
+        if($this->uri->segment(3)){
+            $page = ($this->uri->segment(3)) ;
+            }
+            else{
+            $page = 1;
+            } 
+        $data["domaine"] = $this->domaine_model->get_domaine(FALSE, $config["per_page"], $page);
+        $str_links = $this->pagination->create_links();
+        $data["links"] = explode('&nbsp;',$str_links ); 
+          
+         
+        
         $this->load->view('templates/header', $data);
         $this->load->view('domaine/index', $data);
         
@@ -26,8 +56,11 @@ class Domaine extends CI_Controller {
  
     public function view($mail1 = NULL)
     {
-        $data['domaine_item'] = $this->domaine_model->get_domaine($mail1);
         $data['name'] = $this->session->userdata('name');
+        
+        $data['domaine_item'] = $this->domaine_model->get_domaine($mail1,0,1);
+        
+        $data['total_domaine'] = $this->domaine_model->record_count();
         
         if (empty($data['domaine_item']))
         {
