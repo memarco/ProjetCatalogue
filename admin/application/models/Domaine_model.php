@@ -6,13 +6,19 @@ class Domaine_model extends CI_Model {
         $this->load->database();
     }
     
-    public function get_domaine($nom = FALSE)
+     public function record_count() {
+        return $this->db->count_all("domaine");
+    }
+    
+    
+    public function get_domaine($nom = FALSE, $limit, $start)
     {
         if ($nom=== FALSE)
         {
             
-            $this->db->order_by("nom", "asc");
-            $query = $this->db->get('domaine');
+           $this->db->order_by("nom", "asc");
+            $this->db->limit($limit, $start); 
+            $query = $this->db->get('domaine');           
             return $query->result_array();
         }
         

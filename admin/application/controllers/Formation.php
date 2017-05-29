@@ -105,7 +105,7 @@ class Formation extends CI_Controller {
  
         if ($this->form_validation->run() === FALSE)
         {
-            $data['domaine'] = $this->domaine_model->get_domaine();
+            //$data['domaine'] = $this->domaine_model->get_domaine();
             $data['type_formation'] = $this->type_formation_model->get_type_formation();
             $data['filiere'] = $this->filiere_model->get_filiere();
             $data['diplome'] = $this->diplome_model->get_diplome();
