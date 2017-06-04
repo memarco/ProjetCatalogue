@@ -32,15 +32,21 @@
                     <dt>Détail stage :</dt> 
                     <dd><?php echo $formation_item['detail_s']; ?></dd> <br>
                      
-                </dl>
-                    <div style="float: left"> 
-                        <?php $prev=$formation_item['id']-1;
-                        $next=$formation_item['id']+1; ?>
-                        <a class="btn btn-info" href="<?php echo site_url('formation/'.$prev); ?>" role="button"><&LT; Précédente </a>
-             </div>
-                    <div style="float:right"> 
-		<a class="btn btn-info" href="<?php echo site_url('formation/'.$next); ?>" role="button">Suivante >></a>
-             </div>
+                </dl> 
+                
+                    <?php 
+                        if(($formation_item['id']-1)!=0){
+                        $prev=$formation_item['id']-1;
+                        echo '<div style="float: left"> ';
+                        echo '<a class="btn btn-info" href="'.site_url('formation/'.$prev).'" role="button"><&LT; Précédente </a>';
+                        echo '</div>';}
+                        if($formation_item['id']!=$total_formation){
+                        $next=$formation_item['id']+1; 
+                        echo  '<div style="float:right">';  
+                        echo '<a class="btn btn-info" href="'.site_url('formation/'.$next).'" role="button">  Suivante >></a>';
+                         echo '</div>';
+                        }
+                        ?> 
             </div>
 
         </div>

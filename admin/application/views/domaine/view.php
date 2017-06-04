@@ -14,19 +14,35 @@
                 <div class="title"><h4>Détail du Domaine</h4> </div>
                 
                 <div class="title" style="float:right"><a href="<?php echo site_url('domaine/'); ?>"> .: Retour :.</a> </div>
-                
+                <br/>
                 <dl class="dl-horizontal" style="font-size: medium; "> 
+<<<<<<< HEAD
                     <dt>Domaine :</dt> 
                     <dd><?php echo $domaine_item['nom'].'</b>'; ?></dd> <br>
+=======
+                    <dt>Libellé :</dt> 
+                    <dd><?php echo $domaine_item['nom']; ?></dd>  <br>
+>>>>>>> ad949c2e090f36205abede9c39fa2fef31bda8d8
                      
-                </dl>
-                    <div style="float: left"> 
-                        <?php $prev=$domaine_item['id']-1;
-                        $next=$domaine_item['id']+1; ?>
-                        <a class="btn btn-info" href="<?php echo site_url('domaine/'.$prev); ?>" role="button"><&LT; Précédente </a>
-             </div>
-                    <div style="float:right"> 
-		<a class="btn btn-info" href="<?php echo site_url('domaine/'.$next); ?>" role="button">Suivante >></a>
+                </dl> 
+                        <?php 
+                        if(($domaine_item['id']-1)!=0){
+                        $prev=$domaine_item['id']-1;
+                        echo '<div style="float: left"> ';
+                        echo '<a class="btn btn-info" href="'.site_url('domaine/'.$prev).'" role="button"><&LT; Précédente </a>';
+                        echo '</div>';
+                        //echo $total_domaine;
+                        }
+                        if($domaine_item['id']!=$total_domaine){
+                        $next=$domaine_item['id']+1; 
+                        
+                        echo  '<div style="float:right">';  
+                        echo '<a class="btn btn-info" href="'.site_url('domaine/'.$next).'" role="button">  Suivante >></a>';
+                         echo '</div>';
+                        }
+                        ?> 
+          
+                   
              </div>
             </div>
 
