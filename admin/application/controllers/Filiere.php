@@ -24,8 +24,12 @@ class Filiere extends CI_Controller {
  
     public function view($mail1 = NULL)
     {
-        $data['filiere_item'] = $this->filiere_model->get_filiere($mail1);
         
+        $data['name'] = $this->session->userdata('name');
+        $data['total_filiere'] = $this->filiere_model->record_count();
+        //$data['filiere_item'] = $this->filiere_model->get_filiere($mail1);
+        $data['filiere_item'] = $this->filiere_model->get_filiere($mail1,0,1);
+ 
         if (empty($data['filiere_item']))
         {
             show_404();

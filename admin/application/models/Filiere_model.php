@@ -6,6 +6,10 @@ class Filiere_model extends CI_Model {
         $this->load->database();
     }
     
+    public function record_count() {
+        return $this->db->count_all("filiere");
+    }
+    
     public function get_filiere($nom = FALSE)
     {
         if ($nom=== FALSE)
@@ -17,7 +21,7 @@ class Filiere_model extends CI_Model {
         }
         
         $this->db->order_by("nom", "asc");
-        $query = $this->db->get_where('filiere', array('nom' => $nom));
+        $query = $this->db->get_where('filiere', array('id' => $nom));
         return $query->row_array();
     }
     

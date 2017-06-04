@@ -23,7 +23,7 @@ class Domaine_model extends CI_Model {
         }
         
         $this->db->order_by("nom", "asc");
-        $query = $this->db->get_where('domaine', array('nom' => $nom));
+        $query = $this->db->get_where('domaine', array('id' => $nom));
         return $query->row_array();
     }
     
