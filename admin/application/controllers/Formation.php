@@ -67,7 +67,9 @@ class Formation extends CI_Controller {
         $data['total_formation'] = $this->formation_model->record_count();
  
         $data['formation_item'] = $this->formation_model->get_formation($mail1,0,1);
-        
+       
+        //var_dump($data['formation_item']);
+           
         if (empty($data['formation_item']))
         {
             show_404();

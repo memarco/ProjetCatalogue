@@ -59,6 +59,7 @@ class Domaine extends CI_Controller {
         $data['name'] = $this->session->userdata('name');
         
         $data['domaine_item'] = $this->domaine_model->get_domaine($mail1,0,1);
+            //var_dump($data['domaine_item']);
         
         $data['total_domaine'] = $this->domaine_model->record_count();
         

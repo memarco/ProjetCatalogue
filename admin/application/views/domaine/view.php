@@ -17,7 +17,7 @@
                 
                 <dl class="dl-horizontal" style="font-size: medium; "> 
                     <dt>Domaine :</dt> 
-                    <dd><?php echo $domaine_item['nom']; ?></dd>  <br>
+                    <dd><?php echo $domaine_item['nom'].'</b>'; ?></dd> <br>
                      
                 </dl>
                     <div style="float: left"> 

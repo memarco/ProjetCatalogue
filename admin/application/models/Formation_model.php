@@ -34,7 +34,10 @@ class Formation_model extends CI_Model {
             $this->db->limit($limit, $start);   
             $query = $this->db->get();
             return $query->result_array();
+              
         }
+       
+        
          $this->db->select('rd_formation.id as id, type_periode.nom as nom_periode, rd_formation.nbre_entreprise, '
                     . 'rd_formation.nbre_ecole, libelle as libelle,niveau, composante.nom as nom_c, filiere.nom as nom_f, '
                     . 'type_formation.nom as nom_typ,type_stage.nom as nom_stage,'
