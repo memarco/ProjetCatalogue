@@ -5,16 +5,21 @@ class Site_model extends CI_Model {
     {
         $this->load->database();
     }
+    public function record_count() {
+        return $this->db->count_all("site");
+    }
     
-    public function get_site($cp_site = FALSE)
+    
+    public function get_site($cp_site = FALSE, $limit, $start)
     {
         if ($cp_site === FALSE)
-        {
+        {   
+            $this->db->limit($limit, $start);
             $query = $this->db->get('site');
             return $query->result_array();
         }
  
-        $query = $this->db->get_where('site', array('cp_site' => $cp_site));
+        $query = $this->db->get_where('site', array('id' => $cp_site));
         return $query->row_array();
     }
     

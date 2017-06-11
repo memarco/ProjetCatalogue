@@ -10,7 +10,11 @@
 <!--maincontent-->        
 <?php $this->load->view('templates/main_head') ?>   
                
-              <p><a class="btn btn-primary" href="<?php echo site_url('niveau/create'); ?>">AJOUTER &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus text-right" aria-hidden="true"></span></a></p> 
+              <p><a class="btn btn-primary" href="<?php echo site_url('niveau/create'); ?>">AJOUTER &nbsp;&nbsp;&nbsp;
+                      <span class="glyphicon glyphicon-plus text-right" aria-hidden="true"></span></a>
+                       <span style="float:right; font-weight: ">Nombre de niveau : <?php echo $total_niveau;  ?>
+              </p> 
+                       
 <table  class="table table-bordered"> 
     <thead>
 				<tr>
@@ -29,7 +33,17 @@
             </td>
         </tr>
 <?php endforeach; ?>
-</table>           
+</table>   
+                      
+<div id="pagination">
+        <ul class="tsc_pagination">
+
+        <!-- Show pagination links -->
+        <?php foreach ($links as $link) {
+        echo "<li>". $link."</li>";
+        } ?>
+     </div> 
+                      
           </div>
         </div>
 

@@ -10,7 +10,10 @@
 <!--maincontent-->           
 <?php $this->load->view('templates/main_head') ?> 
                
-              <p><a class="btn btn-primary" href="<?php echo site_url('type_stage/create'); ?>">AJOUTER &nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-plus text-right" aria-hidden="true"></span></a></p> 
+              <p><a class="btn btn-primary" href="<?php echo site_url('type_stage/create'); ?>">AJOUTER &nbsp;&nbsp;&nbsp;
+                      <span class="glyphicon glyphicon-plus text-right" aria-hidden="true"></span></a>
+                      <span style="float:right; font-weight: ">Nombre de Type de Stage : <?php echo $total_type_stage;  ?>
+              </p> 
 <table  class="table table-bordered"> 
     <thead>
 				<tr>

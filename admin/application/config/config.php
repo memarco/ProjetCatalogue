@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8080/OnlineCatalogue/admin/';
+$config['base_url']	= 'http://localhost/projetCatalogue/admin/';
 
 /*
 |--------------------------------------------------------------------------

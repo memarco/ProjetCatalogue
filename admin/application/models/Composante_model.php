@@ -6,15 +6,20 @@ class Composante_model extends CI_Model {
         $this->load->database();
     }
     
-    public function get_composante($mail1 = FALSE)
+     public function record_count() {
+        return $this->db->count_all("composante");
+    }
+    
+    public function get_composante($mail1 = FALSE, $limit, $start)
     {
         if ($mail1 === FALSE)
         {
+             $this->db->limit($limit, $start);
             $query = $this->db->get('composante');
             return $query->result_array();
         }
  
-        $query = $this->db->get_where('composante', array('mail1' => $mail1));
+        $query = $this->db->get_where('composante', array('id' => $mail1));
         return $query->row_array();
     }
     

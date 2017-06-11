@@ -16,14 +16,11 @@
                 <div class="title" style="float:right"><a href="<?php echo site_url('domaine/'); ?>"> .: Retour :.</a> </div>
                 <br/>
                 <dl class="dl-horizontal" style="font-size: medium; "> 
-<<<<<<< HEAD
                     <dt>Domaine :</dt> 
                     <dd><?php echo $domaine_item['nom'].'</b>'; ?></dd> <br>
-=======
                     <dt>Libellé :</dt> 
                     <dd><?php echo $domaine_item['nom']; ?></dd>  <br>
->>>>>>> ad949c2e090f36205abede9c39fa2fef31bda8d8
-                     
+
                 </dl> 
                         <?php 
                         if(($domaine_item['id']-1)!=0){

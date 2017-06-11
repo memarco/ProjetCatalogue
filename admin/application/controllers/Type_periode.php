@@ -16,6 +16,7 @@ class Type_periode extends CI_Controller {
         $data['type_periode'] = $this->type_periode_model->get_type_periode();
         $data['title'] = 'Les rythmes d\'alternance';
         $data['name'] = $this->session->userdata('name');
+        $data['total_type_periode'] = $this->type_periode_model->record_count();
  
         $this->load->view('templates/header', $data);
         $this->load->view('type_periode/index', $data);
@@ -24,7 +25,12 @@ class Type_periode extends CI_Controller {
  
     public function view($mail1 = NULL)
     {
-        $data['type_periode_item'] = $this->type_periode_model->get_type_periode($mail1);
+        
+        $data['name'] = $this->session->userdata('name');
+       
+        $data['type_periode_item'] = $this->type_periode_model->get_type_periode($mail1,0,1);
+        
+         $data['total_type_periode'] = $this->type_periode_model->record_count();
         
         if (empty($data['type_periode_item']))
         {

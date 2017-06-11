@@ -44,7 +44,8 @@ $route['404_override'] = '';
 /* site routes  */
 $route['site'] = 'site';
 $route['site/create'] = 'site/create';
- 
+$route['site/index/(:any)'] = 'site/index/$1';
+
 $route['site/edit/(:any)'] = 'site/edit/$1';
 $route['site/delete/(:any)'] = 'site/delete/$1';
  
@@ -54,7 +55,8 @@ $route['site/(:any)'] = 'site/view/$1';
 /* composante routes  */
 $route['composante'] = 'composante';
 $route['composante/create'] = 'composante/create';
- 
+$route['composante/index/(:any)'] = 'composante/index/$1';
+
 $route['composante/edit/(:any)'] = 'composante/edit/$1';
 $route['composante/delete/(:any)'] = 'composante/delete/$1';
  
@@ -85,7 +87,8 @@ $route['type_formation/(:any)'] = 'type_formation/view/$1';
 /* filiere routes  */
 $route['filiere'] = 'filiere';
 $route['filiere/create'] = 'filiere/create';
- 
+$route['filiere/index/(:any)'] = 'filiere/index/$1'; 
+
 $route['filiere/edit/(:any)'] = 'filiere/edit/$1';
 $route['filiere/delete/(:any)'] = 'filiere/delete/$1';
  
@@ -95,7 +98,7 @@ $route['filiere/(:any)'] = 'filiere/view/$1';
 /* filiere niveau  */
 $route['niveau'] = 'niveau';
 $route['niveau/create'] = 'niveau/create';
- 
+$route['niveau/index/(:any)'] = 'niveau/index/$1'; 
 $route['niveau/edit/(:any)'] = 'niveau/edit/$1';
 $route['niveau/delete/(:any)'] = 'niveau/delete/$1';
  
@@ -105,6 +108,7 @@ $route['niveau/(:any)'] = 'niveau/view/$1';
 /* filiere diplome  */
 $route['diplome'] = 'diplome';
 $route['diplome/create'] = 'diplome/create';
+$route['diplome/index/(:any)'] = 'diplome/index/$1';
  
 $route['diplome/edit/(:any)'] = 'diplome/edit/$1';
 $route['diplome/delete/(:any)'] = 'diplome/delete/$1';
@@ -122,6 +126,26 @@ $route['formation/delete/(:any)'] = 'formation/delete/$1';
  
 $route['formation/view/(:any)'] = 'formation/view/$1';
 $route['formation/(:any)'] = 'formation/view/$1'; 
+
+/* type_periode routes  */
+$route['type_periode'] = 'type_periode';
+$route['type_periode/create'] = 'type_periode/create';
+ 
+$route['type_periode/edit/(:any)'] = 'type_periode/edit/$1';
+$route['type_periode/delete/(:any)'] = 'type_periode/delete/$1';
+ 
+$route['type_periode/view/(:any)'] = 'type_periode/view/$1';
+$route['type_periode/(:any)'] = 'type_periode/view/$1';
+
+/* type_stage routes  */
+$route['type_stage'] = 'type_stage';
+$route['type_stage/create'] = 'type_stage/create';
+ 
+$route['type_stage/edit/(:any)'] = 'type_stage/edit/$1';
+$route['type_stage/delete/(:any)'] = 'type_stage/delete/$1';
+ 
+$route['type_stage/view/(:any)'] = 'type_stage/view/$1';
+$route['type_stage/(:any)'] = 'type_stage/view/$1';
 
 $route['public'] = 'modules/public/view';
 /* End of file routes.php */

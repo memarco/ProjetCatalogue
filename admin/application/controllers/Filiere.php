@@ -9,13 +9,41 @@ class Filiere extends CI_Controller {
     }
         $this->load->model('filiere_model');
         $this->load->helper('url_helper');
+        $this->load->library("pagination");
     }
  
     public function index()
     {
-        $data['filiere'] = $this->filiere_model->get_filiere();
+        //$data['filiere'] = $this->filiere_model->get_filiere();
         $data['title'] = 'Les filieres de l\'U-PEC';
         $data['name'] = $this->session->userdata('name');
+        
+        $data['total_filiere'] = $this->filiere_model->record_count();
+        
+        $config = array();
+        $config["base_url"] = base_url() . "index.php/filiere/index";
+        $total_row = $this->filiere_model->record_count();
+        $config["total_rows"] = $total_row;
+        $config["per_page"] = 7;    
+        $config['first_link'] = 'Début';
+        $config['last_link'] = 'Dernier';
+        $config['use_page_numbers'] = TRUE;
+        $config['num_links'] = 7;
+        $config['cur_tag_open'] = '&nbsp;<a class="current">';
+        $config['cur_tag_close'] = '</a>';
+        $config['next_link'] = 'Suivant';
+        $config['prev_link'] = 'Précédent';
+
+        $this->pagination->initialize($config); 
+        if($this->uri->segment(3)){
+            $page = ($this->uri->segment(3)) ;
+            }
+            else{
+            $page = 1;
+            } 
+        $data["filiere"] = $this->filiere_model->get_filiere(FALSE, $config["per_page"], $page);
+        $str_links = $this->pagination->create_links();
+        $data["links"] = explode('&nbsp;',$str_links );
  
         $this->load->view('templates/header', $data);
         $this->load->view('filiere/index', $data);
@@ -29,6 +57,8 @@ class Filiere extends CI_Controller {
         $data['total_filiere'] = $this->filiere_model->record_count();
         //$data['filiere_item'] = $this->filiere_model->get_filiere($mail1);
         $data['filiere_item'] = $this->filiere_model->get_filiere($mail1,0,1);
+        
+        $data['total_filiere'] = $this->filiere_model->record_count();
  
         if (empty($data['filiere_item']))
         {

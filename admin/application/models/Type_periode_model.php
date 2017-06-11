@@ -6,6 +6,10 @@ class Type_periode_model extends CI_Model {
         $this->load->database();
     }
     
+     public function record_count() {
+        return $this->db->count_all("type_periode");
+    }
+    
     public function get_type_periode($nom = FALSE)
     {
         if ($nom=== FALSE)
@@ -17,7 +21,7 @@ class Type_periode_model extends CI_Model {
         }
         
         $this->db->order_by("nom", "asc");
-        $query = $this->db->get_where('type_periode', array('nom' => $nom));
+        $query = $this->db->get_where('type_periode', array('id' => $nom));
         return $query->row_array();
     }
     

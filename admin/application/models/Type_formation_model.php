@@ -6,15 +6,20 @@ class Type_formation_model extends CI_Model {
         $this->load->database();
     }
     
+    public function record_count() {
+        return $this->db->count_all("type_formation");
+    }
+    
     public function get_type_formation($nom = FALSE)
     {
         if ($nom=== FALSE)
         {
+            
             $query = $this->db->get('type_formation');
             return $query->result_array();
         }
  
-        $query = $this->db->get_where('type_formation', array('nom' => $nom));
+        $query = $this->db->get_where('type_formation', array('id' => $nom));
         return $query->row_array();
     }
     

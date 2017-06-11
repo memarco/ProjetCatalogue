@@ -6,6 +6,10 @@ class Type_stage_model extends CI_Model {
         $this->load->database();
     }
     
+    public function record_count() {
+        return $this->db->count_all("type_stage");
+    }
+    
     public function get_type_stage($nom = FALSE)
     {
         if ($nom=== FALSE)
@@ -15,7 +19,7 @@ class Type_stage_model extends CI_Model {
             return $query->result_array();
         }
         $this->db->order_by("nom", "asc");
-        $query = $this->db->get_where('type_stage', array('nom' => $nom));
+        $query = $this->db->get_where('type_stage', array('id' => $nom));
         return $query->row_array();
     }
     

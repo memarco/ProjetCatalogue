@@ -9,23 +9,27 @@ class Type_formation extends CI_Controller {
     }
         $this->load->model('type_formation_model');
         $this->load->helper('url_helper');
+        
     }
  
     public function index()
     {
-        $data['type_formation'] = $this->type_formation_model->get_type_formation();
+      $data['type_formation'] = $this->type_formation_model->get_type_formation();
         $data['title'] = 'Les type de formations de l\'U-PEC';
         $data['name'] = $this->session->userdata('name');
- 
+        $data['total_type_formation'] = $this->type_formation_model->record_count();
+        
         $this->load->view('templates/header', $data);
         $this->load->view('type_formation/index', $data);
         
     }
  
     public function view($mail1 = NULL)
-    {
-        $data['type_formation_item'] = $this->type_formation_model->get_type_formation($mail1);
+    {   
+        $data['name'] = $this->session->userdata('name');
+        $data['type_formation_item'] = $this->type_formation_model->get_type_formation($mail1,0,1);
         
+        $data['total_type_formation'] = $this->type_formation_model->record_count();
         if (empty($data['type_formation_item']))
         {
             show_404();

@@ -5,8 +5,12 @@ class Diplome_model extends CI_Model {
     {
         $this->load->database();
     }
+    
+    public function record_count() {
+        return $this->db->count_all("diplome");
+    }
      
-    public function get_diplome($nom = FALSE)
+    public function get_diplome($nom = FALSE, $limit, $start)
     {
         if ($nom=== FALSE)
         {
@@ -15,12 +19,13 @@ class Diplome_model extends CI_Model {
             $this->db->from('niveau');
             $this->db->join('diplome', 'niveau.id = diplome.id_niveau');  
             $this->db->order_by("nom", "asc");
+            $this->db->limit($limit, $start);
             $query = $this->db->get();
             return $query->result_array();
         }
         
         $this->db->order_by("nom", "asc");
-        $query = $this->db->get_where('diplome', array('nom' => $nom));
+        $query = $this->db->get_where('diplome', array('id' => $nom));
         return $query->row_array();
     }
     

@@ -16,6 +16,8 @@ class Type_stage extends CI_Controller {
         $data['type_stage'] = $this->type_stage_model->get_type_stage();
         $data['title'] = 'Les types de stages de formations';
         $data['name'] = $this->session->userdata('name');
+        
+        $data['total_type_stage'] = $this->type_stage_model->record_count();
  
         $this->load->view('templates/header', $data);
         $this->load->view('type_stage/index', $data);
@@ -24,7 +26,11 @@ class Type_stage extends CI_Controller {
  
     public function view($mail1 = NULL)
     {
-        $data['type_stage_item'] = $this->type_stage_model->get_type_stage($mail1);
+        $data['name'] = $this->session->userdata('name');
+        
+        $data['type_stage_item'] = $this->type_stage_model->get_type_stage($mail1,0,1);
+        
+        $data['total_type_stage'] = $this->type_stage_model->record_count();
         
         if (empty($data['type_stage_item']))
         {

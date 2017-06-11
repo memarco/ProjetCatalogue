@@ -69,7 +69,7 @@ class Domaine extends CI_Controller {
         }
  
         $data['nom'] = $data['domaine_item']['nom'];
- 
+
         $this->load->view('templates/header', $data);
         $this->load->view('domaine/view', $data);
         

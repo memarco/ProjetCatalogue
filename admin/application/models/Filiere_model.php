@@ -10,12 +10,13 @@ class Filiere_model extends CI_Model {
         return $this->db->count_all("filiere");
     }
     
-    public function get_filiere($nom = FALSE)
+    public function get_filiere($nom = FALSE, $limit, $start)
     {
         if ($nom=== FALSE)
         {
             
             $this->db->order_by("nom", "asc");
+            $this->db->limit($limit, $start);
             $query = $this->db->get('filiere');
             return $query->result_array();
         }
