@@ -21,8 +21,8 @@
                     <dd><?php echo $formation_item['nom_f']; ?></dd> <br>
                     <dt>Diplôme préparé :</dt> 
                     <dd><?php echo $formation_item['nom_d']; ?></dd> <br>
-                    <dt>Niveau :</dt> 
-                    <dd><?php echo $formation_item['niveau']; ?></dd> <br>
+                   <!-- <dt>Niveau :</dt> 
+                    <dd><?php echo $formation_item['niveau']; ?></dd> <br>-->
                     <dt>Type de formation :</dt> 
                     <dd><?php echo $formation_item['nom_typ']; ?></dd> <br>
                     <dt>Composante :</dt> 
@@ -30,7 +30,7 @@
                     <dt>Site :</dt> 
                     <dd><?php echo $formation_item['nom_site']; ?></dd> <br>
                     <dt>Détail stage :</dt> 
-                    <dd><?php echo $formation_item['detail_s']; ?></dd> <br>
+                    <dd><?php echo $formation_item['detail_stage']; ?></dd> <br>
                      
                 </dl> 
                 
