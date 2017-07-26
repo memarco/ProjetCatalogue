@@ -38,7 +38,7 @@ class Formation extends CI_Controller {
         $config["base_url"] = base_url() . "index.php/formation/index";
         $total_row = $this->formation_model->record_count($key);
         $config["total_rows"] = $total_row;
-        $config["per_page"] = 5;
+        $config["per_page"] = 10;
         $config['first_link'] = 'Début';
         $config['last_link'] = 'Dernier';
         $config['use_page_numbers'] = TRUE;
@@ -50,7 +50,7 @@ class Formation extends CI_Controller {
 
         $this->pagination->initialize($config);
         if($this->uri->segment(3)){
-            $page = ($this->uri->segment(3)) ;
+            $page = (($this->uri->segment(3))-1)*10 ;
             }
             else{
             $page = 0;

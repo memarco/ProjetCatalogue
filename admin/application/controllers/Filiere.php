@@ -24,11 +24,11 @@ class Filiere extends CI_Controller {
         $config["base_url"] = base_url() . "index.php/filiere/index";
         $total_row = $this->filiere_model->record_count();
         $config["total_rows"] = $total_row;
-        $config["per_page"] = 7;
+        $config["per_page"] = 25;
         $config['first_link'] = 'Début';
         $config['last_link'] = 'Dernier';
         $config['use_page_numbers'] = TRUE;
-        $config['num_links'] = 7;
+        $config['num_links'] = 5;
         $config['cur_tag_open'] = '&nbsp;<a class="current">';
         $config['cur_tag_close'] = '</a>';
         $config['next_link'] = 'Suivant';
@@ -36,15 +36,14 @@ class Filiere extends CI_Controller {
 
         $this->pagination->initialize($config);
         if($this->uri->segment(3)){
-            $page = ($this->uri->segment(3)) ;
+            $page = (($this->uri->segment(3))-1)*25 ;
             }
             else{
-            $page = 1;
+            $page = 0; 
             }
         $data["filiere"] = $this->filiere_model->get_filiere(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
-
         $this->load->view('templates/header', $data);
         $this->load->view('filiere/index', $data);
 
