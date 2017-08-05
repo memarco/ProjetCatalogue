@@ -33,14 +33,14 @@
         </tr>
 <?php endforeach; ?>
 </table>  
- <div id="pagination">
+<!-- <div id="pagination">
         <ul class="tsc_pagination">
 
-        <!-- Show pagination links -->
-        <?php foreach ($links as $link) {
+         Show pagination links 
+        <-?php foreach ($links as $link) {
         echo "<li>". $link."</li>";
         } ?>
-     </div>    
+     </div>    -->
           </div>
         </div>
 

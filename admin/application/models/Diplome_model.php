@@ -10,7 +10,7 @@ class Diplome_model extends CI_Model {
         return $this->db->count_all("diplome");
     }
      
-    public function get_diplome($nom = FALSE, $limit, $start)
+    public function get_diplome($nom = FALSE)
     {
         if ($nom=== FALSE)
         {
@@ -19,7 +19,7 @@ class Diplome_model extends CI_Model {
             $this->db->from('niveau');
             $this->db->join('diplome', 'niveau.id = diplome.id_niveau');  
             $this->db->order_by("nom", "asc");
-            $this->db->limit($limit, $start);
+            //$this->db->limit($limit, $start);
             $query = $this->db->get();
             return $query->result_array();
         }

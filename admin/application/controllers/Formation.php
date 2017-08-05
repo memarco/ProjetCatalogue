@@ -17,13 +17,13 @@ class Formation extends CI_Controller {
         $this->load->model('type_formation_model');
         $this->load->model('type_periode_model');
         $this->load->model('type_stage_model');
-        $this->load->model('niveau_model');
         $this->load->helper('url_helper');
         $this->load->library("pagination");
     }
       
     public function index()
     { 
+        //$data['formation'] = $this->formation_model->get_formation();
         $data['title'] = 'Liste des formations de l\'U-PEC ';
         $data['name'] = $this->session->userdata('name');
         $data['total_formation'] = $this->formation_model->record_count();  
@@ -150,7 +150,7 @@ class Formation extends CI_Controller {
  
         if ($this->form_validation->run() === FALSE)
         {
-            $data['niveau'] = $this->niveau_model->get_niveau(); 
+           //$data['formation'] = $this->formation_model->get_formation(); 
             $this->load->model('formation_model'); 
             $this->load->view('templates/header', $data);
             $this->load->view('formation/edit', $data);

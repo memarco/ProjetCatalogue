@@ -14,28 +14,44 @@
                 <div class="panel-body" style="margin:20px"> 
 
                     <?php echo validation_errors(); ?>
-
-                    <?php echo form_open('diplome/edit/' . $diplome_item['id']); ?> 
+      
+                    <?php echo form_open('formation/edit/' . $formation_item['id']); ?> 
                      <div class="form-group">
-                     <label for="title" class="col-sm-2 control-label">Niveau</label>
+                     <label for="title" class="col-sm-2 control-label">Mention</label>
                      <div class="col-sm-10">
-                    <select name="id_niveau" class="form-control">
-                        <option value="<?php echo $diplome_item['id_niveau']?>"><?php echo $diplome_item['nom_niveau'] ?></option> 
+                    <select name="" class="form-control">
+                        <option value="<?php echo $formation_item['id']?>"><?php echo $formation_item['libelle'] ?></option> 
                         <?php
-                        foreach($niveau as $niveau_item)
+                        foreach($formation as $formation_item)
                         {
                             ?>
-                            <option value="<?php echo $niveau_item['id']?>"><?php echo $niveau_item['nom_niveau'] ?></option> 
+                            <option value="<?php echo $formation_item['id']?>"><?php echo $formation_item['libelle'] ?></option> 
+                            <?php
+                        }
+                        ?>
+                        </select>
+                     </div>
+                    </div> 
+                    
+                    <div class="form-group">
+                     <label for="title" class="col-sm-2 control-label">Filiere</label>
+                     <div class="col-sm-10">
+                    <select name="id_filiere" class="form-control">
+                        <option value="<?php echo $formation_item['id_filiere']?>"><?php echo $formation_item['nom_f'] ?></option> 
+                        <?php
+                        foreach($filiere as $filiere_item)
+                        {
+                            ?>
+                            <option value="<?php echo $filiere_item['id']?>"><?php echo $filiere_item['nom_f'] ?></option> 
                             <?php
                         }
                         ?>
                         </select></div>
-                    </div> 
+                    
+                    
+                    
                     <div class="form-group">
-                        <label for="title" class="col-sm-2 control-label">Nom</label>
-                        <div class="col-sm-10">
-                            <input type="input" id="email" class="form-control" name="nom" value="<?php echo $diplome_item['nom'] ?>">
-                        </div>
+                         
                     </div> 
 
                     <div class="form-group">
@@ -43,9 +59,11 @@
                             <button type="submit" name="submit" class="btn btn-info btn-block">Valider</button>
                         </div>   
                         <div class="col-sm-offset-2 col-sm-3"> 
-                            <a class="btn btn-danger btn-block" href="<?php echo site_url('diplome/'); ?>" role="button">Annuler</a>
+                            <a class="btn btn-danger btn-block" href="<?php echo site_url('formation/'); ?>" role="button">Annuler</a>
                         </div>
                     </div>
+                    
+                    
                     </form>
 
                 </div>

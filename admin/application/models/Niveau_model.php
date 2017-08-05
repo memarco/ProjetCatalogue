@@ -10,12 +10,12 @@ class Niveau_model extends CI_Model {
         return $this->db->count_all("niveau");
     }
     
-    public function get_niveau($nom_niveau = FALSE, $limit, $start)
+    public function get_niveau($nom_niveau = FALSE)
     {
         if ($nom_niveau=== FALSE)
         {
            $this->db->order_by("nom_niveau", "asc");
-           $this->db->limit($limit, $start); 
+           //$this->db->limit($limit, $start); 
             $query = $this->db->get('niveau');
             return $query->result_array();
         }
