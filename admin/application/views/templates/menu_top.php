@@ -18,14 +18,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
         <li class="active"><a href="<?php echo base_url();?>">SCUIO-BAIP <span class="sr-only">(current)</span></a></li>
-       </ul>
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Recherche">
-        </div> 
-      </form>  
+       </ul> 
         <ul class="nav navbar-nav navbar-right">
         <li class="active"><a href="#">Bienvenue, <?php echo $name; ?><span class="sr-only">(current)</span></a></li>
+         <li><a href="<?php echo base_url() ?>index.php/login/logout_user"><span class="glyphicon glyphicon-log-out"></span></a></li>
        </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

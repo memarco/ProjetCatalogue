@@ -15,7 +15,11 @@ class Niveau_model extends CI_Model {
         if ($nom_niveau=== FALSE)
         {
            $this->db->order_by("nom_niveau", "asc");
+<<<<<<< HEAD
            //$this->db->limit($limit, $start); 
+=======
+           $this->db->limit($limit,$start); 
+>>>>>>> 426f9bfe416b00800672e2f3266a3d355425ef9a
             $query = $this->db->get('niveau');
             return $query->result_array();
         }

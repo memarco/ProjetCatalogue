@@ -20,7 +20,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-magnet text-success"></span><a href="<?php echo site_url('filiere/'); ?>">Filières</a>
+                                        <span class="glyphicon glyphicon-magnet text-success"></span><a href="<?php echo site_url('filiere/'); ?>">Parcours/Filières</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -31,6 +31,11 @@
                                 <tr>
                                     <td>
                                         <span class="glyphicon glyphicon-tasks text-info"></span><a href="<?php echo site_url('domaine/'); ?>">Domaines d'étude</a>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-sunglasses text-info"></span><a href="<?php echo site_url('historique/'); ?>">Mouchard</a>
                                     </td>
                                 </tr> 
                             </table>
