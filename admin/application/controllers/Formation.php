@@ -1,6 +1,5 @@
-<?php
+ <?php
 class Formation extends CI_Controller {
-
     public function __construct()
     {
         parent::__construct();
@@ -17,15 +16,11 @@ class Formation extends CI_Controller {
         $this->load->model('type_formation_model');
         $this->load->model('type_periode_model');
         $this->load->model('type_stage_model');
+        $this->load->model('niveau_model');
         $this->load->helper('url_helper');
         $this->load->library("pagination");
     }
-
     public function index()
-<<<<<<< HEAD
-    { 
-        //$data['formation'] = $this->formation_model->get_formation();
-=======
     {
         $key = $this->input->post('key'); 
         if($key !=''){
@@ -34,7 +29,6 @@ class Formation extends CI_Controller {
 ;        }
         $this->load->helper('form');
         $this->load->library('form_validation');
->>>>>>> 426f9bfe416b00800672e2f3266a3d355425ef9a
         $data['title'] = 'Liste des formations de l\'U-PEC ';
         $data['name'] = $this->session->userdata('name');
         $data['total_formation'] = $this->formation_model->record_count($key);
@@ -51,7 +45,6 @@ class Formation extends CI_Controller {
         $config['cur_tag_close'] = '</a>';
         $config['next_link'] = 'Suivant';
         $config['prev_link'] = 'Précédent';
-
         $this->pagination->initialize($config);
         if($this->uri->segment(3)){
             $page = (($this->uri->segment(3))-1)*10 ;
@@ -65,10 +58,8 @@ class Formation extends CI_Controller {
         $this->load->view('templates/header', $data);
         $this->load->view('formation/index', $data);
     }
-
     public function search()
     { 
-
         $config = array();
         $config["base_url"] = base_url() . "index.php/formation/index";
         $total_row = $this->formation_model->record_count($key);
@@ -82,7 +73,6 @@ class Formation extends CI_Controller {
         $config['cur_tag_close'] = '</a>';
         $config['next_link'] = 'Suivant';
         $config['prev_link'] = 'Précédent';
-
         $this->pagination->initialize($config);
         if($this->uri->segment(3)){
             $page = ($this->uri->segment(3)) ;
@@ -94,26 +84,19 @@ class Formation extends CI_Controller {
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links ); 
         $this->load->view('formation/search', $data);
-
-
     }
     
     public function view($mail1 = NULL)
     {
-
         $key = $this->input->post('key'); 
         $data['name'] = $this->session->userdata('name');
         $data['total_formation'] = $this->formation_model->record_count($key);
-
         $data['formation_item'] = $this->formation_model->get_formation($mail1,0,1,$key);
-
         //var_dump($data['formation_item']);
-
         if (empty($data['formation_item']))
         {
             show_404();
         }
-
         $data['libelle'] = $data['formation_item']['libelle'];
         $data['nom_do'] = $data['formation_item']['nom_do'];
         $data['nom_f'] = $data['formation_item']['nom_f'];
@@ -126,24 +109,16 @@ class Formation extends CI_Controller {
         $data['nom_d'] = $data['formation_item']['nom_d'];
         $data['nom_site'] = $data['formation_item']['nom_site'];
         $data['detail_stage'] = $data['formation_item']['detail_stage'];
-
-
         $this->load->view('templates/header', $data);
         $this->load->view('formation/view', $data);
-
     }
-
     public function create()
     {
         $this->load->helper('form');
         $this->load->library('form_validation');
-
         $data['title'] = 'Nouvelle formation';
         $data['name'] = $this->session->userdata('name');
-
         $this->form_validation->set_rules('mention', 'La mention', 'required');
-
-
         if ($this->form_validation->run() === FALSE)
         {
             //$data['domaine'] = $this->domaine_model->get_domaine();
@@ -158,18 +133,14 @@ class Formation extends CI_Controller {
             $this->load->view('templates/header', $data);
             $this->load->view('formation/create');
             $this->load->model('formation_model');
-
-
         }
         else
         {
             $this->formation_model->set_formation();
             $this->load->view('templates/header', $data);
             $this->load->view('formation/success');
-
         }
     }
-
     public function edit()
     {
         $id = $this->uri->segment(3);
@@ -178,10 +149,8 @@ class Formation extends CI_Controller {
         {
             show_404();
         }
-
         $this->load->helper('form');
         $this->load->library('form_validation');
-
         $data['title'] = 'Modification des informations';
         $data['name'] = $this->session->userdata('name'); 
         $data['formation_item'] = $this->formation_model->get_formation($id,1,0,$key);
@@ -195,15 +164,8 @@ class Formation extends CI_Controller {
                     $data['type_periode'] = $this->type_periode_model->get_type_periode(FALSE,2147483647,0); 
                     $data['type_stage'] = $this->type_stage_model->get_type_stage(FALSE,2147483647,0); 
         
-
         if ($this->form_validation->run() === FALSE)
-<<<<<<< HEAD
-        {
-           //$data['formation'] = $this->formation_model->get_formation(); 
-            $this->load->model('formation_model'); 
-=======
         { 
->>>>>>> 426f9bfe416b00800672e2f3266a3d355425ef9a
             $this->load->view('templates/header', $data);
             $this->load->view('formation/edit', $data); 
         }
@@ -214,18 +176,14 @@ class Formation extends CI_Controller {
             redirect( base_url() . 'index.php/formation');
         }
     }
-
     public function delete()
     {
         $id = $this->uri->segment(3);
-
         if (empty($id))
         {
             show_404();
         }
-
         $formation_item = $this->formation_model->get_formation_by_id($id);
-
         $this->formation_model->delete_formation($id);
         redirect( base_url() . 'index.php/formation');
     }
