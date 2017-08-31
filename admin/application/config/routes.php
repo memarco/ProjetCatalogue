@@ -76,10 +76,13 @@ $route['domaine/(:any)'] = 'domaine/view/$1';
 
 /* type_formation routes  */
 $route['type_formation'] = 'type_formation';
-$route['type_formation/create'] = 'type_formation/create';
+//$route['type_formation/create']= 'type_formation/create';
+$route['type_formationCreate']['post'] = 'type_formation/store';
  
-$route['type_formation/edit/(:any)'] = 'type_formation/edit/$1';
-$route['type_formation/delete/(:any)'] = 'type_formation/delete/$1';
+//$route['type_formation/edit/(:any)'] = 'type_formation/edit/$1';
+$route['type_formationEdit/(:any)'] = 'type_formation/edit/$1';
+//$route['type_formation/delete/(:any)'] = 'type_formation/delete/$1';
+$route['type_formationDelete/(:any)']['delete'] = 'type_formation/delete/$1';
  
 $route['type_formation/view/(:any)'] = 'type_formation/view/$1';
 $route['type_formation/(:any)'] = 'type_formation/view/$1';

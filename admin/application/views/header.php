@@ -13,13 +13,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>.:: SCUIO-BAIP - Catalogue en ligne ::.</title>
   <meta name="description" content=""> 
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap-theme.min.css"> 
   <link href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
   <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/jquery.js"></script>
   <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  
+  <!-- Angular JS -->
+	<script src="<?= base_url('assets/js/angular.min.js'); ?>"></script>  
+	<script src="<?= base_url('assets/js/angular-route.min.js'); ?>"></script>
+  <!-- MY App -->
+	<script src="app/packages/dirPagination.js"></script>
+	<script src="app/routes.js"></script>
+	<script src="app/services/myServices.js"></script>
+	<script src="app/helper/myHelper.js"></script>
+
+	<!-- App Controller -->
+	<script src="app/controllers/Type_formationController.js"></script>
+  
+  
   <style>
     body {
       padding-top: 60px;

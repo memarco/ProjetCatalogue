@@ -42,6 +42,20 @@ class Type_formation extends CI_Controller {
 
     }
 
+    public function store()
+    {
+    	$this->load->database();
+    	$_POST = json_decode(file_get_contents('php://input'), true);
+    	$insert = $this->input->post();
+		$this->db->insert('type_formation', $insert);
+
+		$id = $this->db->insert_id();
+		$q = $this->db->get_where('type_formation', array('id' => $id));
+		echo json_encode($q->row());
+    }
+
+    
+    
     public function create()
     {
         $this->load->helper('form');
