@@ -24,9 +24,10 @@ class Formation extends CI_Controller {
 
     public function index()
     {
-        $key = $this->input->post('key'); 
+        $key = $this->input->post('key');
         if($key !=''){
-        $data['key_result']='Résultat pour : <span style="color:blue; font-style:italic;">"'.$key.'"</span>';}else{
+        $data['key_result']=''.$key.'';
+              }else{
              $data['key_result']=''
 ;        }
         $this->load->helper('form');
@@ -56,15 +57,31 @@ class Formation extends CI_Controller {
             $page = 0;
             }
         $data["formation"] = $this->formation_model->get_formation(FALSE, $config["per_page"], $page, $key);
+
+    		$data['type_formation'] = $this->type_formation_model->get_type_formation(FALSE,2147483647,0);
+    		$data['filiere'] = $this->filiere_model->get_filiere(FALSE,2147483647,0);
+    		$data['diplome'] = $this->diplome_model->get_diplome(FALSE,2147483647,0);
+    		$data['composante'] = $this->composante_model->get_composante(FALSE,2147483647,0);
+    		$data['site'] = $this->site_model->get_site(FALSE,2147483647,0);
+    		$data['type_periode'] = $this->type_periode_model->get_type_periode(FALSE,2147483647,0);
+    		$data['domaine'] = $this->domaine_model->get_domaine(FALSE,2147483647,0);
+    		$data['type_stage'] = $this->type_stage_model->get_type_stage(FALSE,2147483647,0);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
-        $this->load->view('templates/header', $data);
-        $this->load->view('formation/index', $data);
+        $this->load->view('formation_view', $data);
     }
 
+    public function filierebydomaine()
+     {
+             $domaine=$this->input->post('id_domaine');
+                   $query=$this->filiere_model->get_filiere_by_domaine(); 
+                   foreach($query->result() as $row)
+                   {
+                    echo "<option value='".$row->id."'>".$row->nom."</option>";
+                   }
+     }
     public function search()
-    { 
-
+    {
         $config = array();
         $config["base_url"] = base_url() . "index.php/formation/index";
         $total_row = $this->formation_model->record_count($key);
@@ -88,16 +105,14 @@ class Formation extends CI_Controller {
             }
         $data["formation"] = $this->formation_model->get_formation(FALSE, $config["per_page"], $page, $key);
         $str_links = $this->pagination->create_links();
-        $data["links"] = explode('&nbsp;',$str_links ); 
+        $data["links"] = explode('&nbsp;',$str_links );
         $this->load->view('formation/search', $data);
-
-
     }
-    
+
     public function view($mail1 = NULL)
     {
 
-        $key = $this->input->post('key'); 
+        $key = $this->input->post('key');
         $data['name'] = $this->session->userdata('name');
         $data['total_formation'] = $this->formation_model->record_count($key);
 
@@ -123,8 +138,6 @@ class Formation extends CI_Controller {
         $data['nom_site'] = $data['formation_item']['nom_site'];
         $data['detail_stage'] = $data['formation_item']['detail_stage'];
 
-
-        $this->load->view('templates/header', $data);
         $this->load->view('formation/view', $data);
 
     }
@@ -169,7 +182,7 @@ class Formation extends CI_Controller {
     public function edit()
     {
         $id = $this->uri->segment(3);
-        $key = $this->input->post('key'); 
+        $key = $this->input->post('key');
         if (empty($id))
         {
             show_404();
@@ -179,7 +192,7 @@ class Formation extends CI_Controller {
         $this->load->library('form_validation');
 
         $data['title'] = 'Modification des informations';
-        $data['name'] = $this->session->userdata('name'); 
+        $data['name'] = $this->session->userdata('name');
         $data['formation_item'] = $this->formation_model->get_formation($id,1,0,$key);
         $this->form_validation->set_rules('mention', 'Mention', 'required');
             $data['type_formation'] = $this->type_formation_model->get_type_formation(FALSE,2147483647,0);
@@ -187,23 +200,63 @@ class Formation extends CI_Controller {
                     $data['filiere'] = $this->filiere_model->get_filiere(FALSE,2147483647,0);
                     $data['diplome'] = $this->diplome_model->get_diplome(FALSE,2147483647,0);
                     $data['composante'] = $this->composante_model->get_composante(FALSE,2147483647,0);
-                    $data['site'] = $this->site_model->get_site(FALSE,2147483647,0); 
-                    $data['type_periode'] = $this->type_periode_model->get_type_periode(FALSE,2147483647,0); 
-                    $data['type_stage'] = $this->type_stage_model->get_type_stage(FALSE,2147483647,0); 
-        
+                    $data['site'] = $this->site_model->get_site(FALSE,2147483647,0);
+                    $data['type_periode'] = $this->type_periode_model->get_type_periode(FALSE,2147483647,0);
+                    $data['type_stage'] = $this->type_stage_model->get_type_stage(FALSE,2147483647,0);
+
 
         if ($this->form_validation->run() === FALSE)
-        { 
+        {
             $this->load->view('templates/header', $data);
-            $this->load->view('formation/edit', $data); 
+            $this->load->view('formation/edit', $data);
         }
         else
-        { 
+        {
             $this->formation_model->update_formation($id);
             //$this->load->view('formation/success');
             redirect( base_url() . 'index.php/formation');
         }
     }
+
+     public function duplicate()
+    {
+        $id = $this->uri->segment(3);
+        $key = $this->input->post('key');
+        if (empty($id))
+        {
+            show_404();
+        }
+
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $data['title'] = 'Dupliquer les informations';
+        $data['name'] = $this->session->userdata('name');
+        $data['formation_item'] = $this->formation_model->get_formation($id,1,0,$key);
+        $this->form_validation->set_rules('mention', 'Mention', 'required');
+            $data['type_formation'] = $this->type_formation_model->get_type_formation(FALSE,2147483647,0);
+                $data['domaine'] = $this->domaine_model->get_domaine(FALSE,2147483647,0);
+                    $data['filiere'] = $this->filiere_model->get_filiere(FALSE,2147483647,0);
+                    $data['diplome'] = $this->diplome_model->get_diplome(FALSE,2147483647,0);
+                    $data['composante'] = $this->composante_model->get_composante(FALSE,2147483647,0);
+                    $data['site'] = $this->site_model->get_site(FALSE,2147483647,0);
+                    $data['type_periode'] = $this->type_periode_model->get_type_periode(FALSE,2147483647,0);
+                    $data['type_stage'] = $this->type_stage_model->get_type_stage(FALSE,2147483647,0);
+
+
+        if ($this->form_validation->run() === FALSE)
+        {
+            $this->load->view('templates/header', $data);
+            $this->load->view('formation/duplicate', $data);
+        }
+        else
+        {
+            $this->formation_model->update_formation($id);
+            //$this->load->view('formation/success');
+            redirect( base_url() . 'index.php/formation');
+        }
+    }
+
 
     public function delete()
     {

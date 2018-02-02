@@ -1,8 +1,8 @@
 <style>
     #accordion{ position:fixed;  }
 </style>
-<div class="col-sm-2 col-md-2">
-            <div class="panel-group"  id="accordion"> 
+<div class="col-sm-2 col-md-2"  >
+            <div class="panel-group"  id="accordion">
                 <div class="panel panel-default" >
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -15,7 +15,8 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-duplicate"></span><a href="<?php echo site_url('formation/'); ?>">Formations</a>
+                                        <span class="glyphicon glyphicon-duplicate"></span><a href="<?php echo site_url('formation/'); ?>">Formations</a> |
+                                        <a href="<?php echo site_url('ajax_search_view'); ?>" title="Recherche"><span class="glyphicon glyphicon-search text-right" aria-hidden="true"></span></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -32,12 +33,12 @@
                                     <td>
                                         <span class="glyphicon glyphicon-tasks text-info"></span><a href="<?php echo site_url('domaine/'); ?>">Domaines d'étude</a>
                                     </td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                     <td>
                                         <span class="glyphicon glyphicon-sunglasses text-info"></span><a href="<?php echo site_url('historique/'); ?>">Mouchard</a>
                                     </td>
-                                </tr> 
+                                </tr>
                             </table>
                         </div>
                     </div>
@@ -51,7 +52,7 @@
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table class="table"> 
+                            <table class="table">
                                 <tr>
                                     <td>
                                         <span class="glyphicon glyphicon-folder-close"></span><a href="<?php echo site_url('diplome/'); ?>">Diplômes</a>
@@ -62,7 +63,7 @@
                                         <span class="glyphicon glyphicon-level-up"></span><a href="<?php echo site_url('niveau/'); ?>">Niveaux</a>
                                     </td>
                                 </tr>
-                                
+
                             </table>
                         </div>
                     </div>
@@ -76,7 +77,7 @@
                     </div>
                     <div id="collapseFour" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table class="table"> 
+                            <table class="table">
                                 <tr>
                                     <td>
                                         <span class="glyphicon glyphicon-random text-success"></span><a href="<?php echo site_url('type_periode/'); ?>">Rytmes d'alternance</a>
@@ -86,8 +87,8 @@
                                     <td>
                                         <span class="glyphicon glyphicon-tasks text-success"></span><a href="<?php echo site_url('type_stage/'); ?>">Types de stage</a>
                                     </td>
-                                </tr> 
-                                
+                                </tr>
+
                             </table>
                         </div>
                     </div>
@@ -101,7 +102,7 @@
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <table class="table"> 
+                            <table class="table">
                                 <tr>
                                     <td>
                                         <span class="glyphicon glyphicon-play-circle"></span><a href="<?php echo site_url('composante/'); ?>">Composantes</a>
@@ -112,7 +113,7 @@
                                         <span class="glyphicon glyphicon-map-marker text-success"></span><a href="<?php echo site_url('site/'); ?>">Sites</a>
                                     </td>
                                 </tr>
-                                
+
                             </table>
                         </div>
                     </div>
@@ -136,23 +137,23 @@
                                     <td>
                                         <span class="glyphicon glyphicon-flash"></span><a href="#">Notifications</a> <span class="label label-info">5</span>
                                     </td>
-                                </tr>  
+                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default"> 
+                <div class="panel panel-default">
                     <div class="panel-body">
                         <table class="table">
                             <tr>
                                 <td>
                                     <span class="glyphicon glyphicon-log-out"></span><a href="<?php echo base_url() ?>index.php/login/logout_user">Deconnexion</a>
                                 </td>
-                            </tr> 
+                            </tr>
                         </table>
                     </div>
-                     
+
                 </div>
-            
+
             </div>
         </div>

@@ -1,5 +1,5 @@
 <?php
-class Type_stage extends CI_Controller {
+class type_stage extends CI_Controller {
 
     public function __construct()
     {
@@ -19,7 +19,6 @@ class Type_stage extends CI_Controller {
 
         $data['total_type_stage'] = $this->type_stage_model->record_count();
 
-        $this->load->view('templates/header', $data);
         $this->load->view('type_stage/index', $data);
 
     }

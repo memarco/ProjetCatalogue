@@ -1,5 +1,5 @@
 <?php
-class Diplome extends CI_Controller {
+class diplome extends CI_Controller {
 
     public function __construct()
     {
@@ -37,18 +37,16 @@ class Diplome extends CI_Controller {
 
         $this->pagination->initialize($config);
         if($this->uri->segment(3)){
-            $page = ($this->uri->segment(3)) ;
+                $page = (($this->uri->segment(3))-1)*5 ;
             }
             else{
-            $page = 1;
+            $page = 0;
             }
         $data["diplome"] = $this->diplome_model->get_diplome(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
 
-
-        $this->load->view('templates/header', $data);
-        $this->load->view('diplome/index', $data);
+         $this->load->view('diplome/index', $data);
     }
 
     public function view($mail1 = NULL)

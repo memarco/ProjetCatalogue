@@ -44,8 +44,7 @@ class Historique extends CI_Controller {
         $data["historique"] = $this->historique_model->get_historique(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
-
-        $this->load->view('templates/header', $data);
+ 
         $this->load->view('historique/index', $data);
 
     }

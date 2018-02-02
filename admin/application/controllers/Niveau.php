@@ -15,7 +15,7 @@ class Niveau extends CI_Controller {
     public function index()
     {
         //$data['niveau'] = $this->niveau_model->get_niveau();
-        $data['title'] = 'Les niveaus de l\'U-PEC';
+        $data['title'] = 'Les niveaux de l\'U-PEC';
         $data['name'] = $this->session->userdata('name');
 
         $data['total_niveau'] = $this->niveau_model->record_count();
@@ -36,16 +36,15 @@ class Niveau extends CI_Controller {
 
         $this->pagination->initialize($config);
         if($this->uri->segment(3)){
-            $page = ($this->uri->segment(3)) ;
+          $page = (($this->uri->segment(3))-1)*5 ;
             }
             else{
-            $page = 1;
+            $page = 0;
             }
-        $data["niveau"] = $this->niveau_model->get_niveau(FALSE, $config["per_page"], $page);
+        $data["niveau"] = $this->niveau_model->get_niveau(FALSE,$page, $config["per_page"]);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
 
-        $this->load->view('templates/header', $data);
         $this->load->view('niveau/index', $data);
 
     }

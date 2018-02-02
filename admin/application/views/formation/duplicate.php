@@ -1,4 +1,8 @@
-<?php $this->load->view('templates/header') ?>
+
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
 
 <div class="container">
     <?php $this->load->view('templates/menu_top') ?>
@@ -8,15 +12,16 @@
         <!--endmenuleft-->
 
         <!--maincontent-->
-        <?php $this->load->view('templates/head_form') ?>  
- 
+        <?php $this->load->view('templates/head_form') ?>
+
                     <?php echo validation_errors(); ?>
 
-                    <?php echo form_open('formation/edit/' . $formation_item['id']); ?>
+                    <?php echo form_open('formation/create'); ?>
                     <div class="form-group">
-                     <label for="title" class="col-sm-2 control-label">Type formation</label> 
+                     <label for="title" class="col-sm-2 control-label">Type formation</label>
                      <div class="col-sm-10">
-                    <select name="id_type_formation" class="form-control">
+
+                    <select name="id_type_formation" class="form-control"  id="multiple-checkboxes"  >
                         <?php
                    foreach($type_formation as $type_formation_item): ?>
                        <option value="<?php echo $type_formation_item['id']; ?>"
@@ -30,6 +35,34 @@
                    <?php endforeach ?>
                         </select>
                           </div>
+                    </div>
+
+                    <div class="form-group">
+                     <label for="title" class="col-sm-2 control-label">Alternance</label>
+                     <div class="col-sm-10">
+                    <div  class="btn-group" >
+                        <label  class="btn btn-default  <?php  if (1 == $formation_item['est_alternance'])
+                          {
+                              echo 'active';
+                          }
+                          ?>"><input type="radio" name="est_alternance" value="1" id="oui_alternance"
+                                                                       <?php  if (1 == $formation_item['est_alternance'])
+                          {
+                              echo 'checked';
+                          }
+                          ?>> OUI</label>
+                        <label  class="btn btn-default  <?php  if (0 == $formation_item['est_alternance'])
+                          {
+                              echo 'active';
+                          }
+                          ?>"><input type="radio" name="est_alternance" value="0" id="non_alternance"
+                            <?php  if (0 == $formation_item['est_alternance'])
+                          {
+                              echo 'checked';
+                          }
+                          ?>> NON</label>
+                    </div>
+                    </div>
                     </div>
                     <div class="form-group">
                     <label for="title" class="col-sm-2 control-label">Domaine</label>
@@ -68,7 +101,7 @@
                    </div>
                     <div class="form-group">
                     <label for="title" class="col-sm-2 control-label">Diplôme préparé</label>
-                    <div class="col-sm-10"> 
+                    <div class="col-sm-10">
                      <select name="id_diplome" class="form-control">
                               <?php
                   foreach($diplome as $diplome_item): ?>
@@ -82,7 +115,7 @@
                       </option>
                   <?php endforeach ?>
                        </select></div>
-                   </div> 
+                   </div>
                    <div class="form-group">
                        <label for="title" class="col-sm-2 control-label"><abbr title="(Libellé de la formation)">Mention</abbr> <span class="h"></span></label>
                        <div class="col-sm-10">
@@ -92,7 +125,7 @@
                    </div>
                    <div class="form-group">
                     <label for="title" class="col-sm-2 control-label">Composante</label>
-                    <div class="col-sm-10"> 
+                    <div class="col-sm-10">
                     <select name="id_composante" class="form-control">
                               <?php
                   foreach($composante as $composante_item): ?>
@@ -109,7 +142,7 @@
                    </div>
                    <div class="form-group">
                     <label for="title" class="col-sm-2 control-label">Site</label>
-                    <div class="col-sm-10"> 
+                    <div class="col-sm-10">
                         <select name="id_site" class="form-control">
                               <?php
                   foreach($site as $site_item): ?>
@@ -153,7 +186,7 @@
 
                    <div id="2" class='choix' style="display:none">
                    <div class="page-header text-primary"><b>STAGE</b></div>
-                   <div class="form-group"> 
+                   <div class="form-group">
                    </div>
                    <div class="form-group">
                        <label for="title" class="col-sm-2 control-label"><abbr title="4|SEM|1$1|OPT">Détail du stage</abbr> <span class="h"></span></label>
@@ -171,13 +204,13 @@
                    </div>
                    <div class="form-group">
                        <label for="title" class="col-sm-2 control-label"><abbr title="(Mois de début du stage)">Début</abbr> <span class="h"></span></label>
-                       <div class="col-sm-10"> 
+                       <div class="col-sm-10">
                                <select name="debut_stage" class="form-control">
                                      <option value="">-Choisir-</option>
-                              <?php  
+                              <?php
 // Tableau de mois
 $arr = array('Janvier' => 'Janvier', 'Février' => 'Février', 'Mars' => 'Mars', 'Avril' => 'Avril', 'Mai' => 'Mai', 'Juin' => 'Juin', 'Juillet' => 'Juillet', 'Août' => 'Août', 'Septembre' => 'Septembre', 'Octobre' => 'Octobre', 'Novembre' => 'Novembre', 'Décembre' => 'Décembre');
- 
+
 
                   foreach($arr as $key => $value): ?>
                       <option value="<?php echo $key; ?>"
@@ -197,7 +230,7 @@ $arr = array('Janvier' => 'Janvier', 'Février' => 'Février', 'Mars' => 'Mars',
                        <div class="col-sm-10">
                          <select name="fin_stage" class="form-control">
                            <option value="">-Choisir-</option>
-                              <?php   
+                              <?php
                   foreach($arr as $key => $value): ?>
                       <option value="<?php echo $key; ?>"
                           <?php  if ($key== $formation_item['fin_stage'])

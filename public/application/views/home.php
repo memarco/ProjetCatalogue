@@ -1,5 +1,5 @@
-<?php $this->load->view('_partials/navbar'); ?> 
-<div class="container"> 
+<?php $this->load->view('_partials/navbar'); ?>
+<div class="container">
     <div  style="border: solid 1px #c1002a; height: auto">
 
         <div class="row" >
@@ -24,20 +24,20 @@ Le Bureau d'Aide à l'Insertion Professionnelle (BAIP) au sein du SCUIO a pour m
 <li>conseiller les étudiants sur leurs problématiques liées à l'emploi et à l'insertion professionnelle,</li>
 <li>évaluer les stages et l’insertion professionnelle.</li>
 </ul>
-<p style="float: right"><a class="btn btn-danger btn-lg" href="<?php echo base_url(); ?>index.php/catalogue/formation" role="button">Aller au catalogue >></a></p>
+<p style="float: right"><a class="btn btn-danger btn-lg" href="<?php echo base_url(); ?>index.php/formation" role="button">Aller au catalogue >></a></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <h2 class="title text-danger"> Angenda</h2><br/>
                 <blockquote class="quote-card">
                     <p class="title">
-                        <a href="#">Journée portes ouvertes 2017 </a>
+                        <a href="#">Journée portes ouvertes 2018 </a>
                     </p>
 
                     <cite>
-                        4 mars 2017
+                        Samedi 10 mars 2018
                     </cite>
-                </blockquote> 
+                </blockquote>
                 <blockquote class="quote-card">
                     <p class="title">
                         <a href="#">Coaching CV </a>
@@ -49,14 +49,14 @@ Le Bureau d'Aide à l'Insertion Professionnelle (BAIP) au sein du SCUIO a pour m
                 </blockquote>
                 <blockquote class="quote-card">
                     <p class="title">
-                        <a href="#">Comment trouver son stage ?</a>
+                        <a href="#">Conférence "Les enjeux du Big Data"?</a>
                     </p>
 
                     <cite>
-                        Conférence : le 18/01/2017 - 12h à 14h
+                        Conférence :  Le 19 janvier 2018 - 8h30 à 10h30
                     </cite>
                 </blockquote>
-                </blockquote> 
+                </blockquote>
             </div>
 
         </div>

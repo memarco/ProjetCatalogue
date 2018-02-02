@@ -18,7 +18,6 @@ class Type_periode extends CI_Controller {
         $data['name'] = $this->session->userdata('name');
         $data['total_type_periode'] = $this->type_periode_model->record_count();
 
-        $this->load->view('templates/header', $data);
         $this->load->view('type_periode/index', $data);
 
     }
