@@ -83,7 +83,7 @@ class formation_model_search extends CI_Model {
         return $query->row_array();}
     }
 
-    public function get_formation_by_filter($id = FALSE, $limit, $start,$key,$id_type_formation,$id_domaine,$id_composante,$id_filiere,$id_diplome,$id_site,$regex_alternance) {
+    public function get_formation_by_filter($id = FALSE, $limit, $start,$key,$id_type_formation,$id_domaine,$id_composante,$id_filiere,$id_diplome,$id_site,$regex_alternance,$id_type_stage) {
         if ($id === FALSE) {
             $this->db->select('rd_formation.id as id, type_periode.nom as nom_periode,rd_formation.id_rythme as id_rythme, nbre_entreprise, rd_formation.id_domaine,'
                     . 'nbre_ecole, libelle as libelle,niveau, composante.nom as nom_c, composante.sigle as nom_s,filiere.nom as nom_f, rd_formation.id_type_formation,'

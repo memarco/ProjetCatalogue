@@ -81,7 +81,7 @@ class Search extends CI_Controller
 	                    echo "<option value='".$row->id."'>".$row->nom."</option>";
 	                   }
 	     }
-			 
+
 	function get_something()
 	{
 		$key =	$this->input->post('something_id');
@@ -91,9 +91,10 @@ class Search extends CI_Controller
 										$id_composante =	$this->input->post('id_composante');
 												$id_diplome =	$this->input->post('id_diplome');
 														$id_site =	$this->input->post('id_site');
+																$id_type_stage =	$this->input->post('id_type_stage');
 														$regex_alternance =	$this->input->post('regex_alternance');
 		$this->load->library('ajax');
-		$arr['data_list'] =  $this->formation_model_search->get_formation_by_filter(FALSE,10000, 1, $key,$id_type_formation,$id_domaine,$id_composante,$id_filiere,$id_diplome,$id_site,$regex_alternance);
+		$arr['data_list'] =  $this->formation_model_search->get_formation_by_filter(FALSE,10000, 1, $key,$id_type_formation,$id_domaine,$id_composante,$id_filiere,$id_diplome,$id_site,$regex_alternance,$id_type_stage);
  		if ($this->input->post('something_id') == '2')
 		{
 			$arr['data_list'] = $this->formation_model_search->get_formation(FALSE,10000, 1, $key);
