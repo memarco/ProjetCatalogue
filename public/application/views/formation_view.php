@@ -11,8 +11,8 @@
             <thead>
                 <tr>
                     <th>Mention</th>
-                    <th>Parcours/Filière</th>
                     <th>Domaine d'étude</th>
+                    <th>Parcours/Filière</th>
                     <th>Type de formation</th>
                     <th>Diplôme</th>
                     <th>Composante</th>
@@ -25,8 +25,8 @@
             <tfoot>
             <tr>
                 <th>Mention</th>
-                <th>Parcours/Filière</th>
                 <th>Domaine d'étude</th>
+                <th>Parcours/Filière</th>
                 <th>Type de formation</th>
                 <th>Diplôme</th>
                 <th>Composante</th>

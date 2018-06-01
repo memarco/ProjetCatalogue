@@ -36,6 +36,11 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <span class="glyphicon glyphicon-file text-info"></span><a href="<?php echo site_url('page/'); ?>">Pages</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <span class="glyphicon glyphicon-sunglasses text-info"></span><a href="<?php echo site_url('historique/'); ?>">Mouchard</a>
                                     </td>
                                 </tr>

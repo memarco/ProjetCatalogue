@@ -6,7 +6,7 @@
 <h1>SCUIO-BAIP - <small> Catalogue Stage/Alternance</small></h1>
 <div class="container" style="width: 600px">
 
-        
+
       <div class="span4 offset4 well" >
 
         <legend>Authentification</legend>
@@ -19,9 +19,9 @@
 
         <?php echo form_open('login/login_user') ?>
             <div class="form-group">
-            <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+            <label for="inputEmail3" class="col-sm-3 control-label">Login</label>
             <div class="col-sm-8">
-              <input type="text" id="email" class="form-control" name="email" placeholder="Email">
+              <input type="text" id="email" class="form-control" name="email" placeholder="Login">
             </div>
           </div>
         <div class="form-group">
@@ -29,12 +29,12 @@
             <div class="col-sm-8">
         <input type="password" id="password" class="form-control" name="password" placeholder="Mot de passe">
             </div>
-          </div> 
+          </div>
 
         <!--<label class="checkbox">
           <input type="checkbox" name="remember" value="1"> Remember Me
         </label>-->
-        
+
   <div class="form-group">
     <div class="col-sm-offset-3 col-sm-8">
         <button type="submit" name="submit" class="btn btn-info btn-block">Connexion</button>
@@ -43,7 +43,7 @@
 
         </form>
       </div>
-  
+
   </div></div>
 
 <?php include 'footer.php' ?>

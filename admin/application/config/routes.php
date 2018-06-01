@@ -159,6 +159,9 @@ $route['formation_ajax'] = 'formation_ajax';
 $route['formation/filierebydomaine'] = 'formation/filierebydomaine';
 
 
+$route['editor/(:any)'] = 'editor/index/$1';
+
+
 $route['ajax_search_view'] = 'search';
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

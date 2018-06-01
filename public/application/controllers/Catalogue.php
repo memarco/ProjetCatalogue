@@ -13,11 +13,11 @@ class Catalogue extends CI_Controller {
 	}
 
 	public function _example_output($output = null)
-	{  
-        $this->load->view('_base/head'); 
-        $this->load->view('_partials/navbar'); 
+	{
+        $this->load->view('_base/head');
+        $this->load->view('_partials/navbar');
         $this->load->view('catalogue.php',$output);
-        $this->load->view('_base/foot'); 
+        $this->load->view('_base/foot');
 	}
 
 	public function offices()
@@ -39,32 +39,32 @@ class Catalogue extends CI_Controller {
 
 			$crud->set_theme('datatables');
 			$crud->set_table('rd_formation');
-			$crud->set_subject('Formation');  
-                        $crud->set_relation('id_domaine','domaine', 'nom'); 
-                        $crud->set_relation('id_diplome','diplome', 'nom');   
-			$crud->set_relation('id_composante','composante','nom');   
-                        $crud->set_relation('id_filiere','filiere', 'nom'); 
-                        $crud->set_relation('id_type_formation','type_formation', 'nom');  
-                        $crud->set_relation('id_site','site', 'nom');  
-                        $crud->set_relation('id_type_stage','type_stage', 'nom');  
-                        $crud->set_relation('id_rythme','type_periode', 'nom');  
+			$crud->set_subject('Formation');
+                        $crud->set_relation('id_domaine','domaine', 'nom');
+                        $crud->set_relation('id_diplome','diplome', 'nom');
+												$crud->set_relation('id_composante','composante','nom');
+                        $crud->set_relation('id_filiere','filiere', 'nom');
+                        $crud->set_relation('id_type_formation','type_formation', 'nom');
+                        $crud->set_relation('id_type_stage','type_stage', 'nom');
+                        $crud->set_relation('id_rythme','type_periode', 'nom');
+                        $crud->set_relation('id_site','site', '{ville},{adresse}'); 
 			$crud->display_as('id_domaine','Domaine');
 			$crud->display_as('id_filiere','Filière');
 			$crud->display_as('id_type_formation','Type formation');
 			$crud->display_as('id_composante','Composante');
 			$crud->display_as('id_diplome','Diplôme');
 			$crud->display_as('libelle','Mention');
-			$crud->display_as('id_site','Site');
+			$crud->display_as('id_site','Adresse');
 			$crud->display_as('id_type_stage','Type de stage');
 			$crud->display_as('id_rythme','Rythme alternance');
 			$crud->display_as('id','Code');
 			$crud->required_fields('libelle');
-			$crud->columns('libelle','id_domaine','id_diplome','id_composante','id_filiere','id_type_formation');
+			$crud->columns('libelle','id_domaine','id_diplome','id_composante','id_filiere','id_type_formation', 'id_site', 'detail_stage');
                         $crud->unset_delete();
                         $crud->unset_add();
                         $crud->unset_edit();
                         $crud->unset_export();
-                        $crud->unset_print(); 
+                        $crud->unset_print();
 
 			$output = $crud->render();
 

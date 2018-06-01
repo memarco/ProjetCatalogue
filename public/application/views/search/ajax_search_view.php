@@ -18,7 +18,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
 	  <script>
-	      function selctcity()
+	      function selectfiliere()
 	  {
 	     var id_domaine=$('#id_domaine').val();
 
@@ -29,7 +29,6 @@
 	  		},
 	  		function(data)
 	  		{
-
 	  		$('#id_filiere').html(data);
 	  		});
 
@@ -119,8 +118,8 @@
 	<div class="panel-body" style="background-color: #f7f7f7; border-radius:0.7em; ;padding: 15px;">
 		<span style="float:right; font-weight: ">Nombre de formations : <span id="nbre_formation"><b><?php echo $total_formation ?></b></span></span>
 		<h4>Filtre</h4><hr>
-		<div id="search_form"   style="display:none">
-		  <form class="form-horizontal" id="form-horizontal"  method="post" accept-charset="utf-8">
+		<div id="search_form">
+		  <form class="form-horizontal" id="form-horizontal"  method="post" accept-charset="utf-8" >
 			<div class="form-inline" style="padding:10px;">
   		<div class="form-group" style="margin-right:20px;">
 			 <label for="id_type_formation">Type formation</label>
@@ -138,7 +137,7 @@
 				</div>
   		<div class="form-group" style="margin-right:20px;">
 			<label for="id_domaine">Domaine</label>
-		 	<select name="id_domaine" class="form-control" id="id_domaine" style="width:210px"  onchange="selctcity()">
+		 	<select name="id_domaine" class="form-control" id="id_domaine" style="width:210px"  onchange="selectfiliere()">
 				 <option value="0">- Choisir -</option>
 				 <?php
 				 foreach($domaine as $domaine_item)
@@ -181,7 +180,7 @@
 				foreach($composante as $composante_item)
 				{
 						?>
-						<option value="<?php echo $composante_item['id']?>"><?php echo $composante_item['nom'] ?></option>
+						<option value="<?php echo $composante_item['id']?>"><?php echo $composante_item['nom'] ." - (".$composante_item['sigle'].")" ?></option>
 						<?php
 				}
 				?>
@@ -209,9 +208,9 @@
      </div>
 	 </div>
 
-	<div id="stage">
+	<div id="stage" class="col-sm-8">
 	<div class="form-inline">
- 		 <h5>STAGE</h5><hr>
+ 		 <h5 style="color:blue">STAGE</h5><hr>
 		 <div class="form-group" style="margin-right:10px;">
 		 <label for="title" class="col-sm-2 control-label" style="margin-right:5px;">Type</label>
 		 <div class="col-sm-10">
@@ -272,15 +271,11 @@
  	</div>
 	</div>
 
-
-	<br/><hr> <br/>
-
-
-		<div id="stage">
+		<div id="alternance" class="col-sm-4">
 		<div class="form-inline">
-	 		 <h5>ALTERNANCE</h5><hr>
+	 		 <h5 style="color:blue">ALTERNANCE</h5><hr>
 		 <div class="form-group" style="margin-right:10px;">
-	 		<label for="id_debut_stage" class="col-sm-2 control-label" style="margin-right:5px;">Rythme (Ent/Ecole)</label>
+	 		<label for="id_debut_stage" class="col-sm-2 control-label" style="margin-right:5px;">Rythme</label>
 	 		<div class="col-sm-10">
 		 	<select name="id_rythme" class="form-control" id="id_rythme">
 				 <option value="0">- Choisir -</option>
@@ -293,7 +288,7 @@
 						 <?php
 				 }
 				 ?>
-		 </select>
+		 </select> (Entreprise/Ecole)
 			</div>
 		 </div>
 	 	</div>

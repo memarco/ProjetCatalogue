@@ -76,6 +76,7 @@ class Search extends CI_Controller
 	     {
 	             $domaine=$this->input->post('id_domaine');
 	                   $query=$this->filiere_model->get_filiere_by_domaine();
+	                    echo "<option value='0'>- Choisir -</option>";
 	                   foreach($query->result() as $row)
 	                   {
 	                    echo "<option value='".$row->id."'>".$row->nom."</option>";

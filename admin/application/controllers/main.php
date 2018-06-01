@@ -50,6 +50,7 @@ class main extends CI_Controller{
     $data['tagline'] = $this->session->userdata('tagline');
     $data['teamId'] = $this->session->userdata('teamId');
     $data['title'] = '';
+    $data['page_content'] = $this->post_m->get_page_content(2);
 
     $this->load->view('main',$data);
   }

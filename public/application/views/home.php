@@ -28,7 +28,7 @@ Le Bureau d'Aide à l'Insertion Professionnelle (BAIP) au sein du SCUIO a pour m
                 </div>
             </div>
             <div class="col-md-4">
-                <h2 class="title text-danger"> Angenda</h2><br/>
+                <h2 class="title text-danger"> Agenda</h2><br/>
                 <blockquote class="quote-card">
                     <p class="title">
                         <a href="#">Journée portes ouvertes 2018 </a>
