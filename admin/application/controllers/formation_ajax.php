@@ -49,29 +49,20 @@ class Formation_ajax extends CI_Controller {
 		foreach ($list as $person) {
 			$no++;
 			$row = array();
-			if($person->est_alternance==1){
-				$lib_typ = $person->nom_typ." , Formation en alternance";
-			}else{
-				$lib_typ =$person->nom_typ;
-			};
+			$nom_lib = array();
+            $lib_typ=$this->type_formation_model->get_type_formation_by_id_formation($person->id);
+			for($i=0; $i<count($lib_typ);$i++){
+			    array_push($nom_lib,$lib_typ[$i]['nom_type']);
+			}
 			$row[] = $person->libelle;
 			$row[] = $person->nom_do;
 			$row[] = $person->nom_f;
-			$row[] = $lib_typ;
+			$row[] = $nom_lib;
 			$row[] = $person->nom_d;
 			$row[] = $person->nom_s;
-
-			//add html for action
-			/*
-			$row[] = '<a class="btn btn-sm btn-success" href="javascript:void(0)" title="Afficher" onclick="edit_person('."'".$person->id."'".')"><i class="glyphicon glyphicon-search"></i></a>
-					<a class="btn btn-sm btn-primary" href="javascript:void(0)" title="Modifier" onclick="edit_person('."'".$person->id."'".')"><i class="glyphicon glyphicon-pencil"></i></a>
-							<a class="btn btn-sm btn-warning" href="javascript:void(0)" title="Dupliquer" onclick="edit_person('."'".$person->id."'".')"><i class="glyphicon glyphicon-plus"></i></a>
-				  <a class="btn btn-sm btn-danger" href="javascript:void(0)" title="Supprimer" onclick="delete_person('."'".$person->id."'".')"><i class="glyphicon glyphicon-trash"></i></a>';
-*/
-
 								//add html for action
 								$row[] = '<a class="btn btn-sm btn-success" href="'.site_url('formation/'.$person->id).'" title="Afficher" ><i class="glyphicon glyphicon-search"></i></a>
-										<a class="btn btn-sm btn-primary" href="'.site_url('formation/edit/'.$person->id).'"  title="Modifier" ><i class="glyphicon glyphicon-pencil"></i></a>
+										<a class="btn btn-sm btn-primary" href="javascript:void(0);"  onclick="edit_formation('.$person->id.')" title="Modifier" ><i class="glyphicon glyphicon-pencil"></i></a>
 												<a class="btn btn-sm btn-warning" href="'.site_url('formation/duplicate/'.$person->id).'"  title="Dupliquer" ><i class="glyphicon glyphicon-plus"></i></a>
 									  <a class="btn btn-sm btn-danger" href="'.site_url('formation/delete/'.$person->id).'" onClick="return confirm(\'Êtes-vous sûre de vouloir supprimer ?\')" title="Supprimer" ><i class="glyphicon glyphicon-trash"></i></a>';
 

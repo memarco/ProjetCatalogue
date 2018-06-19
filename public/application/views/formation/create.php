@@ -198,15 +198,6 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="title" class="col-sm-2 control-label"><abbr title="(Liste des compétences visées)">Compétences</abbr>
-                <span class="h"></span></label>
-            <div class="col-sm-10">
-                <input type="input" id="skills" class="form-control" value="<?php echo set_value('skills'); ?>"
-                       name="skills">
-                <?php echo form_error('mention', '<div class="text-danger">', '</div>'); ?>
-            </div>
-        </div>
         <div id="2" class='choix' style="display:none">
             <div class="page-header text-primary"><b>STAGE</b></div>
             <div class="form-group">

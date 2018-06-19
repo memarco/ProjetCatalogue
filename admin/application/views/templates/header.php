@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap-theme.min.css">
   <link href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
-  <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/jquery.js"></script>
   <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <style>
     body {
@@ -35,15 +34,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css">
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript">
 
-    $(document).ready(function() {
-        $('#multiple-checkboxes').multiselect({
-            nonSelectedText:'Aucun choix',
-            allSelectedText: 'Tous'
-});
-    });
-</script>
 
 
 <script type="text/javascript">
@@ -64,7 +55,7 @@ $(function () {
         frameDoc.document.write('<link href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"  rel="stylesheet">/>');
         frameDoc.document.write('<link href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet" type="text/css"  rel="stylesheet">/>');
         frameDoc.document.write('<link href="<?php echo base_url();?>assets/css/main.css" rel="stylesheet" type="text/css" />');
-        frameDoc.document.write('<link href="<?php echo base_url();?>assets/bootstrap/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />');  
+        frameDoc.document.write('<link href="<?php echo base_url();?>assets/bootstrap/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />');
         //Append the DIV contents.
         frameDoc.document.write(contents);
         frameDoc.document.write('</body></html>');
@@ -80,7 +71,7 @@ $(function () {
 
 
 </head>
-<body onload="searchFormation()">
+<body onload="">
 <div class="container" style="padding-top:15px;">
 <span style="float:right">
         <button type="button" class="btn btn-default btn-sm" id="btnPrint">

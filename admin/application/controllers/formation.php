@@ -1,5 +1,5 @@
 <?php
-class Formation extends CI_Controller {
+class formation extends CI_Controller {
 
     public function __construct()
     {
@@ -124,11 +124,15 @@ class Formation extends CI_Controller {
         {
             show_404();
         }
-
+        $nom_lib = array();
+        $lib_typ=$this->type_formation_model->get_type_formation_by_id_formation($mail1);
+        for($i=0; $i<count($lib_typ);$i++){
+            array_push($nom_lib,$lib_typ[$i]['nom_type']);
+        }
         $data['libelle'] = $data['formation_item']['libelle'];
         $data['nom_do'] = $data['formation_item']['nom_do'];
         $data['nom_f'] = $data['formation_item']['nom_f'];
-        $data['nom_typ'] = $data['formation_item']['nom_typ'];
+        $data['nom_typ'] = $lib_typ;
         $data['nom_stage'] = $data['formation_item']['nom_stage'];
         $data['debut_stage'] = $data['formation_item']['debut_stage'];
         $data['fin_stage'] = $data['formation_item']['fin_stage'];
@@ -137,6 +141,7 @@ class Formation extends CI_Controller {
         $data['nom_d'] = $data['formation_item']['nom_d'];
         $data['nom_site'] = $data['formation_item']['nom_site'];
         $data['detail_stage'] = $data['formation_item']['detail_stage'];
+        $this->load->view('templates/header', $data);
 
         $this->load->view('formation/view', $data);
 
@@ -193,9 +198,10 @@ class Formation extends CI_Controller {
 
         $data['title'] = 'Modification des informations';
         $data['name'] = $this->session->userdata('name');
-        $data['formation_item'] = $this->formation_model->get_formation($id,1,0,$key);
+        $data['formation_item'] = $this->formation_model->get_formation_by_id($id);
         $this->form_validation->set_rules('mention', 'Mention', 'required');
             $data['type_formation'] = $this->type_formation_model->get_type_formation(FALSE,2147483647,0);
+            $data['type_formation_selected'] = $this->type_formation_model->get_type_formation_by_id_formation($id);
                 $data['domaine'] = $this->domaine_model->get_domaine(FALSE,2147483647,0);
                     $data['filiere'] = $this->filiere_model->get_filiere(FALSE,2147483647,0);
                     $data['diplome'] = $this->diplome_model->get_diplome(FALSE,2147483647,0);
@@ -207,14 +213,13 @@ class Formation extends CI_Controller {
 
         if ($this->form_validation->run() === FALSE)
         {
-            $this->load->view('templates/header', $data);
             $this->load->view('formation/edit', $data);
         }
         else
         {
             $this->formation_model->update_formation($id);
-            //$this->load->view('formation/success');
-            redirect( base_url() . 'index.php/formation');
+            $this->load->view('formation/success_edited');
+            //redirect( base_url() . 'index.php/formation');
         }
     }
 
@@ -271,5 +276,95 @@ class Formation extends CI_Controller {
 
         $this->formation_model->delete_formation($id);
         redirect( base_url() . 'index.php/formation');
+    }
+
+    public function get_formation()
+    {
+        $result=array();
+        $key=$_REQUEST['key'];
+        $id_type_formation=$_REQUEST['id_type_formation'];
+        $id_domaine=$_REQUEST['id_domaine'];
+        $id_composante=$_REQUEST['id_composante'];
+        $id_filiere=$_REQUEST['id_filiere'];
+        $id_diplome=$_REQUEST['id_diplome'];
+        $id_site=$_REQUEST['id_site'];
+        //$regex_alternance=$_REQUEST['id_rythme'];
+
+        $list = $this->formation_model->get_formation_by_filter($id_type_formation,$id_domaine,$id_composante,$id_filiere,$id_diplome,$id_site,$key) ;
+
+        $data = array();
+        foreach ($list as $person) {
+            $row = array();
+            $nom_lib = array();
+            $lib_typ=$this->type_formation_model->get_type_formation_by_id_formation($person->id);
+            for($i=0; $i<count($lib_typ);$i++){
+                array_push($nom_lib,$lib_typ[$i]['nom_type']);
+            }
+            $row[] = $person->libelle;
+            $row[] = $person->nom_do;
+            $row[] = $person->nom_f;
+            $row[] = $nom_lib;
+            $row[] = $person->nom_d;
+            $row[] = $person->nom_s;
+            //add html for action
+            $row[] = '<button type="button" data-toggle="modal" data-target="#detailModal"   class="btn btn-sm btn-success" 
+             title="Afficher" onclick="getDetail('.$person->id.')"><i class="glyphicon glyphicon-eye-open"></i></button>
+										<a class="btn btn-sm btn-primary" href="javascript:void(0);"  onclick="edit_formation('.$person->id.')"   title="Modifier" ><i class="glyphicon glyphicon-pencil"></i></a>';
+/*												<a class="btn btn-sm btn-warning" href="'.site_url('formation/duplicate/'.$person->id).'"  title="Dupliquer" ><i class="glyphicon glyphicon-plus"></i></a>
+									  <a class="btn btn-sm btn-danger" href="'.site_url('formation/delete/'.$person->id).'" onClick="return confirm(\'Êtes-vous sûre de vouloir supprimer ?\')" title="Supprimer" ><i class="glyphicon glyphicon-trash"></i></a>;*/
+
+            $data[] = $row;
+        }
+
+
+
+        $output = array(
+            "recordsTotal" => $this->formation_model->record_count(''),
+            "data" => $data,
+        );
+        //output to json format
+        echo json_encode($output);
+    }
+
+    public function get_formation_by_id(){
+
+        $id_formation=$_REQUEST['id_formation'];
+
+        $list = $this->formation_model->get_formation_by_id_for_detail($id_formation) ;
+        $data = array();
+        foreach ($list as $person) {
+            $stage ='';
+            $alternance='';
+            $row = array();
+            $nom_lib = array();
+            $lib_typ=$this->type_formation_model->get_type_formation_by_id_formation($person->id);
+            for($i=0; $i<count($lib_typ);$i++){
+                array_push($nom_lib,$lib_typ[$i]['nom_type']);
+            }
+            if($person->regex_alternance != '' ){
+                $alternance ='ALTERNANCE :';
+            }
+            if($person->regex_stage != ''){
+                $stage ='STAGE :';
+            }
+            $row['libelle'] = $person->libelle;
+            $row['nom_do'] = $person->nom_do;
+            $row['nom_f'] = $person->nom_f;
+            $row['type_formation'] = $nom_lib;
+            $row['nom_d'] = $person->nom_d;
+            $row['nom_site'] = $person->nom_site."<br/><br/><span class=\"glyphicon glyphicon-map-marker text-default\"></span>".$person->adresse." ".$person->cp_site." ".$person->ville;
+            $row['nom_c'] = $person->ville." - ".$person->nom_site;
+            $row['entreprise'] = "<b>$stage</b>".$person->regex_stage."<br/><b>$alternance</b>".$person->regex_alternance;
+            $row['regex_alternance'] = $person->regex_alternance;
+            $row['detail_stage'] = $person->detail_stage;
+            $row['skills'] = $person->skills;
+            //add html for action
+            $data[] = $row;
+        }
+        $output = array(
+            "data" => $data
+        );
+        //output to json format
+        echo json_encode($output);
     }
 }

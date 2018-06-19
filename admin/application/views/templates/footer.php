@@ -19,16 +19,16 @@ $(function() {
             $('#' + $(this).val()).show();
         });
     });
-		function openSearch(){
-				if(document.getElementById("chevron").className == "glyphicon glyphicon-chevron-down"){
-					document.getElementById("chevron").className = "glyphicon glyphicon-chevron-up";
-							$('#search_form').show();
-				}else{
-					document.getElementById("chevron").className = "glyphicon glyphicon-chevron-down";
-							$('#search_form').hide();
-				}
+function openSearch(){
+    if(document.getElementById("chevron").className == "glyphicon glyphicon-chevron-down"){
+        document.getElementById("chevron").className = "glyphicon glyphicon-chevron-up";
+                $('#search_form').show();
+    }else{
+        document.getElementById("chevron").className = "glyphicon glyphicon-chevron-down";
+                $('#search_form').hide();
+    }
 
-		}
+}
 </script>
 </body>
 </html>

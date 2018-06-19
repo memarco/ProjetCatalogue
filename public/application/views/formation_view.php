@@ -122,65 +122,6 @@ $(document).ready(function() {
 
 
 
-function add_person()
-{
-    save_method = 'add';
-    $('#form')[0].reset(); // reset form on modals
-    $('.form-group').removeClass('has-error'); // clear error class
-    $('.help-block').empty(); // clear error string
-    $('#modal_form').modal('show'); // show bootstrap modal
-    $('.modal-title').text('Add Person'); // Set Title to Bootstrap modal title
-}
-
-function edit_person(id)
-{
-    save_method = 'update';
-    $('#form')[0].reset(); // reset form on modals
-    $('.form-group').removeClass('has-error'); // clear error class
-    $('.help-block').empty(); // clear error string
-
-    //Ajax Load data from ajax
-    $.ajax({
-        url : "<?php echo site_url('formation/ajax_edit/')?>/" + id,
-        type: "GET",
-        dataType: "JSON",
-        success: function(data)
-        {
-          var lib_typ;
-          var alt ='';
-          var stage ='';
-          if(data.est_alternance == 1){
-            lib_typ=data.nom_typ + ", Formation en alternance";
-          }else{
-            lib_typ=data.nom_typ;
-          }
-            $('[name="libelle"]').val(data.libelle);
-            $('[name="nom_do"]').val(data.nom_do);
-            $('[name="nom_f"]').val(data.nom_f);
-            $('[name="nom_site"]').val(data.nom_site);
-            $('[name="nom_d"]').val(data.nom_d);
-            $('[name="nom_s"]').val(data.nom_s);
-            $('[name="nom_typ"]').val(lib_typ);
-            $('[name="nom_c"]').val(data.nom_c);
-            $('[name="detail_stage"]').val(data.detail_stage);
-            if(data.regex_stage != ''){
-              stage = "STAGE : " + data.regex_stage;
-            }
-            if(data.regex_alternance != ''){
-              alt = "\nALTERNANCE : " + data.regex_alternance;
-            }
-            $('[name="regex_stage"]').val(stage +" "+ alt);
-            $('#modal_form').modal('show'); // show bootstrap modal when complete loaded
-            $('.modal-title').text('Detail de la formation'); // Set title to Bootstrap modal title
-
-        },
-        error: function (jqXHR, textStatus, errorThrown)
-        {
-            alert('Error get data from ajax');
-        }
-    });
-}
-
 function reload_table()
 {
     table.ajax.reload(null,false); //reload datatable ajax

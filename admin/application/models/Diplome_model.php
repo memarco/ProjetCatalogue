@@ -8,8 +8,8 @@ class diplome_model extends CI_Model {
 
     public function record_count() {
         $this->db->select('*');
-        $this->db->from('niveau');
-        $this->db->join('diplome', 'niveau.id = diplome.id_niveau');
+        $this->db->from('diplome');
+        $this->db-> join('niveau', 'diplome.id_niveau = niveau.id', 'left');
         $query = $this->db->get();
         return $query->num_rows();
     }
@@ -19,9 +19,9 @@ class diplome_model extends CI_Model {
         if ($nom=== FALSE)
         {
 
-            $this->db->select('*');
-            $this->db->from('niveau');
-            $this->db->join('diplome', 'niveau.id = diplome.id_niveau');
+            $this->db->select('diplome.id as id, niveau.id as id_niveau, nom, nom_niveau');
+            $this->db->from('diplome');
+            $this->db-> join('niveau', 'diplome.id_niveau = niveau.id', 'left');
             $this->db->order_by("nom", "asc");
             $this->db->limit($limit, $start);
             $query = $this->db->get();

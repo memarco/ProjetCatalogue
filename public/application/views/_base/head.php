@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/doc.css">
   <link href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
-  <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/jquery.js"></script>
   <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <style>
     body {

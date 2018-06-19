@@ -132,6 +132,7 @@ $route['formation/delete/(:any)'] = 'formation/delete/$1';
 
 $route['formation/view/(:any)'] = 'formation/view/$1';
 $route['formation/(:any)'] = 'formation/view/$1';
+$route['formation/get_formation'] = 'formation/get_formation';
 
 /* type_periode routes  */
 $route['type_periode'] = 'type_periode';
@@ -161,6 +162,7 @@ $route['formation/filierebydomaine'] = 'formation/filierebydomaine';
 
 $route['editor/(:any)'] = 'editor/index/$1';
 
+$route['formation/get_formation_by_id'] = 'formation/get_formation_by_id';
 
 $route['ajax_search_view'] = 'search';
 /* End of file routes.php */

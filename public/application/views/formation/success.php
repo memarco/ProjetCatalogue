@@ -25,7 +25,7 @@
 <!--maincontent-->
 <?php $this->load->view('templates/main_head') ?>
               <div class="col-sm-9 col-md-6">
-		<span id="success" >Enregistrement effectué avec succès !</span>
+		<span id="success" >Enregistrement effecuté avec succès !</span>
               </div>
               <div class="col-sm-9 col-md-6" style="text-align:right">
 		<a class="btn btn-info" href="<?php echo site_url('formation/'); ?>" role="button">Continuer >></a>

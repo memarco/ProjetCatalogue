@@ -330,9 +330,9 @@ CREATE TABLE `type_formation` (
 --
 
 INSERT INTO `type_formation` (`id`, `nom`) VALUES
-(3, 'Formation continue'),
-(4, 'Formation en alternance'),
-(5, 'Formation initiale');
+(3, 'formation continue'),
+(4, 'formation en alternance'),
+(5, 'formation initiale');
 
 -- --------------------------------------------------------
 

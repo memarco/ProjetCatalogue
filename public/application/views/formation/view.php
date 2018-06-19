@@ -1,3 +1,4 @@
+ 
 <div class="container">
     <?php $this->load->view('templates/menu_top') ?>
     <div class="row">
@@ -22,7 +23,7 @@
                    <!-- <dt>Niveau :</dt>
                     <dd><?php echo $formation_item['niveau']; ?></dd> <br>-->
                     <dt>Type de formation :</dt>
-                    <dd><?php for($i=0;$i<count($nom_typ);$i++){ echo $nom_typ[$i]['nom_type']." <br/>";}; ?></dd> <br>
+                    <dd><?php echo $formation_item['nom_typ']; ?></dd> <br>
                     <dt>Composante :</dt>
                     <dd><?php echo $formation_item['nom_c']; ?></dd> <br>
                     <dt>Site :</dt>
@@ -52,3 +53,4 @@
     </div>
 
 
+    <?php $this->load->view('templates/footer') ?>

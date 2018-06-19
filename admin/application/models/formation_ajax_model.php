@@ -4,8 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Formation_ajax_model extends CI_Model {
 
 	var $table = 'rd_formation';
-	var $column_order = array('libelle','nom_do','nom_f','nom_typ','nom_site','nom_s',null); //set column field database for datatable orderable
-	var $column_search = array('libelle','domaine.nom','domaine.nom','filiere.nom','rd_formation.id_type_formation','composante.sigle'); //set column field database for datatable searchable just firstname , lastname , address are searchable
+	var $column_order = array('libelle','nom_do','nom_f', 'nom_site','nom_s',null); //set column field database for datatable orderable
+	var $column_search = array('libelle','domaine.nom','domaine.nom','filiere.nom','composante.sigle'); //set column field database for datatable searchable just firstname , lastname , address are searchable
 	var $order = array('id' => 'desc'); // default order
 
 	public function __construct()
@@ -14,23 +14,31 @@ class Formation_ajax_model extends CI_Model {
 		$this->load->database();
 	}
 
-	private function _get_formation($key) {
-					$this->db->select('rd_formation.id as id, type_periode.nom as nom_periode,rd_formation.id_rythme as id_rythme, nbre_entreprise, rd_formation.id_domaine,'
-									. 'nbre_ecole, libelle as libelle,niveau, composante.nom as nom_c, composante.sigle as nom_s,filiere.nom as nom_f, rd_formation.id_type_formation,'
-									. 'type_formation.nom as nom_typ,type_stage.nom as nom_stage,rd_formation.id_diplome, rd_formation.id_site, regex_stage, regex_alternance,'
-									. 'nbre_ecole,nbre_semaine, debut_stage, fin_stage, rd_formation.est_alternance,rd_formation.id_filiere,'
-									. 'diplome.nom as nom_d, domaine.nom as nom_do, rd_formation.id_composante, '
-									. 'site.nom as nom_site, rd_formation.detail_stage, rd_formation.detail_alt, rd_formation.nbre_modif');
-					$this->db->from('rd_formation');
-					$this->db->join('composante', 'composante.id = rd_formation.id_composante');
-					$this->db->join('filiere', 'filiere.id = rd_formation.id_filiere');
-					$this->db->join('type_formation', 'type_formation.id = rd_formation.id_type_formation');
-					$this->db->join('diplome', 'diplome.id = rd_formation.id_diplome');
-					$this->db->join('domaine', 'domaine.id = rd_formation.id_domaine');
-					$this->db->join('site', 'site.id = rd_formation.id_site');
-					$this->db->join('type_periode', 'type_periode.id = rd_formation.id_rythme');
-					$this->db->join('type_stage', 'type_stage.id = rd_formation.id_type_stage');
-			}
+	public function _get_formation($key) {
+        $this->db->select('rd_formation.id as id, type_periode.nom as nom_periode,rd_formation.id_rythme as id_rythme, nbre_entreprise, rd_formation.id_domaine,'
+            . 'nbre_ecole, libelle as libelle,niveau, composante.nom as nom_c, composante.sigle as nom_s,filiere.nom as nom_f, rd_formation.id_type_formation,'
+            . ' type_stage.nom as nom_stage,rd_formation.id_diplome, rd_formation.id_site, regex_stage, regex_alternance,'
+            . 'nbre_ecole,nbre_semaine, debut_stage, fin_stage, rd_formation.est_alternance,rd_formation.id_filiere,'
+            . 'diplome.nom as nom_d, domaine.nom as nom_do,rd_formation.id_composante, '
+            . 'site.nom as nom_site, rd_formation.detail_stage, rd_formation.detail_alt, rd_formation.nbre_modif');
+        $this->db->from('rd_formation');
+        $this->db->join('composante', 'composante.id = rd_formation.id_composante');
+        $this->db->join('filiere', 'filiere.id = rd_formation.id_filiere');
+        $this->db->join('diplome', 'diplome.id = rd_formation.id_diplome');
+        $this->db->join('domaine', 'domaine.id = rd_formation.id_domaine');
+        $this->db->join('site', 'site.id = rd_formation.id_site');
+        $this->db->join('type_periode', 'type_periode.id = rd_formation.id_rythme');
+        $this->db->join('type_stage', 'type_stage.id = rd_formation.id_type_stage');
+        $this->db->or_like('libelle', $key);
+        $this->db->or_like('domaine.nom', $key);
+        $this->db->or_like('composante.nom', $key);
+        $this->db->or_like('filiere.nom', $key);
+        $this->db->or_like('type_stage.nom', $key);
+        $this->db->or_like('diplome.nom', $key);
+        $this->db->or_like('site.nom', $key);
+        $this->db->or_like('rd_formation.detail_stage', $key);
+        $this->db->or_like('rd_formation.detail_alt', $key);
+        }
 
 	private function _get_datatables_query()
 	{

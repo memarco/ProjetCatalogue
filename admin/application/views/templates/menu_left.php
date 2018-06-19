@@ -1,7 +1,17 @@
 <style>
-    #accordion{ position:fixed;  }
+   #accordion{
+       position: fixed;
+    }*/
+    .fixgauche{
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        /* Mise en forme */
+        width: 270px;
+    }
+
 </style>
-<div class="col-sm-2 col-md-2"  >
+<div class="col-md-2 col-lg-2"  >
             <div class="panel-group"  id="accordion">
                 <div class="panel panel-default" >
                     <div class="panel-heading">
@@ -152,13 +162,12 @@
                         <table class="table">
                             <tr>
                                 <td>
-                                    <span class="glyphicon glyphicon-log-out"></span><a href="<?php echo base_url() ?>index.php/login/logout_user">Deconnexion</a>
+                                    <span class="glyphicon glyphicon-log-out"></span><a href="<?php echo base_url() ?>index.php/login/logout_user">Déconnexion</a>
                                 </td>
                             </tr>
                         </table>
                     </div>
 
                 </div>
-
             </div>
-        </div>
+</div>
