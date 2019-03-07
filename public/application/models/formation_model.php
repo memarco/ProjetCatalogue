@@ -95,18 +95,13 @@ class Formation_model extends CI_Model {
         $this->db->join('site', 'site.id = rd_formation.id_site');
         $this->db->join('type_periode', 'type_periode.id = rd_formation.id_rythme');
         $this->db->join('type_stage', 'type_stage.id = rd_formation.id_type_stage');
-        $this->db->or_like('(libelle', $key);
-        $this->db->or_like('domaine.nom', $key);
-        $this->db->or_like('composante.nom', $key);
-        $this->db->or_like('filiere.nom', $key);
-        $this->db->or_like('type_stage.nom', $key);
-        $this->db->or_like('diplome.nom', $key);
-        $this->db->or_like('site.nom', $key);
+        $this->db->or_like('(libelle', $key); 
         $this->db->or_like('rd_formation.detail_stage', $key);
         $this->db->or_like('rd_formation.detail_alt', $key);
         $this->db->or_like('type_stage.nom', $key);
         $this->db->or_like('rd_formation.detail_stage', $key);
         $this->db->or_like('rd_formation.detail_alt', $key);
+        $this->db->or_like('rd_formation.skills', $key);
         $this->db->bracket('close','like');
         if($id_type_formation != 0){
             $this->db->where("rd_formation.id IN (SELECT id_formation from formation_type_formation where id_type_formation=$id_type_formation)", NULL, FALSE);

@@ -281,8 +281,15 @@
                                 </select>
                             </div>
                         </div>
+                          <div class="form-group">
+                              <label for="title" class="col-sm-4 control-label">Compétence(s)</label>
+                              <div class="col-sm-8">    <input  type="text" class="form-control" name="key" id="key_word"
+                                         placeholder="Mot clé"
+                                         onkeyup="refreshTable()">
+                              </div>
+                          </div>
                         <div class="form-group">
-                            <input style="visibility: hidden" type="text" class="form-control" name="key" id="key_word"
+                            <input style="visibility: hidden" type="text" class="form-control" name="key_" id="key_word_"
                                    placeholder="Mot clé"
                                    onkeyup="refreshTable()">
                         </div>

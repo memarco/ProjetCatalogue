@@ -81,9 +81,7 @@ class Composante extends CI_Controller {
         if ($this->form_validation->run() === FALSE)
         {
             $this->load->view('templates/header', $data);
-            $this->load->view('composante/create');
-
-
+            $this->load->view('composante/create'); 
         }
         else
         {
