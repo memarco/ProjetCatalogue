@@ -38,13 +38,12 @@ class Site extends CI_Controller {
             $page = ($this->uri->segment(3)) ;
             }
             else{
-            $page = 1;
+            $page = 0;
             }
         $data["site"] = $this->site_model->get_site(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
 
-        $this->load->view('templates/header', $data);
         $this->load->view('site/index', $data);
 
     }
@@ -109,7 +108,7 @@ class Site extends CI_Controller {
         $this->load->library('form_validation');
         $data['name'] = $this->session->userdata('name');
 
-        $data['title'] = 'Modification des informations';        
+        $data['title'] = 'Modification des informations';
         $data['site_item'] = $this->site_model->get_site_by_id($id);
 
         $this->form_validation->set_rules('nom', 'Nom', 'required');

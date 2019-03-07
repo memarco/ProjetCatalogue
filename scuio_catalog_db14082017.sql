@@ -621,7 +621,7 @@ INSERT INTO `filiere` (`id`, `nom`, `nbre_modif`) VALUES
 (23, 'Conseiller Principal d\'Education', 0),
 (24, 'Cadre en éducation', 0),
 (25, '2nd degré, parcours documentation (CAPES)', 0),
-(26, 'Formation de formateurs conseil en formation pédagogique accompagnement pédagogique', 0),
+(26, 'formation de formateurs conseil en formation pédagogique accompagnement pédagogique', 0),
 (27, 'Ingénierie pédagogique formation de formatuers autres qu\'enseignants', 0),
 (28, 'Management du sport Dynamiques Métropolitaines et logiques d\'Acteurs', 0),
 (29, 'Préparation mentale et accompagnement de la performance', 0),

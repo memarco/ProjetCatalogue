@@ -2,77 +2,526 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d7f2001-25dc-4da7-8fef-b1094aa901a1" name="Default" comment="Nouveau fichier importe">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change afterPath="$PROJECT_DIR$/admin/application/models/formation_type_formation_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/models/nFormation_model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/views/formation/success_edited.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/application/views/view_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/application/views/search/view_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/config/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/config/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/controllers/Formation.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/controllers/formation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/controllers/formation_ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/controllers/formation_ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/models/Diplome_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/models/Diplome_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/models/Formation_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/models/Formation_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/models/Type_formation_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/models/type_formation_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/models/formation_ajax_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/models/formation_ajax_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/formation/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/formation/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/formation/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/formation/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/formation/success.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/formation/success.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/formation/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/formation/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/formation_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/formation_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/application/views/templates/menu_left.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/application/views/templates/menu_left.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/public/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/config/grocery_crud.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/config/grocery_crud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/Catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/Catalogue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/calendrier.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/calendrier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/composante.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/composante.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/domaine.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/domaine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/formation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/formation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/formation_ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/formation_ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/person.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/person.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/controllers/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/controllers/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/libraries/Ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/libraries/Ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/libraries/Grocery_CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/libraries/Grocery_CRUD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/libraries/image_moo.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/libraries/image_moo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/models/Grocery_crud_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/models/Grocery_crud_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/models/Person_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/models/Person_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/models/diplome_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/models/diplome_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/models/fa_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/models/fa_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/models/formation_ajax_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/models/formation_ajax_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/models/formation_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/models/formation_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/models/type_formation_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/models/type_formation_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_base/foot.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_base/foot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_base/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_base/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_base/head_catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_base/head_catalogue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_layouts/default.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_layouts/full_width.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_layouts/full_width.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_layouts/with_breadcrumb.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_layouts/with_breadcrumb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_partials/breadcrumb.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_partials/breadcrumb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_partials/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_partials/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_partials/footer0.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_partials/footer0.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_partials/ga.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_partials/ga.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_partials/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_partials/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_partials/language_switcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_partials/language_switcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/_partials/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/_partials/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/calendrier.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/calendrier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/catalogue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/composante.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/composante.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/domaine.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/domaine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/formation_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/formation_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/person_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/person_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/search/ajax_search_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/search/ajax_search_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/application/views/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/application/views/site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-3.3.7/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap-datepicker/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap-responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap-responsive.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/datatables/css/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/datatables/css/jquery.dataTables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/datatables/js/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/datatables/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/config/language_alias.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/config/language_alias.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/config/translit_chars.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/config/translit_chars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/chosen/chosen.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/chosen/chosen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/chosen/chosen.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/chosen/chosen.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/chosen/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/chosen/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/fancybox/jquery.fancybox.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/fancybox/jquery.fancybox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/file-uploader.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/file-uploader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/fileuploader.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/fileuploader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/jquery.fileupload-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/file_upload/jquery.fileupload-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/jquery-ui-timepicker-addon.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/jquery-ui-timepicker-addon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/jquery.ui.datetime.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/jquery.ui.datetime.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/ui.multiselect.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/jquery_plugins/ui.multiselect.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/ui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/ui/simple/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/ui/simple/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/css/ui/simple/jquery-ui-1.10.1.custom.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/css/ui/simple/jquery-ui-1.10.1.custom.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/common/lazyload-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/common/lazyload-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/common/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/common/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery-1.11.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery-1.11.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery-1.11.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ajax-chosen.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ajax-chosen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery-ui-timepicker-addon.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery-ui-timepicker-addon.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.chosen.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.chosen.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.ckeditor.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.ckeditor.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.datepicker.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.datepicker.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.datetime.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.datetime.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.fancybox.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.fancybox.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.fileupload.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.fileupload.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.markitup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.markitup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.multiselect.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.multiselect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.noty.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.noty.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.numeric.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.numeric.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.tine_mce.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.tine_mce.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.uniform.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/config/jquery.uniform.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery-ui-timepicker-addon.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery-ui-timepicker-addon.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.chosen.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.chosen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.chosen.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.chosen.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.easing-1.3.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.easing-1.3.pack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fancybox-1.3.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fancybox-1.3.4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fancybox.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fancybox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fancybox.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fancybox.pack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.fileupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.form.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.form.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.iframe-transport.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.iframe-transport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.noty.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.noty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.numeric.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.numeric.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.ui.datetime.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/jquery.ui.datetime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/load-image.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/load-image.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/tmpl.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/tmpl.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui.multiselect.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui.multiselect.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-bn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-no.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/datepicker/jquery.ui.datepicker-zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/multiselect/ui-multiselect-uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-no.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/i18n/timepicker/jquery-ui-timepicker-zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/jquery-ui-1.10.3.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/js/jquery_plugins/ui/jquery-ui-1.10.3.custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/add-new-lang-string.sh" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/add-new-lang-string.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/afrikaans.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/afrikaans.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/arabic.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/arabic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/catalan.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/catalan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/croatian.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/croatian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/czech.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/czech.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/danish.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/danish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/dutch.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/dutch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/english.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/english.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/french.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/french.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/german.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/german.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/hungarian.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/hungarian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/indonesian.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/indonesian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/italian.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/italian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/lithuanian.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/lithuanian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/norwegian.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/norwegian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/pt-br.portuguese.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/pt-br.portuguese.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/pt-pt.portuguese.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/pt-pt.portuguese.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/romanian.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/romanian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/slovak.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/slovak.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/spanish.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/spanish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/languages/turkish.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/languages/turkish.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/license-gpl3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/license-gpl3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/license-grocery-crud.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/license-grocery-crud.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/license-mit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/license-mit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/datatables.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/datatables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/demo_table_jui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/demo_table_jui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/images/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/images/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/jquery.dataTables.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/as3/ZeroClipboard.as" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/as3/ZeroClipboard.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/as3/ZeroClipboardPdf.as" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/as3/ZeroClipboardPdf.as" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/css/TableTools.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/css/TableTools.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/css/TableTools_JUI.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/css/TableTools_JUI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/js/TableTools.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/js/TableTools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/js/TableTools.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/js/TableTools.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/js/ZeroClipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/extras/TableTools/media/js/ZeroClipboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables-extras.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables-extras.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/datatables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/list_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/list_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/datatables/views/read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/css/flexigrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/css/flexigrid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/css/images/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/css/images/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/css/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/css/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/cookies.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/cookies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/flexigrid-add.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/flexigrid-add.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/flexigrid-edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/flexigrid-edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/flexigrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/flexigrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/jquery.form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/jquery.form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/jquery.printElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/jquery.printElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/jquery.printElement.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/js/jquery.printElement.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/list_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/list_template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/flexigrid/views/read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/grocery_crud/themes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/grocery_crud/themes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/jquery/jquery-2.1.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/jquery/jquery-2.1.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/vendor/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/vendor/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/jquery-1.9.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/vendor/jquery-1.9.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/uploads/files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/uploads/files/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/uploads/files/pdftest.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/uploads/files/pdftest.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/uploads/files/test-2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/uploads/files/test-2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/uploads/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/uploads/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/change_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/change_log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/contributing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Benchmark.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Benchmark.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/CodeIgniter.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/CodeIgniter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Common.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Exceptions.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Exceptions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Input.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Input.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Loader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Output.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Output.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Security.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Security.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/URI.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/URI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/Utf8.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/Utf8.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/core/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/core/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/examples_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/public/examples_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/license-gpl3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/license-gpl3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/license-grocery-crud.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/license-grocery-crud.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/license-mit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/license-mit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/readme.rst" beforeDir="false" afterPath="$PROJECT_DIR$/public/readme.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scuio_catalog_db10052017.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scuio_catalog_db10052017.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scuio_catalog_db14082017.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scuio_catalog_db14082017.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scuio_catalog_db17042017.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scuio_catalog_db17042017.sql" afterDir="false" />
     </list>
     <ignored path="ProjetCatalogue.iws" />
     <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/import_excel/composer.json</pharConfigPath>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ProjetCatalogue">
       <favorite_root url="file://$PROJECT_DIR$/admin/application/libraries/Csvimport.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="formation_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/formation_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="21" selection-start="2097" selection-end="2097" vertical-scroll-proportion="-28.307692" vertical-offset="335" max-vertical-offset="2227">
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#!!top" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="e#13167#13835#0#HTML" />
+                <element signature="e#13934#14031#0#HTML" />
+                <element signature="e#14113#14233#0#HTML" />
+                <element signature="e#14894#16339#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/index.php">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-              <folding />
+            <state relative-caret-position="-307">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Diplome_model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/application/models/Diplome_model.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="view_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/views/view_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="5" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1309">
-              <folding />
+            <state relative-caret-position="428">
+              <caret line="71" column="48" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Formation_model.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Formation_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/application/models/Formation_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="30" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.55988026" vertical-offset="306" max-vertical-offset="3213">
-              <folding />
+            <state relative-caret-position="190">
+              <caret line="170" column="50" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="50" />
+              <folding>
+                <element signature="n#record_count#0;n#Formation_model#0;n#!!top" />
+                <element signature="n#get_formation#0;n#Formation_model#0;n#!!top" />
+                <element signature="n#get_formation_by_filter#0;n#Formation_model#0;n#!!top" />
+                <element signature="n#get_formation_bad#0;n#Formation_model#0;n#!!top" />
+                <element signature="n#set_formation#0;n#Formation_model#0;n#!!top" />
+                <element signature="n#get_to_mouchard#0;n#Formation_model#0;n#!!top" />
+                <element signature="n#delete_formation#0;n#Formation_model#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/application/views/formation/index.php">
+      <file leaf-file-name="formation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/formation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="35" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1122">
-              <folding />
+            <state relative-caret-position="1020">
+              <caret line="300" column="62" lean-forward="true" selection-start-line="300" selection-start-column="62" selection-end-line="300" selection-end-column="62" />
+              <folding>
+                <element signature="n#index#0;n#formation#0;n#!!top" />
+                <element signature="e#0#6#0" expanded="true" />
+                <element signature="n#filierebydomaine#0;n#formation#0;n#!!top" />
+                <element signature="n#search#0;n#formation#0;n#!!top" />
+                <element signature="n#view#0;n#formation#0;n#!!top" />
+                <element signature="n#create#0;n#formation#0;n#!!top" />
+                <element signature="n#edit#0;n#formation#0;n#!!top" />
+                <element signature="n#duplicate#0;n#formation#0;n#!!top" />
+                <element signature="n#delete#0;n#formation#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/controllers/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-374" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="type_formation_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/application/models/type_formation_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="type_formation_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/application/models/type_formation_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="6" lean-forward="true" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/application/controllers/formation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="649">
+              <caret line="359" column="24" selection-start-line="359" selection-start-column="18" selection-end-line="359" selection-end-column="24" />
+              <folding>
+                <element signature="n#index#0;n#formation#0;n#!!top" />
+                <element signature="n#filierebydomaine#0;n#formation#0;n#!!top" />
+                <element signature="n#search#0;n#formation#0;n#!!top" />
+                <element signature="n#view#0;n#formation#0;n#!!top" />
+                <element signature="n#create#0;n#formation#0;n#!!top" />
+                <element signature="n#edit#0;n#formation#0;n#!!top" />
+                <element signature="n#duplicate#0;n#formation#0;n#!!top" />
+                <element signature="n#delete#0;n#formation#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_datatables</find>
+      <find>datatable</find>
+      <find>_get_datatables_query</find>
+      <find>search</find>
+      <find>id=&quot;id_type_formation</find>
+      <find>multiselect</find>
+      <find>get_f</find>
+      <find>get_fo</find>
+      <find>btn1</find>
+      <find>$('#entrepselector').</find>
+      <find>col-sm-2</find>
+      <find>class=&quot;col-sm-4 control-label&quot;</find>
+      <find>nom_c</find>
+      <find>id_</find>
+      <find>nom_s</find>
+      <find>col-sm-8</find>
+      <find>mention</find>
+      <find>col-sm-9</find>
+      <find>id_type_formation</find>
+      <find>en en</find>
+      <find>reload_table</find>
+      <find>$choice</find>
+      <find>get_type_formation_by_id_formation</find>
+      <find>get_formation_by_id</find>
+      <find>btn_cancel</find>
+      <find>nbre_for</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>refreshTable()</replace>
+      <replace>col-sm-5</replace>
+      <replace>col-sm-9</replace>
+      <replace>detail_</replace>
+      <replace>class=&quot;col-sm-4 control-label text-right&quot;</replace>
+      <replace>col-sm-8</replace>
+    </replaceStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -83,290 +532,328 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/application/views/header.php" />
-        <option value="$PROJECT_DIR$/admin/application/config/database.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/templates/head_form.php" />
-        <option value="$PROJECT_DIR$/admin/application/models/Csv_Domaine_model.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Csv_Domaine.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/domaine/vue.php" />
         <option value="$PROJECT_DIR$/admin/application/config/config.php" />
-        <option value="$PROJECT_DIR$/admin/application/models/csv_domaine_model.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/csv_domaine.php" />
-        <option value="$PROJECT_DIR$/admin/application/models/Domaine_model.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/domaine/index.php" />
-        <option value="$PROJECT_DIR$/admin/application/config/mimes.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/views/formation/import.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/views/niveau/import.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/controllers/Niveau.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/views/filiere/import.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/views/index.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/controllers/Filiere.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/controllers/Formation.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/type_formation/index.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/templates/menu_top.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Type_formation.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Filiere.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Domaine.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Niveau.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Type_periode.php" />
-        <option value="$PROJECT_DIR$/admin/application/config/routes.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Type_stage.php" />
-        <option value="$PROJECT_DIR$/import_excel/application/controllers/Site.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Site.php" />
-        <option value="$PROJECT_DIR$/admin/application/controllers/Formation.php" />
         <option value="$PROJECT_DIR$/admin/application/views/formation/index.php" />
-        <option value="$PROJECT_DIR$/admin/application/views/site/index.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/nFormation_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/templates/main_head.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/formation_ajax_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/Formation.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/templates/menu_left.php" />
+        <option value="$PROJECT_DIR$/public/application/config/config.php" />
+        <option value="$PROJECT_DIR$/public/application/views/_base/head.php" />
+        <option value="$PROJECT_DIR$/public/application/controllers/Type_formation.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/Diplome_model.php" />
+        <option value="$PROJECT_DIR$/public/application/models/diplome_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/templates/footer.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/templates/header.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/formation/view.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/formation/create.php" />
+        <option value="$PROJECT_DIR$/public/application/views/formation/create.php" />
+        <option value="$PROJECT_DIR$/public/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/public/application/views/search/view_detail.html" />
+        <option value="$PROJECT_DIR$/public/application/views/search/ajax_search_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/formation_ajax.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/formation/success.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/formation/success_edited.php" />
+        <option value="$PROJECT_DIR$/public/application/models/type_formation_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/Type_formation_model.php" />
+        <option value="$PROJECT_DIR$/public/application/models/formation_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/formation/edit.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/formation_type_formation_model.php" />
+        <option value="$PROJECT_DIR$/public/application/views/formation_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/admin/application/models/type_formation_model.php" />
         <option value="$PROJECT_DIR$/admin/application/models/Formation_model.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/view_detail.html" />
+        <option value="$PROJECT_DIR$/public/application/controllers/formation.php" />
+        <option value="$PROJECT_DIR$/admin/application/views/formation_view.php" />
+        <option value="$PROJECT_DIR$/admin/application/controllers/formation.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetCatalogue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjetCatalogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineCatalogue" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="web-ide.project.structure" />
-    <property name="options.splitter.main.proportions" value="0.26833335" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../import_excel" />
-    <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="152" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="170" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="177" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="856" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="174" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="152" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="170" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="177" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="856" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="163" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="169" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="849" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="174" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="163" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="169" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="849" />
+    <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.26833335" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\OnlineCatalogue\admin\application\views" />
       <recent name="F:\wamp\www\ProjetCatalogue\import_excel\application\controllers" />
       <recent name="F:\wamp\www\ProjetCatalogue\import_excel\application\views" />
       <recent name="F:\wamp\www\ProjetCatalogue\import_excel\application\views\formation" />
       <recent name="F:\wamp\www\ProjetCatalogue" />
-      <recent name="F:\wamp\www\ProjetCatalogue\admin\application\libraries" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.csv_domaine.php">
-    <configuration default="false" name="libraries" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner directory="$PROJECT_DIR$/admin/application/libraries" />
-      <method />
-    </configuration>
-    <configuration default="false" name="csv_domaine.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/ProjetCatalogue/admin/application/controllers/csv_domaine.php">
+    <configuration name="csv_domaine.php" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://localhost:63342/ProjetCatalogue/admin/application/controllers/csv_domaine.php">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
+    <configuration name="libraries" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/admin/application/libraries" />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="PHPUnit.libraries" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.csv_domaine.php" />
+    <list>
+      <item itemvalue="PHPUnit.libraries" />
+      <item itemvalue="JavaScript Debug.csv_domaine.php" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.csv_domaine.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHPUnit.libraries" />
+      <list>
+        <item itemvalue="JavaScript Debug.csv_domaine.php" />
+        <item itemvalue="PHPUnit.libraries" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4d7f2001-25dc-4da7-8fef-b1094aa901a1" name="Default" comment="" />
       <created>1492105417632</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1492105417632</updated>
+      <workItem from="1527894463890" duration="871000" />
+      <workItem from="1527950569445" duration="105282000" />
     </task>
     <task id="LOCAL-00001" summary="projet  modifier">
       <created>1492845028292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
       <updated>1492845028292</updated>
     </task>
     <task id="LOCAL-00002" summary="Import_file">
       <created>1492848489502</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
       <updated>1492848489502</updated>
     </task>
     <task id="LOCAL-00003" summary="import-excel">
       <created>1492853500606</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
       <updated>1492853500606</updated>
     </task>
     <task id="LOCAL-00004" summary="import_excel_projet">
       <created>1492856233907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
       <updated>1492856233907</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="106153000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07361111" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13233191" sideWeight="0.49896482" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22532189" sideWeight="0.5010352" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04432133" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32916668" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.60413355" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32916668" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49896482" visible="true" weight="0.14494875" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.45945945" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5010352" side_tool="true" weight="0.22532189" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Changes" order="7" weight="0.07361111" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
     <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22532189" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Changes" order="7" weight="0.32916668" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32916668" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -377,9 +864,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
     <MESSAGE value="projet modifier" />
     <MESSAGE value="projet  modifier" />
     <MESSAGE value="Import_file" />
@@ -389,279 +873,468 @@
     <MESSAGE value="Nouveau fichier importe" />
     <option name="LAST_COMMIT_MESSAGE" value="Nouveau fichier importe" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Niveau.php">
+    <entry file="file://$PROJECT_DIR$/admin/application/models/nFormation_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="63" selection-start="2695" selection-end="2695" vertical-scroll-proportion="0.0" vertical-offset="1292" max-vertical-offset="1683" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Formation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.42040184" vertical-offset="0" max-vertical-offset="1802" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="7" selection-start="590" selection-end="590" vertical-scroll-proportion="0.38173652" vertical-offset="0" max-vertical-offset="668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/site/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="234" selection-end="234" vertical-scroll-proportion="0.25449103" vertical-offset="0" max-vertical-offset="668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/filiere/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="50" selection-start="220" selection-end="220" vertical-scroll-proportion="0.2035928" vertical-offset="0" max-vertical-offset="668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Filiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/niveau/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="230" selection-end="230" vertical-scroll-proportion="0.25449103" vertical-offset="0" max-vertical-offset="668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/views/formation/import.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="231" selection-end="231" vertical-scroll-proportion="0.22904192" vertical-offset="0" max-vertical-offset="668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="668" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38173652" vertical-offset="255" max-vertical-offset="1088" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="1" selection-start="578" selection-end="578" vertical-scroll-proportion="0.58532935" vertical-offset="51" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="40" selection-start="770" selection-end="770" vertical-scroll-proportion="0.6043277" vertical-offset="0" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.026275115" vertical-offset="0" max-vertical-offset="918" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="2607" selection-end="2607" vertical-scroll-proportion="0.9072643" vertical-offset="297" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.9491018" vertical-offset="1066" max-vertical-offset="1802" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/menu_top.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="67" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.6691617" vertical-offset="12" max-vertical-offset="680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/type_formation/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0778626" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/type_formation/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0508982" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Niveau.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="57" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.36377245" vertical-offset="1100" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Domaine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="57" selection-start="2184" selection-end="2184" vertical-scroll-proportion="-10.461538" vertical-offset="1122" max-vertical-offset="2142" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/type_periode/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Filiere.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="57" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.4992272" vertical-offset="1020" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Type_formation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="57" selection-start="2253" selection-end="2253" vertical-scroll-proportion="-11.923077" vertical-offset="1033" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/type_periode/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/import_excel/application/controllers/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="44" selection-start="2089" selection-end="2089" vertical-scroll-proportion="1.501497" vertical-offset="0" max-vertical-offset="1564" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Type_stage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="7" selection-start="2134" selection-end="2184" vertical-scroll-proportion="-12.423077" vertical-offset="1020" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Type_periode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="9" selection-start="2446" selection-end="2446" vertical-scroll-proportion="-11.307693" vertical-offset="1151" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/type_stage/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="673" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/composante/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="-18.846153" vertical-offset="190" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="57" selection-start="876" selection-end="876" vertical-scroll-proportion="-15.076923" vertical-offset="50" max-vertical-offset="901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Composante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="60" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.99251497" vertical-offset="102" max-vertical-offset="2057" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="23" selection-start="2045" selection-end="2045" vertical-scroll-proportion="1.5089821" vertical-offset="250" max-vertical-offset="2091" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/niveau/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="21" selection-start="2097" selection-end="2097" vertical-scroll-proportion="-28.307692" vertical-offset="335" max-vertical-offset="2227">
-          <folding />
+        <state relative-caret-position="459">
+          <caret line="87" column="12" lean-forward="true" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Diplome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2395209" vertical-offset="828" max-vertical-offset="2159" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Person_model.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/Site_model.php">
+    <entry file="file://$PROJECT_DIR$/admin/application/models/formation_ajax_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.07634731" vertical-offset="51" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/Composante_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="311" selection-end="311" vertical-scroll-proportion="0.33083832" vertical-offset="0" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/Filiere_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="35" selection-start="540" selection-end="540" vertical-scroll-proportion="0.50898206" vertical-offset="0" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/Domaine_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="87" column="32" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Formation.php">
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/main_head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="22" selection-start="1502" selection-end="1502" vertical-scroll-proportion="0.94011974" vertical-offset="171" max-vertical-offset="2431" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/application/models/Diplome_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1309">
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="2" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/views/formation/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1122">
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/admin/application/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/system/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="694">
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="10" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
+    <entry file="file://$PROJECT_DIR$/public/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.4503818" vertical-offset="2915" max-vertical-offset="3570">
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/_partials/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/_partials/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-651" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/controllers/Type_formation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Diplome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <folding>
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/diplome/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="95" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Diplome_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="88" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/models/diplome_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/menu_top.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/menu_left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="69" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="102" selection-start-line="24" selection-start-column="102" selection-end-line="24" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="205" column="35" selection-start-line="205" selection-start-column="35" selection-end-line="205" selection-end-column="35" />
+          <folding>
+            <element signature="n#div#11;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#div#11;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#11;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/formation/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="273" column="48" lean-forward="true" selection-start-line="273" selection-start-column="48" selection-end-line="273" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/_base/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="101" lean-forward="true" selection-start-line="17" selection-start-column="101" selection-end-line="18" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/search/view_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/search/ajax_search_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1003">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="e#0#6#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/Person.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <folding>
+            <element signature="n#ajax_list#0;n#Person#0;n#!!top" />
+            <element signature="n#ajax_edit#0;n#Person#0;n#!!top" />
+            <element signature="n#ajax_add#0;n#Person#0;n#!!top" />
+            <element signature="n#ajax_update#0;n#Person#0;n#!!top" />
+            <element signature="n#ajax_delete#0;n#Person#0;n#!!top" />
+            <element signature="n#_validate#0;n#Person#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/formation_ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="64" column="159" lean-forward="true" selection-start-line="64" selection-start-column="159" selection-end-line="64" selection-end-column="159" />
+          <folding>
+            <element signature="n#index#0;n#Formation_ajax#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/templates/head_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/success_edited.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/duplicate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="63" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="283" column="59" selection-start-line="283" selection-start-column="59" selection-end-line="283" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#!!top" />
+            <element signature="e#1120#1161#0#HTML" />
+            <element signature="e#1271#1314#0#HTML" />
+            <element signature="e#1336#1373#0#HTML" />
+            <element signature="e#1407#1449#0#HTML" />
+            <element signature="e#1478#1521#0#HTML" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#6;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#7;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#div#9;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#5;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#span#0;n#label#0;n#div#5;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#0;n#div#5;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#10;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/Fa_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="4" lean-forward="true" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/historique_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/formation_type_formation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/formation_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="e#1994#4881#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/views/search/ajax_search_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="483" column="3" lean-forward="true" selection-start-line="456" selection-start-column="2" selection-end-line="483" selection-end-column="3" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+            <element signature="e#1421#1740#0#HTML" />
+            <element signature="n#div#0;n#!!top" />
+            <element signature="e#21684#23173#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="49" column="62" lean-forward="true" selection-start-line="49" selection-start-column="62" selection-end-line="50" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="164" column="74" selection-start-line="164" selection-start-column="74" selection-end-line="164" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/models/type_formation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" lean-forward="true" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/models/type_formation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/models/formation_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="32" />
+          <folding>
+            <element signature="n#record_count#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#get_formation#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#get_formation_bad#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#_get_formation_by_id#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#set_formation#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#get_to_mouchard#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#update_formation#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#delete_formation#0;n#Formation_model#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/application/controllers/formation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="359" column="24" selection-start-line="359" selection-start-column="18" selection-end-line="359" selection-end-column="24" />
+          <folding>
+            <element signature="n#index#0;n#formation#0;n#!!top" />
+            <element signature="n#filierebydomaine#0;n#formation#0;n#!!top" />
+            <element signature="n#search#0;n#formation#0;n#!!top" />
+            <element signature="n#view#0;n#formation#0;n#!!top" />
+            <element signature="n#create#0;n#formation#0;n#!!top" />
+            <element signature="n#edit#0;n#formation#0;n#!!top" />
+            <element signature="n#duplicate#0;n#formation#0;n#!!top" />
+            <element signature="n#delete#0;n#formation#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/application/models/Formation_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.55988026" vertical-offset="306" max-vertical-offset="3213">
-          <folding />
+        <state relative-caret-position="190">
+          <caret line="170" column="50" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="50" />
+          <folding>
+            <element signature="n#record_count#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#get_formation#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#get_formation_by_filter#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#get_formation_bad#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#set_formation#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#get_to_mouchard#0;n#Formation_model#0;n#!!top" />
+            <element signature="n#delete_formation#0;n#Formation_model#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/view_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="71" column="48" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/views/formation_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="e#13167#13835#0#HTML" />
+            <element signature="e#13934#14031#0#HTML" />
+            <element signature="e#14113#14233#0#HTML" />
+            <element signature="e#14894#16339#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-307">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/application/controllers/formation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="300" column="62" lean-forward="true" selection-start-line="300" selection-start-column="62" selection-end-line="300" selection-end-column="62" />
+          <folding>
+            <element signature="n#index#0;n#formation#0;n#!!top" />
+            <element signature="e#0#6#0" expanded="true" />
+            <element signature="n#filierebydomaine#0;n#formation#0;n#!!top" />
+            <element signature="n#search#0;n#formation#0;n#!!top" />
+            <element signature="n#view#0;n#formation#0;n#!!top" />
+            <element signature="n#create#0;n#formation#0;n#!!top" />
+            <element signature="n#edit#0;n#formation#0;n#!!top" />
+            <element signature="n#duplicate#0;n#formation#0;n#!!top" />
+            <element signature="n#delete#0;n#formation#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

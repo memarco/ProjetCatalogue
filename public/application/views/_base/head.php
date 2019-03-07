@@ -12,20 +12,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>.:: SCUIO-BAIP - Catalogue en ligne ::.</title>
-  <meta name="description" content=""> 
- 
+  <meta name="description" content="">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.min.css"> 
-  <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap-theme.min.css"> 
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/css/doc.css">
   <link href="<?php echo base_url();?>assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
-  <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/jquery.js"></script>
   <script src="<?php echo base_url();?>assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
   <style>
     body {
       padding-top: 60px;
       padding-bottom: 40px;
     }
-    body{margin-top:50px;}
+    body{margin-top:25px;}
 .glyphicon { margin-right:10px; }
 .panel-body { padding:0px; }
 .panel-body table tr td { padding-left: 15px }
@@ -33,7 +33,7 @@
   </style>
   <!--<link rel="stylesheet" href="<?php /*echo base_url();*/?>/assets/css/bootstrap-responsive.min.css">-->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css">
- 
+
 
 </head>
 <body>

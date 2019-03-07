@@ -1,6 +1,4 @@
-<?php $this->load->view('templates/header') ?>
-
-<div class="container">
+ <div class="container">
     <?php $this->load->view('templates/menu_top') ?>
     <div class="row">
         <!-- menuleft-->

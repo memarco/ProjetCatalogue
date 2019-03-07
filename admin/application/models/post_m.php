@@ -15,12 +15,36 @@ class post_m extends CI_Model {
     }
   }
 
+  function update_content($id_page,$html)
+  {
+    $data['page_content']=$html;
+        $this->db->where('id_page', $id);
+        return $this->db->update('page', $data);
+
+  }
+
   function get_posts_for_user( $user_id, $num_posts = 10 ) {
 
     $this->db->from('post');
     $this->db->where( array('userId'=>$user_id) );
     $this->db->limit( $num_posts );
     $this->db->order_by('createdDate','desc');
+
+    $posts = $this->db->get()->result_array();
+
+    if( is_array($posts) && count($posts) > 0 ) {
+      return $posts;
+    }
+
+    return false;
+  }
+
+  function get_page_content( $id_page ) {
+
+    $this->db->from('page');
+    if($id_page!=0){
+    $this->db->where( array('id_page'=>$id_page) );}
+    $this->db->order_by('id_page','desc');
 
     $posts = $this->db->get()->result_array();
 

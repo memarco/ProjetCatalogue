@@ -8,6 +8,7 @@ class Filiere extends CI_Controller {
         redirect('/login/show_login');
     }
         $this->load->model('filiere_model');
+            $this->load->model('domaine_model');
         $this->load->helper('url_helper');
         $this->load->library("pagination");
     }
@@ -39,12 +40,11 @@ class Filiere extends CI_Controller {
             $page = (($this->uri->segment(3))-1)*25 ;
             }
             else{
-            $page = 0; 
+            $page = 0;
             }
         $data["filiere"] = $this->filiere_model->get_filiere(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
-        $this->load->view('templates/header', $data);
         $this->load->view('filiere/index', $data);
 
     }
@@ -64,7 +64,7 @@ class Filiere extends CI_Controller {
             show_404();
         }
 
-        $data['nom'] = $data['filiere_item']['nom'];
+        $data['nom'] = $data['filiere_item']['nom_f'];
 
         $this->load->view('templates/header', $data);
         $this->load->view('filiere/view', $data);
@@ -83,6 +83,7 @@ class Filiere extends CI_Controller {
 
         if ($this->form_validation->run() === FALSE)
         {
+            $data['domaine'] = $this->domaine_model->get_domaine(FALSE,2147483647,0);
             $this->load->view('templates/header', $data);
             $this->load->view('filiere/create');
 
@@ -111,12 +112,14 @@ class Filiere extends CI_Controller {
 
         $data['title'] = 'Modification des informations';
         $data['name'] = $this->session->userdata('name');
+        $data['domaine_item'] = $this->domaine_model->get_domaine_by_id($id);
         $data['filiere_item'] = $this->filiere_model->get_filiere_by_id($id);
 
         $this->form_validation->set_rules('nom', 'Nom', 'required');
 
         if ($this->form_validation->run() === FALSE)
         {
+            $data['domaine'] = $this->domaine_model->get_domaine(FALSE,2147483647,0);
             $this->load->view('templates/header', $data);
             $this->load->view('filiere/edit', $data);
 

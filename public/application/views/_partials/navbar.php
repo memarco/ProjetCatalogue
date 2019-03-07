@@ -18,8 +18,8 @@ border-right: 1px solid #ffffff;
 .blockquote-box.blockquote-warning .square{background-color:#F0AD4E;color:#FFF}
 .blockquote-box.blockquote-danger{border-color:#D43F3A}
 .blockquote-box.blockquote-danger .square{background-color:#D9534F;color:#FFF}
-</style>  
-<div class="container" style="margin-top:-30px">   
+</style>
+<div class="container" style="margin-top: 25px;" >
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,35 +35,32 @@ border-right: 1px solid #ffffff;
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav"> 
-        <li role="separator" class="divider-vertical"></li> 
-            <li><a href="#">DOMAINES</a></li>
-            <li><a href="#">FILI&Egrave;RES</a></li>
-            <li><a href="#">PARCOURS</a></li>
-            <li><a href="#">COMPOSANTES</a></li>
-            <li><a href="#">SITES</a></li>
-            <li><a href="#">CALENDRIER</a></li>
-            <li><a href="#"><b><i>Les offres</i></b></a></li>
+
+      <ul class="nav navbar-nav">
+        <li role="separator" class="divider-vertical"></li>
+            <li><a href="<?php echo base_url(); ?>index.php/domaine">DOMAINES</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/composante">COMPOSANTES</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/site">SITES</a></li>
+            <li><a href="<?php echo base_url(); ?>index.php/ajax_search_view">CALENDRIER</a></li> 
         </li>
-      </ul> 
-      <ul class="nav navbar-nav navbar-right"> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b>.:.</b> Accès direct <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Etudiants</a></li> 
+            <li><a href="#">Etudiants</a></li>
             <li><a href="#">Administration</a></li>
           </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav> 
-</div> 
+</nav>
+</div>
 <div class="container">
  <div class="col-md-12" style="background: #c1002a;height: auto;
                             padding: 1.3em 1em 0.8em 1.1em; font-family: maplelight;color: #fff;line-height: 1.3em;font-size: 2.5em;">
-        <span>Catalogue des stages et alternances</span>  
+        <span>Catalogue des stages et alternances</span>
         <a class="" href="#">
             <img height="71px" width="auto" style="margin-top: -35.7px; float: right" src="<?php echo base_url(); ?>assets/img/logoUpecgrand.png" />
         </a></div></div>

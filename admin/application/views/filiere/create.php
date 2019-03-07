@@ -1,30 +1,43 @@
-<?php $this->load->view('templates/header') ?>
 
-<div class="container"> 
-    <?php $this->load->view('templates/menu_top') ?>  
+<div class="container">
+    <?php $this->load->view('templates/menu_top') ?>
     <div class="row">
         <!-- menuleft-->
-        <?php $this->load->view('templates/menu_left') ?>   
+        <?php $this->load->view('templates/menu_left') ?>
         <!--endmenuleft-->
 
-        <!--maincontent-->        
-        <?php $this->load->view('templates/head_form') ?>  
- 
-                    <?php echo form_open('filiere/create'); ?>    
- 
+        <!--maincontent-->
+        <?php $this->load->view('templates/head_form') ?>
+
+                    <?php echo form_open('filiere/create'); ?>
+
+                    <div class="form-group">
+                     <label for="title" class="col-sm-2 control-label">Domaine</label>
+                     <div class="col-sm-10">
+                    <select name="id_domaine" class="form-control">
+                        <?php
+                        foreach($domaine as $domaine_item)
+                        {
+                            ?>
+                            <option value="<?php echo $domaine_item['id']?>"><?php echo $domaine_item['nom'] ?></option>
+                            <?php
+                        }
+                        ?>
+                        </select></div>
+                    </div>
                     <div class="form-group">
                         <label for="title" class="col-sm-2 control-label">Nom</label>
                         <div class="col-sm-10">
-                            <input type="input" id="email" class="form-control" value="<?php echo set_value('nom'); ?>" name="nom"> 
+                            <input type="input" id="email" class="form-control" value="<?php echo set_value('nom'); ?>" name="nom">
                             <?php echo form_error('nom', '<div class="text-danger">', '</div>'); ?>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-3">
                             <button type="submit" name="submit" class="btn btn-info btn-block">Valider</button>
-                        </div>   
-                        <div class="col-sm-offset-2 col-sm-3"> 
+                        </div>
+                        <div class="col-sm-offset-2 col-sm-3">
                             <a class="btn btn-danger btn-block" href="<?php echo site_url('filiere/'); ?>" role="button">Annuler</a>
                         </div>
                     </div>
@@ -38,6 +51,4 @@
     </div>
 
 
-    <?php $this->load->view('templates/footer') ?>   
-
-
+    <?php $this->load->view('templates/footer') ?>

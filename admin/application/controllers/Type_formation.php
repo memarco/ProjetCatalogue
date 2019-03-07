@@ -1,5 +1,5 @@
 <?php
-class Type_formation extends CI_Controller {
+class type_formation extends CI_Controller {
 
     public function __construct()
     {
@@ -18,8 +18,7 @@ class Type_formation extends CI_Controller {
         $data['title'] = 'Les type de formations de l\'U-PEC';
         $data['name'] = $this->session->userdata('name');
         $data['total_type_formation'] = $this->type_formation_model->record_count();
-
-        $this->load->view('templates/header', $data);
+ 
         $this->load->view('type_formation/index', $data);
 
     }

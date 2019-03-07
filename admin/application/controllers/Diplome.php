@@ -1,5 +1,5 @@
 <?php
-class Diplome extends CI_Controller {
+class diplome extends CI_Controller {
 
     public function __construct()
     {
@@ -15,40 +15,10 @@ class Diplome extends CI_Controller {
 
     public function index()
     {
-        $data['diplome'] = $this->diplome_model->get_diplome();
+        //$data['diplome'] = $this->diplome_model->get_diplome();
         $data['title'] = 'Les diplomes de l\'U-PEC';
         $data['name'] = $this->session->userdata('name');
         $data['total_diplome'] = $this->diplome_model->record_count();
-<<<<<<< HEAD
-        
-         
-//        $config = array();
-//        $config["base_url"] = base_url() . "index.php/diplome/index";
-//        $total_row = $this->diplome_model->record_count();
-//        $config["total_rows"] = $total_row;
-//        $config["per_page"] = 5;    
-//        $config['first_link'] = 'Début';
-//        $config['last_link'] = 'Dernier';
-//        $config['use_page_numbers'] = TRUE;
-//        $config['num_links'] = 7;
-//        $config['cur_tag_open'] = '&nbsp;<a class="current">';
-//        $config['cur_tag_close'] = '</a>';
-//        $config['next_link'] = 'Suivant';
-//        $config['prev_link'] = 'Précédent';
-//
-//        $this->pagination->initialize($config); 
-//        if($this->uri->segment(3)){
-//            $page = ($this->uri->segment(3)) ;
-//            }
-//            else{
-//            $page = 1;
-//            } 
-//        $data["diplome"] = $this->diplome_model->get_diplome(FALSE, $config["per_page"], $page);
-//        $str_links = $this->pagination->create_links();
-//        $data["links"] = explode('&nbsp;',$str_links ); 
-          
-         
-=======
 
 
         $config = array();
@@ -67,33 +37,24 @@ class Diplome extends CI_Controller {
 
         $this->pagination->initialize($config);
         if($this->uri->segment(3)){
-            $page = ($this->uri->segment(3)) ;
+                $page = (($this->uri->segment(3))-1)*5 ;
             }
             else{
-            $page = 1;
+            $page = 0;
             }
         $data["diplome"] = $this->diplome_model->get_diplome(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
 
-
->>>>>>> 426f9bfe416b00800672e2f3266a3d355425ef9a
-        $this->load->view('templates/header', $data);
-        $this->load->view('diplome/index', $data);
+         $this->load->view('diplome/index', $data);
     }
 
     public function view($mail1 = NULL)
     {
         $data['name'] = $this->session->userdata('name');
-<<<<<<< HEAD
-        
-        $data['diplome_item'] = $this->diplome_model->get_diplome($mail1);
-        
-=======
 
         $data['diplome_item'] = $this->diplome_model->get_diplome($mail1,0,1);
 
->>>>>>> 426f9bfe416b00800672e2f3266a3d355425ef9a
         $data['total_diplome'] = $this->diplome_model->record_count();
 
          //var_dump($data['diplome_item']);

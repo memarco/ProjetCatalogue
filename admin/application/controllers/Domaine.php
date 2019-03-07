@@ -41,15 +41,12 @@ class Domaine extends CI_Controller {
             $page = ($this->uri->segment(3)) ;
             }
             else{
-            $page = 1;
+            $page = 0;
             }
         $data["domaine"] = $this->domaine_model->get_domaine(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
 
-
-
-        $this->load->view('templates/header', $data);
         $this->load->view('domaine/index', $data);
 
     }

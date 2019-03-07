@@ -58,7 +58,7 @@ class CI_DB_active_record extends CI_DB_driver {
 	var $ar_cache_having		= array();
 	var $ar_cache_orderby		= array();
 	var $ar_cache_set			= array();
-	
+
 	var $ar_no_escape 			= array();
 	var $ar_cache_no_escape     = array();
 
@@ -426,7 +426,7 @@ class CI_DB_active_record extends CI_DB_driver {
 
 					$v = ' '.$this->escape($v);
 				}
-				
+
 				if ( ! $this->_has_operator($k))
 				{
 					$k .= ' = ';
@@ -660,7 +660,7 @@ class CI_DB_active_record extends CI_DB_driver {
 			$prefix = (count($this->ar_like) == 0) ? '' : $type;
 
 			$v = $this->escape_like_str($v);
-			
+
 			if ($side == 'none')
 			{
 				$like_statement = $prefix." $k $not LIKE '{$v}'";
@@ -2039,6 +2039,52 @@ class CI_DB_active_record extends CI_DB_driver {
 
 		$this->_reset_run($ar_reset_items);
 	}
+
+		var $ar_bracket_open = FALSE;
+    var $last_bracket_type = 'where';
+
+    function bracket($type = NULL,$append='where')
+    {
+        if ( strtolower($type) == 'open' )
+        {
+            // fetch the key of the last entry added
+            $key = key($this->ar_where);
+            $this->ar_bracket_open = TRUE;
+
+            // add a bracket close
+            $this->ar_where[$key] = '('.$this->ar_where[$key];
+        }
+        elseif ( strtolower($type) == 'close' )
+        {
+            // fetch the key of the last entry added
+            if ($append == 'like')    {
+                end($this->ar_like);
+                $key = key($this->ar_like);
+
+                // add a bracket close
+                   $this->ar_like[$key] .= ')';
+
+                // update the AR cache clauses as well
+                if ($this->ar_caching === TRUE)
+                {
+                    $this->ar_cache_like[$key] = $this->ar_like[$key];
+                }
+            } else {
+                end($this->ar_where);
+                $key = key($this->ar_where);
+
+                // add a bracket close
+                   $this->ar_where[$key] .= ')';
+
+                // update the AR cache clauses as well
+                if ($this->ar_caching === TRUE)
+                {
+                    $this->ar_cache_where[$key] = $this->ar_where[$key];
+                }
+            }
+        }
+        return $this;
+    }
 }
 
 /* End of file DB_active_rec.php */

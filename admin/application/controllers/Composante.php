@@ -39,13 +39,12 @@ class Composante extends CI_Controller {
             $page = ($this->uri->segment(3)) ;
             }
             else{
-            $page = 1;
+            $page = 0;
             }
         $data["composante"] = $this->composante_model->get_composante(FALSE, $config["per_page"], $page);
         $str_links = $this->pagination->create_links();
         $data["links"] = explode('&nbsp;',$str_links );
 
-        $this->load->view('templates/header', $data);
         $this->load->view('composante/index', $data);
 
     }
@@ -82,9 +81,7 @@ class Composante extends CI_Controller {
         if ($this->form_validation->run() === FALSE)
         {
             $this->load->view('templates/header', $data);
-            $this->load->view('composante/create');
-
-
+            $this->load->view('composante/create'); 
         }
         else
         {
@@ -107,7 +104,7 @@ class Composante extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
 
-        $data['title'] = 'Modification des informations';   
+        $data['title'] = 'Modification des informations';
         $data['name'] = $this->session->userdata('name');
         $data['composante_item'] = $this->composante_model->get_composante_by_id($id);
 
